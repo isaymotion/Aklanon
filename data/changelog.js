@@ -3,6 +3,13 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.1.1', date: '2026-11-08', title: 'Mania section',
+    items: [
+      { type: 'content', text: 'New interview section Elevated mood and DIGFAST (mania): 12 phrases in respectful and everyday register screening a distinct period of elevated or irritable mood, duration, decreased need for sleep, talkativeness, racing thoughts, distractibility, increased activity, grandiosity, spending and risk-taking, prior episodes and collateral; 11 point-board replies with clinical notes; 26 new dictionary entries (sadya, masadya, kusog, madasig, dugay, gasto, baligya, basol, gahum, maaeam, kinaandan, pasikat and others, with Tagalog equivalents). All lines are unreviewed draft; words attested in Zorc & de la Cruz are marked Z.' },
+      { type: 'update', text: 'Totals: 7 sections, 77 phrases, 315 dictionary entries. Next: anxiety, trauma, substances, cognition, collateral, children, elderly.' }
+    ]
+  },
+  {
     version: '0.1.0', date: '2026-11-08', title: 'First draft: engine fork from Usap Tayo',
     items: [
       { type: 'feature', text: 'Mag-istorya Kita ("let’s talk" in Aklanon) runs on the same engine as Usap Tayo: Home, Lessons with quizzes, Dictionary with root search, universal search, Flashcards (topic and psychiatry decks, My mistakes), the Psychiatry phrase sections, Point board, Listening drill, Practice, Progress, Settings, backup, theme and text size, offline use and install to home screen.' },

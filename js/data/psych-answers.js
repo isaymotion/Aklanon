@@ -126,6 +126,19 @@ window.PSYCH_ANSWERS = {
       ['Owa nagapati ro pamilya ko.', 'My family doesn\'t believe me.'],
       ['Sigurado gid ako.', 'I\'m completely sure.', 'Fixed conviction.']
     ],
+    mania: [
+      ['Masadya gid ako makaron. Owa ako it problema.', 'I\'m really happy now. I have no problem.', 'Euphoria with denial of illness; get collateral.'],
+      ['Indi ako kapoy bisan owa ako it tueog.', 'I\'m not tired even without sleep.', 'Decreased need for sleep: core manic symptom.'],
+      ['Tatlo ka oras lang ro tueog ko, pero makusog ako.', 'I sleep only three hours, but I\'m strong.', 'Decreased need for sleep.'],
+      ['Madasig ro akon hunahuna. Madamo ako it plano.', 'My mind is fast. I have many plans.', 'Racing thoughts; check goal-directed activity.'],
+      ['Kuno sobra ako it hambae.', 'They say I talk too much.', 'Talkativeness reported by others.'],
+      ['Nag-gasto ako it madamo nga kwarta.', 'I spent a lot of money.', 'Indiscretion; ask amount and source.'],
+      ['Ginbaligya ko ro amon motor.', 'I sold our motorcycle.', 'Indiscretion with family consequences; confirm with family.'],
+      ['May misyon ako halin sa Diyos.', 'I have a mission from God.', 'Grandiosity; test conviction, consider psychosis.'],
+      ['Madali ako maakig makaron.', 'I get angry easily now.', 'Irritability; ask about aggression and safety.'],
+      ['Bukon ako it buang. Ro pamilya ko ro may problema.', 'I\'m not crazy. My family is the one with the problem.', 'Poor insight; keep rapport, avoid arguing.'],
+      ['Sadto natabo eon raya, pero nag-ayad man.', 'This happened before, but it got better too.', 'Prior episode; ask about treatment and depression between episodes.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it tambae?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],

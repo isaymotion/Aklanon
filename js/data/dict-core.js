@@ -294,4 +294,31 @@ multo|ghost|n|folk||Z.|multo
 ingkanto|enchanted being|n|folk||Z.|engkanto
 pasma|folk illness from heat/cold exposure|n|folk||Z.|pasma
 anting-anting|amulet|n|folk||Z.|anting-anting
+sadya|be happy; fun|v|emotions||Z (~p. 334). masadya = happy; kasadyahan = happiness.|saya
+masadya|happy; cheerful; lively|adj|emotions|sadya|Z. In mania the patient's own word for feeling well.|masaya
+kasadyahan|happiness; merriment|n|emotions|sadya|Z.|kasiyahan
+kusog|strength; energy|n|body||makusog = strong, energetic.|lakas
+makusog|strong; full of energy|adj|adjectives|kusog||malakas
+dasig|speed|n|adjectives||madasig = fast; kadasig = how fast.|bilis
+madasig|fast; quick|adj|adjectives|dasig||mabilis
+dugay|long (time)|adj|time||nagdugay = lasted; madugay = will take long.|tagal
+maakig|angry; irritable|adj|emotions|akig|Z (makaakig). Madali maakig = easily angered.|magalit
+gasto|expenses; spend|n|daily||Z (~p. 192). Nagsobra it gasto = overspent.|gastos
+baligya|sell|v|verbs||Z (~p. 91, ginbaligya).|benta
+basol|regret; blame|v|emotions||ginabasol = regrets, blames.|sisi
+sobra|too much; excess; more than|adj|quantity||Spanish loan, shared with Tagalog and Hiligaynon.|sobra
+gahum|power; authority|n|mind||Also gahom. Espesyal nga gahum = special power (grandiosity).|kapangyarihan
+maaeam|knowledgeable; clever|adj|adjectives|aeam|Cognate of Hiligaynon maalam; l > e between vowels.|marunong
+misyon|mission|n|mind||Spanish loan; common grandiose theme.|misyon
+tunog|sound; noise|n|daily|||tunog
+hueag|movement; move|n|verbs||Cognate of Hiligaynon hulag.|galaw
+sugal|gambling|n|daily||Spanish loan (jugar).|sugal
+kinaandan|usual; habitual; customary|adj|adjectives|anad|Indi kinaandan = not one's usual.|nakasanayan
+delikado|dangerous; risky|adj|adjectives||Spanish loan.|delikado
+halin|from; since|prep|grammar||Halin sa Diyos = from God. Also "leave".|mula
+plano|plan|n|mind||Spanish loan.|plano
+palibot|surroundings; around|n|daily||Sa palibot = around (someone).|paligid
+pasikat|showy; acting above one's status|adj|people||Z (~p. 300). Family's word for grandiose behaviour.|mayabang
+motor|motorcycle|n|daily||Common asset sold in manic spending.|motor
+ayad|get well; improve|v|health||nag-ayad = got better; cf. mayad.|galing
 `);

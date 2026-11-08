@@ -20,19 +20,19 @@ The learner is assumed to **speak Tagalog already**. Lessons are contrastive (wh
 
 | Section | What it does |
 |---|---|
-| **Psychiatry Aklanon** | Interview phrase sections, each phrase in a respectful (*kamo*) and an everyday (*ikaw*) form, with Study, Recall and two quiz modes. 6 sections, 65 phrases: opening and rapport, history of present illness, depressed mood and SIGECAPS, suicide risk, hallucinations and delusions, closing and follow-up. Route `#/psych/s/<section id>`. |
+| **Psychiatry Aklanon** | Interview phrase sections, each phrase in a respectful (*kamo*) and an everyday (*ikaw*) form, with Study, Recall and two quiz modes. 7 sections, 77 phrases: opening and rapport, history of present illness, depressed mood and SIGECAPS, suicide risk, elevated mood and DIGFAST, hallucinations and delusions, closing and follow-up. Route `#/psych/s/<section id>`. |
 | **Point board** (*Itudlo*) | Turn the phone around: the patient taps a reply, the phone speaks it and the interviewer reads the English. General replies (yes/no, how often, since when, how much, how I feel, I need…), a 0–10 scale, and replies per interview section. Nothing is saved. Route `#/psych/point?s=<section>`. |
 | **Listening drill** | Hear a patient reply, choose its meaning from four, then see the Aklanon. Pool: the point-board replies. Route `#/psych/listen?s=<section>`. |
 | **For review** | Every phrase and point-board reply has a **⚑** flag. Flagged lines, with an optional one-line comment, are listed by section at `#/review` (App menu), with **Copy all** (plain text) and **Clear**. This is the worklist for the native-speaker reviewer. |
 | **Lessons** | 12 contrastive grammar and culture lessons with quizzes, written for a Tagalog speaker and citing Zorc & de la Cruz (1968) by page: sounds and the Aklanon *e*; *ang/ng/sa → ro/it(ku)/sa*; pronouns; demonstratives; *may/owa* and the four negators; question words; verb focus; aspect (*nag-/naga-/maga-/mag-*, *gin-/gina-/-on*); particles; numbers and time; respect without *po*; real Kalibo speech, *hay* and interpreting. Lines marked ◌ are the author's reconstructions, not quotations. |
-| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 289 core and clinical entries; entries marked Z in the file are attested in Zorc's grammar or dictionary. |
+| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 315 core and clinical entries; entries marked Z in the file are attested in Zorc's grammar or dictionary. |
 | **Universal search** | One search bar (press `/`) across words, phrases, lessons and pages. |
 | **Flashcards** | Spaced repetition with topic decks, psychiatry decks and an automatic "My mistakes" deck. |
 | **You** | Streaks, XP, progress, backup export/import (review flags included), settings, What's New, About. |
 
 Also: a draft banner under the top bar on every page (the **Why?** link explains; hide it for the session with ✕), a Practice page, pin-to-Home stars, match-device/light/dark theme, adjustable text size (Aa), back/forward buttons, offline support and install-to-home-screen (PWA).
 
-**Deferred to later versions:** the remaining interview sections (mania, anxiety, trauma, substances including tuba and betel, cognition, collateral, children, elderly), a fuller dictionary, an Aklanon verb trainer (new; Usap Tayo's Tagalog morphology engine was not carried over), recorded audio by a native speaker, case simulations, ward tools and printable handouts.
+**Deferred to later versions:** the remaining interview sections (anxiety, trauma, substances including tuba and betel, cognition, collateral, children, elderly), a fuller dictionary, an Aklanon verb trainer (new; Usap Tayo's Tagalog morphology engine was not carried over), recorded audio by a native speaker, case simulations, ward tools and printable handouts.
 
 ## Draft status and reviewer workflow
 
