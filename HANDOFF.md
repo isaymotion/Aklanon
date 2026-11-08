@@ -1,6 +1,6 @@
 # Handoff: Mag-istorya Kita (Aklanon variant of Usap Tayo)
 
-Updated 2026-11-08 after v0.1.0.
+Updated 2026-11-08 after v0.1.1 (mania section).
 
 ## 1. Project and audience
 - App: **Mag-istorya Kita**, Aklanon ("Akeanon") for the psychiatric interview, for a psychiatrist who speaks Tagalog and English and will see patients in Kalibo, Aklan. Grammar lessons are the priority.
@@ -46,7 +46,7 @@ git -C /home/claude/aklanon fetch --depth 1 origin dev-tools && git -C /home/cla
 for f in js/*.js js/data/*.js data/*.js sw.js; do node --check $f || echo FAIL $f; done
 cd /home/claude/aklanon && (python3 -m http.server 8123 &) && python3 /home/claude/aklanon-devtools/tools/smoke_test.py
 ```
-Passing: every route body length > 900; LESSONS 12 / SECTIONS 6 / phrases 65 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
+Passing: every route body length > 900; LESSONS 12 / SECTIONS 7 / phrases 77 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
 Design checks: skill `isaymotion-app-design` → `scripts/check_sw.py /home/claude/aklanon` (must pass) and `scripts/check_design.py` (warns about `hospital.js` and `icon-maskable-512` naming — both intentional).
 Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com"` and the Claude co-author trailer from the session reminder.
 
@@ -54,17 +54,19 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 | Item | Status |
 |---|---|
 | Engine fork, identity, icon, palette, banner, flags, #/review | done (v0.1.0) |
+| Current version | 0.1.1 (2026-11-08) |
 | Lessons | 12 done: sounds, markers, pronouns, demonstratives, may-owa, questions, focus, aspect, particles, numbers-time, politeness, kalibo-register |
-| Dictionary | 289 entries (core, grammar, time, body, emotions, verbs, folk) |
-| Phrase sections | 6 / ~20: opening, hpi, depression, suicide, psychosis, closing (65 phrases) |
-| Point-board replies | common groups + 6 sections |
+| Dictionary | 315 entries (core, grammar, time, body, emotions, verbs, folk, mania vocabulary) |
+| Phrase sections | 7 / ~20: opening, hpi, depression, suicide, psychosis, closing, mania (77 phrases) |
+| Point-board replies | common groups + 7 sections |
 | Audio | none (no TTS exists); recorded pack by native speaker later |
 | GitHub Pages | user must enable |
+| Mania section (0.1.1) | 12 phrases, 11 replies, 26 dict entries; Z-marked where attested (sadya, akig, hambae, gasto, baligya, obra, pasikat); unmarked forms (madasig, dugay, kusog, gahum, maaeam, kinaandan, basol, hueag, halin) are author's Western Bisayan drafts to verify against the PDFs |
 | Source verification | Zorc grammar partly extracted (verb chart p. 95 unreadable); dictionary ~400 noisy rows. Proper OCR pending PDFs |
 
 ## 7. Next steps
 1. If the user attached `ED145705.pdf` / `ED145704.pdf`: OCR them (pdftotext/tesseract via the pdf skill), rebuild `sources/zorc-*.md` from real text, re-verify every ◌ line in lessons and every unmarked dictionary entry; fix and commit as 0.1.1 with `correction` changelog items.
-2. Otherwise next section units, in this order: `mania` (DIGFAST), `anxiety` (incl. kulba, panic), `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12.
+2. Otherwise next section units, in this order (`mania` done in 0.1.1): `anxiety` (incl. kulba, panic), `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12.
 3. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
 ## 8. Pitfalls learned
@@ -73,6 +75,7 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 - GitHub API call to enable Pages was denied by the permission classifier (creates a public surface) — the user enables it.
 - Google Fonts fail in the sandbox; ignore in smoke tests.
 - Pushing from a fresh shallow clone is fine; fetch `origin main` before pushing if the clone is stale (413 otherwise).
+- `check_design.py` reports `missing data/hospital.js` as FAIL and `icon-maskable-512.png` as WARN; both are intentional for this app (no hospital forms, Usap Tayo icon naming). Only `check_sw.py` must pass.
 - `check_design.py` expects `icon-maskable-512.png`; this app keeps Usap Tayo's `maskable-512.png` naming on purpose.
 - Lesson tables with 4+ columns are tight on a 390px phone; keep tables ≤ 4 columns or split.
 
