@@ -6,7 +6,7 @@
 
 **App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com**
 
-Version **0.1.2** (2026-11-13); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
+Version **0.1.3** (2026-11-13); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
 
 **Live site:** https://isaymotion.github.io/Aklanon/ (after GitHub Pages is switched on; see below)
 

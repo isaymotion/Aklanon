@@ -2,7 +2,7 @@
    All isaymotion apps share one origin (isaymotion.github.io), so this worker only ever deletes caches that
    start with its own PREFIX. 'magistorya-audio' will hold recorded clips (future pack) and is kept across versions. */
 const PREFIX = 'magistorya-';
-const VERSION = PREFIX + '0.1.2';
+const VERSION = PREFIX + '0.1.3';
 const KEEP = ['magistorya-audio'];
 const FILES = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',

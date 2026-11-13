@@ -3,6 +3,12 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.1.3', date: '2026-11-13', title: 'Menu scrolling fixed',
+    items: [
+      { type: 'correction', text: 'The menu that opens from More now scrolls on phones and tablets. Before, it was taller than the screen and could not be scrolled, so the items at the bottom of the list (such as Settings and About) could not be reached from it.' }
+    ]
+  },
+  {
     version: '0.1.2', date: '2026-11-13', title: 'Hospital details file',
     items: [
       { type: 'update', text: 'Added data/hospital.js, the per-site settings file the shared design uses (hospital name, program, form numbers, crisis line). No hospital is named yet, so only the crisis line shows; the About page now reads NCMH 1553 and the alternate mobile numbers from it.' }
