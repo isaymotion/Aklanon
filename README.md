@@ -6,7 +6,7 @@
 
 **App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com**
 
-Version **0.1.0** (2026-11-08): first draft, engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
+Version **0.1.2** (2026-11-13); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
 
 **Live site:** https://isaymotion.github.io/Aklanon/ (after GitHub Pages is switched on; see below)
 
@@ -98,6 +98,7 @@ sw.js                   Offline cache (prefix magistorya-)
 css/style.css           Styles: shared isaymotion tokens (sea-teal palette, light and dark), shell, screens
 data/app-meta.js        Name, version, attribution, APP_LINKS (Other apps menu, off)
 data/changelog.js       What's New (APP_CHANGELOG)
+data/hospital.js        Hospital, program and crisis-line details for this site (empty except the crisis line; edit per deployment)
 data/strings.js         English and Tagalog (draft) labels for the menu, footer, backup and banner
 icons/                  App icons (favicon-32, favicon-64, logo-96, apple-touch-icon, icon-192, icon-512, maskable-192, maskable-512)
 js/lang.js              Language pack (Aklanon)
