@@ -84,3 +84,6 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 ## 9. Files to re-attach
 - `ED145705.pdf` (Zorc grammar) and `ED145704.pdf` (dictionary) from https://files.eric.ed.gov/fulltext/ — needed for source verification and dictionary expansion (next step 1). Not needed for adding sections from existing vocabulary.
 - Nothing else; icons and content live in the repo.
+
+## Note, 13 Nov 2026 (version 0.1.3, pushed)
+- Phone menu fix: the menu that opens from More could not scroll on phones (the fixed `.rail` took the height of its content inside the `.shell` grid). The phone rule in `css/style.css` now sets `align-self: stretch` and a max-height. Found and fixed first in Hanashimashō (`isaymotion/Japanese` 0.12.1); test with `qa/drawer-any.py <port> <label>` on that repo's dev-tools branch ("scrolls OK" at 390×844, 360×640 and 820×1180). Version bumped in app-meta.js, changelog.js, sw.js and README.
