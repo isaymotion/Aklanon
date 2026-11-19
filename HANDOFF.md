@@ -66,7 +66,7 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 | Source verification | Zorc grammar partly extracted (verb chart p. 95 unreadable); dictionary ~400 noisy rows. Proper OCR pending PDFs |
 
 ## 7. Next steps
-1. If the user attached `ED145705.pdf` / `ED145704.pdf`: OCR them (pdftotext/tesseract via the pdf skill), rebuild `sources/zorc-*.md` from real text, re-verify every ◌ line in lessons and every unmarked dictionary entry; fix and commit as 0.1.2 with `correction` changelog items.
+1. If the user attached `ED145705.pdf` / `ED145704.pdf`: OCR them (pdftotext/tesseract via the pdf skill), rebuild `sources/zorc-*.md` from real text, re-verify every ◌ line in lessons and every unmarked dictionary entry; fix and commit as the next patch version with `correction` changelog items.
 2. Otherwise next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4 done): `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12 (next content release is 0.1.5; 0.1.2 and 0.1.3 were non-content).
 3. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
@@ -78,7 +78,7 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 - `worktree add … dev-tools` fails on a shallow clone ("invalid reference"): add the worktree from FETCH_HEAD, then `checkout -B dev-tools` (command in §5).
 - The git proxy refuses pushes until the repo is added to the session with the add_repo tool (access: push); the existing clone can then push as is.
 - Pushing from a fresh shallow clone is fine; fetch `origin main` before pushing if the clone is stale (413 otherwise).
-- `check_design.py` reports `missing data/hospital.js` as FAIL and `icon-maskable-512.png` as WARN; both are intentional for this app (no hospital forms, Usap Tayo icon naming). Only `check_sw.py` must pass.
+- `data/hospital.js` exists since 0.1.2 (crisis line only, no hospital named), so `check_design.py` no longer fails on it; it still warns on `icon-maskable-512.png` (intentional). Only `check_sw.py` must pass.
 - `check_design.py` expects `icon-maskable-512.png`; this app keeps Usap Tayo's `maskable-512.png` naming on purpose.
 - Lesson tables with 4+ columns are tight on a 390px phone; keep tables ≤ 4 columns or split.
 
