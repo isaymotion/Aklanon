@@ -103,7 +103,7 @@ abi|because, you see|part|grammar||Z.|kasi
 ngani|indeed; I know|part|grammar||Z.|nga
 eagi|at once; right away|part|grammar||Z.|agad
 haeos|almost|adv|grammar||Z.|halos
-makaron|now|adv|time||Z (mga alas tres makaron).|ngayon
+makaron|now; today; at this time|adv|time||Z (mga alas tres makaron); SR ~p. 250.|ngayon
 kahapon|yesterday|adv|time||Z.|kahapon
 kabii|last night|adv|time||Z.|kagabi
 buwas|tomorrow|adv|time||Draft; also "sa aga".|bukas
@@ -137,7 +137,7 @@ tawo|person; people|n|people||Z.|tao
 eaki|man; male|n|people||SR ~p. 173 (alt. eaeaki).|lalaki
 bayi|woman; female|n|people|||babae
 unga|child|n|people||Z (unga').|bata; anak
-asawa|spouse|n|family||Z.|asawa
+asawa|spouse; husband or wife|n|family||Z; SR ~p. 12 (mag-asawa = be married). bana = husband in Kalibo speech.|asawa
 nanay|mother|n|family||Z (nay, ina). Title Nay.|nanay
 tatay|father|n|family||Z. Title Tay.|tatay
 manong|older brother; older man (title Nong)|n|family|||kuya
@@ -224,7 +224,7 @@ kita|see|v|verbs||Z (kita').|kita
 bati|hear|v|verbs||Not confirmed in SR (bati(h) [Sp] there = to blend).|dinig
 hambae|speak; say|v|verbs|||salita
 istorya|talk; converse|v|verbs||mag-istorya.|usap
-sugid|tell; relate|v|verbs||Sugidi ako = tell me.|sabi; kuwento
+sugid|tell; relate; reveal|v|verbs||SR ~p. 33, 322 (Akl for Spanish reporte). Sugidi ako = tell me; isugid = to tell (something).|sabi; kuwento
 pangutana|ask|v|verbs|||tanong
 sabat|answer|v|verbs||SR ~p. 324.|sagot
 maman-an|know (fact)|v|verbs||Indi ko maman-an = I don't know.|alam
@@ -244,7 +244,7 @@ lingkod|sit|v|verbs||Z.|upo
 tindog|stand|v|verbs|||tayo
 tangis|cry; weep|v|verbs||SR ~p. 211 marks hibi' as Hiligaynon with Akl: tangis; ~p. 369 "Nano ring ginatangisan?" = What are you crying about?|iyak
 isip|think|v|verbs||mag-isip, nagaisip.|isip
-lipat|forget|v|verbs||Z (hilipatan).|limot
+lipat|forget; leave behind|v|verbs||Z (hilipatan); SR ~p. 246 (lipat RV3). Hiligaynon limot is not Aklanon.|limot
 dumdum|remember; keep in mind|v|verbs||SR ~p. 167 (dumdum RV1); also padumdum = remind. Spelled dumdum.|alala
 patay|die; dead|v|verbs||Z (patay).|patay
 kabuhi|life|n|mind|buhi||buhay
@@ -253,7 +253,7 @@ sakit sa ueo|headache|phr|health|sakit||sakit ng ulo
 hilo|become dizzy; feel faint|v|health||SR ~p. 213 (hilo ST2); also mabuyog = dizzy (~p. 114). lipong is Hiligaynon.|hilo
 suka|vomit|v|health|||suka
 away|quarrel; fight|v|verbs||SR ~p. 66.|away
-bunae|hit; beat|v|verbs|||bugbog
+bunae|hit; beat; beating|v|verbs||SR ~p. 54 (mamumunae = one who beats). l > e: Hiligaynon bunal.|bugbog
 daeagan|run|v|verbs|||takbo
 tago|hide|v|verbs||SR ~p. 363.|tago
 obra|work (verb)|v|verbs||Z (magapangobra).|trabaho
@@ -277,7 +277,7 @@ mainit|hot|adj|adjectives|||mainit
 maeamig|cold|adj|adjectives|eamig|SR ~p. 383 marks tugnaw as Hiligaynon with Akl: eamig; "Maeamig kuno rito sa America".|malamig
 matam-is|sweet|adj|adjectives||Z (tam-is).|matamis
 husto|right; correct; enough|adj|adjectives||Z.|tama
-saea|wrong; mistake|n|adjectives|||mali
+saea|wrong; mistake; fault; sin|n|adjectives||SR ~p. 200 ("may saea man" = also at fault), ~p. 266 (sad-an). l > e: Tagalog sala.|mali; kasalanan
 matuod|true|adj|adjectives||SR ~p. 386.|totoo
 puril|lie; falsehood|n|adjectives||SR ~p. 113 marks butig as Hiligaynon with Akl: puril; purilon = liar.|kasinungalingan
 abo|many; much|adj|quantity||SR ~p. 156 marks damo' as Hiligaynon with Akl: abo'; Z "abo' nga saeamat". Kalibo speakers also say madamo.|marami
@@ -377,4 +377,27 @@ baeabag|block; thwart|v|verbs||SR ~p. 72 (baeabag V3 = block or stop one's moves
 ugali|custom; habit|n|mind||SR ~p. 277 (ugali').|ugali
 gihapon|usually; just the same|adv|time||SR ~p. 194.|karaniwan
 loko|crazy; foolish|adj|mind||SR ~p. 248 [Sp] (loko m., loka f.). Stigmatizing; patients use it of themselves.|loko
+bagyo|typhoon; storm|n|daily||SR ~p. 77 (hurricane, storm; "sinalipdan ro andang baeay sa bagyo").|bagyo
+linog|earthquake|n|daily||SR ~p. 245.|lindol
+aksidente|accident|n|health||Spanish loan; not in SR as a headword.|aksidente
+hampak|beat; spank; slap|v|verbs||SR ~p. 205.|hampas
+sampae|slap|v|verbs||SR ~p. 367 (tampa\', tampaling = slap, syn. sampae).|sampal
+abuso|abuse; take advantage of|v|verbs||SR ~p. 41 [Sp] (abuso, abusar; abusador = abuser).|abuso
+pahog|threaten; scare|v|verbs||SR ~p. 291 (syn. paeog, pahadlok).|takot (pananakot)
+siyagit|scream; shout|n|verbs||SR ~p. 346.|sigaw
+igbata|relative|n|family||SR ~p. 56, 89 ("Igbata namon imaw" = he is our relative); SR marks paryente as Spanish.|kamag-anak
+kato anay|long ago; formerly; back then|adv|time||SR ~p. 24, 30 (kato anay, with makaron, kaina).|noon
+uman|repeat; do again|v|grammar||Z grammar root list (uman = repeat, do again). nagakatabo uman = happening again.|ulit
+padumdum|remind|v|verbs|dumdum|SR ~p. 26.|paalala
+tupay|have a bad dream; have a nightmare|v|health||SR ~p. 221, 387 (tupay ST2; syn. hupa\'). ginatupay = keeps having nightmares.|binabangungot
+bangungot|nightmare believed to be fatal|n|folk||SR ~p. 85 (bangungot ST4).|bangungot
+kigbot|startle; frighten; be startled|v|emotions||SR ~p. 140 (read from a noisy OCR line; Hiligaynon kibot). makigbot = easily startled. ⚑ verify.|gulat
+parehas|same; alike|adj|adjectives||SR ~p. 176 (opp. eain = different), ~p. 262.|pareho
+maeain|bad; ill|adj|adjectives|eain|SR ~p. 176 ("maeain dang pamatyag" = I feel bad). Note eain alone = different, other.|masama
+madali|easy; quick; easily|adj|adjectives||SR ~p. 155 ("madali hilipatan" = easily forgotten).|madali
+hinay|slowly; softly|adv|adjectives||SR ~p. 215 (hinay = go slowly, not be loud or fast). hinay-hinay = little by little.|dahan-dahan
+kalma|calm; serene|adj|emotions||SR ~p. 122 [Sp] (syn. hasay).|kalma
+linong|calm; peaceful|adj|emotions||SR ~p. 245 (syn. linaw; cf. tawhay, tagnong).|payapa
+saeanhon|alone; individual|adj|people||SR ~p. 328.|mag-isa
+sang-una|before; in the past|adv|time||Draft (Western Bisayan); SR gives kato anay. ⚑ verify.|dati
 `);

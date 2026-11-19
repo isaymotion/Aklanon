@@ -3,6 +3,13 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.1.6', date: '2026-11-19', title: 'Trauma section',
+    items: [
+      { type: 'content', text: 'New interview section Trauma and its aftermath: 12 phrases in both registers — a normalising gateway (accident, typhoon, beatings at home, something done to the patient), permission to skip details, timing (kato anay), intrusion (memories coming back uman, nightmares tupay), avoidance (likaw, padumdum), arousal (on guard, startle kigbot, sleep, anger), numbing and detachment, self-blame (saea, hinuesoe), whether it is still happening and whether home is safe now, and a closing that returns control to the patient. 11 point-board replies with risk notes; 23 new dictionary entries, each checked against the Aklanon dictionary (bagyo, linog, bunae, hampak, sampae, abuso, pahog, siyagit, igbata, kato anay, uman, padumdum, tupay, bangungot, kigbot, saea, parehas, maeain, madali, hinay, kalma, linong, saeanhon). Two draft forms carry a ⚑: kigbot (noisy line) and sang-una.' },
+      { type: 'update', text: 'Totals: 9 sections, 102 phrases, 392 dictionary entries. Next: substances, cognition, collateral, children, elderly.' }
+    ]
+  },
+  {
     version: '0.1.5', date: '2026-11-19', title: 'Source verification against the Aklanon dictionary',
     items: [
       { type: 'correction', text: 'Every dictionary entry was checked against the 1969 Aklanon dictionary (Salas Reyes, Zorc & Prado, ERIC ED145704) and the 1968 grammar, read from a fresh OCR of the scans. Words that turned out to be Hiligaynon, with the attested Aklanon form now used throughout the phrases, replies and lessons: salamat → saeamat; tambae → bueong (medicine); kulba → kueba (fear, nervousness); pirme → permi; kun kaisa → kon amat; talagsa → paeangta; kapoy → gaoy (tired); madamo → abo (many); dugay → buhay (long time); lipong → hilo; baehas → hueas (sweat); atake → ataki; multo → mueto; dako → bahoe; diutay → sangkiri; matugnaw → maeamig; hibi → tangis; butig → puril; dumdom → dumdum; tagipusuon → tagipuso-on; hunahuna → huna-huna; baba → ba-ba; delikado (which means fragile in Aklanon) → may peligro; palengke → tindahan.' },

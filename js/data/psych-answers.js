@@ -152,6 +152,19 @@ window.PSYCH_ANSWERS = {
       ['Masakit ro ueo ag abaga ko tungod sa kabalaka.', 'My head and shoulders hurt because of worry.', 'Somatic tension; common presenting complaint.'],
       ['Nagainom ako it bueong nga binakae sa botika para makatueog.', 'I take medicine bought at the pharmacy to sleep.', 'Get the name; pharmacy benzodiazepine or antihistamine use.']
     ],
+    trauma: [
+      ['Kato anay, sa bagyo, nawaea ro amon baeay.', 'Long ago, in the typhoon, we lost our house.', 'Disaster trauma; ask about deaths and displacement.'],
+      ['Ginbunae ako ku akon bana / asawa.', 'My husband / wife beat me.', 'Current risk first: is it still happening, children at home?'],
+      ['May naghimo kakon it maeain kato nga unga pa ako.', 'Someone did something bad to me when I was still a child.', 'Do not press for details; thank, validate, plan a later session.'],
+      ['Indi ko gusto maghambae parte raya.', 'I do not want to talk about it.', 'Respect it; note avoidance; return to safety and symptoms.'],
+      ['Nagabalik raya sa akon huna-huna bisan indi ko gusto.', 'It comes back to my mind even when I do not want it to.', 'Intrusion; ask frequency and triggers.'],
+      ['Permi ako ginatupay.', 'I keep having nightmares.', 'Re-experiencing at night; ask about sleep avoidance and alcohol.'],
+      ['Madali ako makigbot, bisan sa gamay nga tunog.', 'I startle easily, even at a small sound.', 'Exaggerated startle; hyperarousal cluster.'],
+      ['Pamatyag ko ako ro may saea.', 'I feel it was my fault.', 'Self-blame; correct gently, do not argue.'],
+      ['Owa eon ako it pamatyag, daw bukon ako it tawo.', 'I feel nothing any more, as if I were not a person.', 'Numbing and depersonalisation; ask about dissociation.'],
+      ['Nagakatabo pa raya makaron.', 'It is still happening now.', 'Active danger: safety plan, VAW desk, admission if needed.'],
+      ['Owa ako it maistorya parte raya.', 'I have no one to talk to about it.', 'Isolation; identify one safe person; follow-up soon.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it bueong?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],
