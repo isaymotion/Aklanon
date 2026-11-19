@@ -54,7 +54,7 @@ dikeong|relapse; get sick again|v|health||SR ~p. 164.|binat
 dinaya|deceit; cheating|n|mind||SR ~p. 160 (OCR headword dinaya'; spelling normalised).|daya
 dita|report; give information|v|verbs||SR ~p. 159.|
 ditok|brain|n|body||SR ~p. 285.|utak
-dueom|be in the dark; not able to comprehend|v|mind||SR ~p. 165.|
+dueom|be in the dark; not able to comprehend|v|mind||SR ~p. 165. Figurative sense of dueom = dark (Z p. 14).|hindi makaunawa
 dueon|choke on food; cough from eating fast|v|health||SR ~p. 166.|samid
 dugo|blood|n|body||SR ~p. 167 (OCR headword duge'; spelling normalised).|dugo
 dungan|together; simultaneously|adv|grammar||SR ~p. 168.|sabay
@@ -361,7 +361,7 @@ baktas|hike; walk; go on foot|v|verbs||SR ~p. 71.|lakad
 bakukang|tropical ulcer; abscess|n|health||SR ~p. 70 (OCR headword bakukdng; spelling normalised). ⚑ spelling to verify.|pigsa
 bingkoe|become stubborn; hard-headed|v|mind||SR ~p. 109.|matigas ang ulo
 basin|toilet bowl; potty|n|daily||SR ~p. 88.|inidoro
-bastos|crude; rude; ill-mannered|adj|adjectives||SR ~p. 89.|bastos
+bastos|crude; rude; ill-mannered|adj|adjectives||SR ~p. 89; bastos ST5: Nabastusan ako ku imong ginhambae = I was grossed out by what you said (SR p. 28).|bastos
 batyag|feel; sense; perceive|v|mind||SR ~p. 91. Root of pamatyag = feeling.|dama
 baeo|become a widow or widower|v|family||SR ~p. 74 (OCR headword beeo; spelling normalised).|biyuda
 banhaw|rise from the dead|v|folk||SR ~p. 82 (OCR headword bemhaw; spelling normalised). ⚑ spelling to verify.|muling mabuhay

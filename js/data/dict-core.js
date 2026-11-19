@@ -282,7 +282,7 @@ matuod|true|adj|adjectives||SR ~p. 386.|totoo
 puril|lie; falsehood|n|adjectives||SR ~p. 113 marks butig as Hiligaynon with Akl: puril; purilon = liar.|kasinungalingan
 abo|many; much|adj|quantity||SR ~p. 156 marks damo' as Hiligaynon with Akl: abo'; Z "abo' nga saeamat". Kalibo speakers also say madamo.|marami
 sangkiri|few; a little|adj|quantity|kiri|SR ~p. 118, 136 (kiri' = few; sangkiri' = a little bit). diutay is Hiligaynon.|kaunti
-sangkurot|a little|adj|quantity||Z.|kaunti
+sangkurot|a little; a little bit|adj|quantity||Z p. 42 (sang- + kurot); tigsangkurot = a little at a time (p. 184).|kaunti
 tanan|all|adj|quantity|||lahat
 ngaean|name|n|basics|||pangalan
 edad|age|n|basics||Z (idad).|edad
@@ -440,4 +440,237 @@ hasta|until; up to|prep|grammar||Z p. 166 [Sp] (syn. tubtub).|hanggang
 grado|grade (in school)|n|daily||Spanish loan.|grado
 baeot-baeot|repeat|v|verbs||SR ~p. 75 (syn. uman).|ulit
 kwenta|count; settle money matters; value|v|mind||SR ~p. 151 [Sp] (Akl: husay); owa it kwenta = worthless.|kuwenta
+# Part 3, 2026-11-19: words taken from Zorc & de la Cruz's own example sentences (Z p. = printed page), added for the vocabulary lessons.
+tinapay|bread|n|daily||Z p. 71, 77.|tinapay
+karne|meat|n|daily||Z p. 87 [Sp].|karne
+sanduko|bolo; large knife|n|daily||Z p. 87.|itak
+dapaean|cutting board|n|daily||Z p. 87.|sangkalan
+sabaw|soup; broth|n|daily||Z p. 175 (Mainit gid do sabaw).|sabaw
+haboe|blanket|n|daily||Z p. 155 (ro haboe ku unga).|kumot
+eukas|gift|n|daily||Z p. 68 (Taw-i imaw it eukas).|regalo
+tueon-an|book|n|daily||Z p. 72 (Ginuli ko ro tueon-an).|aklat
+pisara|blackboard|n|daily||Z p. 81 [Sp].|pisara
+dingding|wall|n|daily||Z p. 47 (primitive word).|dingding
+simbahan|church|n|places||Z p. 39 (simba + -an).|simbahan
+suba|river|n|places||Z p. 39 (suba' = river; suba = go upriver, differing only in stress).|ilog
+bukid|mountain; hills|n|places||Z p. 44 (kabukiran = hilly area), p. 166 (maeapit sa bukid).|bundok
+kalibutan|world; universe|n|places||Z p. 39 (libot + ka-…-an).|mundo
+sueod|inside; interior|n|grammar||Z p. 156 (sa sueod it baeay = inside the house).|loob
+idaeum|under; below|n|grammar||Z p. 156 (sa idaeum it).|ilalim
+ibabaw|on top of; above|n|grammar||Z p. 156 (sa ibabaw it).|ibabaw
+kilid|side; beside|n|grammar||Z p. 156 (sa kilid it); takilid = turn one's side to.|tabi; gilid
+pihak|the other side|n|grammar||Z p. 156 (sa pihak it).|kabila
+hain|from|prep|grammar||Z p. 166 (alt. halin).|mula
+hanungod|about; concerning|prep|grammar||Z p. 166.|tungkol
+tubtub|until; up to|prep|grammar||Z p. 47, 166 (syn. hasta).|hanggang
+ugaling|but; however|conj|grammar||Z p. 163, 210 (Nagadto ako kato, ugaling owa imaw runa).|ngunit
+duro|much; very (it duro)|adv|quantity||Z p. 128, 191 (Nasaktan ako it duro = I was deeply hurt).|lubha
+sambilog|one (piece)|num|numbers||Z p. 41 (sang- + bilog); sambuean = one month.|isa
+pilambisis|how many times|pron|questions||Z p. 41 (pila + ng + bisis).|ilang beses
+lunes|Monday|n|time||Z p. 184 [Sp]; ku Lunes = last Monday, sa Lunes = on Monday.|Lunes
+martes|Tuesday|n|time||Spanish loan, as the other weekdays.|Martes
+miyerkoles|Wednesday|n|time||Spanish loan.|Miyerkules
+huwebes|Thursday|n|time||Z p. 184 (ku Huwebes = last Thursday).|Huwebes
+biyernes|Friday|n|time||Spanish loan.|Biyernes
+sabado|Saturday|n|time||Spanish loan.|Sabado
+enero|January|n|time||Z p. 165 (ku Enero = last January); the months are Spanish loans.|Enero
+temprano|early|adv|time||Z p. 184 [Sp] (opp. ulihi).|maaga
+taeagsa|rarely; seldom|adv|time||Z p. 184 (with imaeaka); SR gives paeangta'. Hiligaynon talagsa is the same word.|bihira
+gerra|war|n|time||Z p. 165 (ku gerra = during the war).|giyera
+kabi-i|last night|adv|time||Z p. 65, 173 (alt. of kabii).|kagabi
+hampangan|toy|n|daily||Z p. 39 (hampang + -an; stress distinguishes it from hampangan = to play with).|laruan
+saeo-saeo|party; feast|n|daily||Z p. 118.|salu-salo
+sine|movie|n|daily||Z p. 173 [Sp] (Kasadya ro sine kabi-i).|sine
+tyempo|weather; time|n|time||Z p. 175 [Sp] (Matsa maeamig ro tyempo makaron).|panahon
+panahon|weather; season; time|n|time||Z p. 179 (Kainit nga panahon).|panahon
+anwang|carabao|n|daily||Z p. 178.|kalabaw
+ayam|dog|n|daily||Z p. 178 (Maisot-isot ro akong ayam).|aso
+uyahon|face|n|body||Z p. 82 (Hatanda-an pa nakon ro anang uyahon).|mukha
+osoy|look for; search for|v|verbs||Z p. 85 (Sino ro ginaosoy mo? = Whom are you looking for?).|hanap
+hakwat|lift; carry (something heavy)|v|verbs||Z p. 67 (Indi ako makahakwat karon).|buhat
+subeang|meet; run into|v|verbs||Z p. 67 (Nakasubeang kami ni Henry sa tindahan); SR makasubeang it mueto.|salubong
+eangoy|swim|v|verbs||Z p. 67 (Makaeangoy ka?).|langoy
+daea|bring; carry; take along|v|verbs||Z p. 68 (Daea ron = bring that), p. 90.|dala
+hatod|take to; bring to; deliver|v|verbs||Z p. 68, 73 (Ihatod mo ro unga sa anang baeay); ihatod = escort.|hatid
+eaha|cook|v|daily||Z p. 39, 73 (Eaha-on mo ro isda).|luto
+hugas|wash (dishes, hands)|v|daily||Z p. 64, 91 (Hugasi ring alima).|hugas
+limpyo|clean|v|daily||Z p. 91 [Sp].|linis
+kiwa|slice; cut|v|daily||Z p. 87 (magakiwa it karne).|hiwa
+takaw|steal|v|verbs||Z p. 90 (also takab in SR).|nakaw
+adto|go (there)|v|verbs||Z p. 64, 92, 116 (Kinahangean sanda gaadto sa Antique).|punta
+saot|dance|v|verbs||Z p. 92.|sayaw
+hueam|borrow|v|verbs||Z p. 99 (pahueam = lend).|hiram
+pakita|show|v|verbs|kita|Z p. 99 (pa- + kita).|ipakita
+padaea|send|v|verbs|daea|Z p. 99.|ipadala
+sugo|order; send on an errand|v|verbs||Z p. 99 (also = force, with pilit).|utos
+pilit|force; insist|v|verbs||Z p. 99.|pilit
+kasayod|know (a fact)|v|mind||Z p. 99 (pasayod = notify); nasayoran = is known (p. 44).|alam
+himuning|be still; keep still|v|verbs||Z p. 69 (Maghimuning!).|tumigil
+singgit|shout|v|verbs||Z p. 196 (Ayaw it singgit).|sigaw
+hibayag|laugh|v|emotions||Z p. 113 (Nakighibayag imaw kakon); panghibayag = laughing (p. 42).|tawa
+hangae|joke; tease|v|emotions||Z p. 156 (Indi dapat maghangae sa tawo nga bag-ong bugtaw).|biro
+hueay|share (in)|v|emotions||Z p. 113 (Nakighueay imaw ku imong kalisod).|makiramay
+dismayo|faint|v|health||Z p. 112 [Sp] (nagdismayo ro nobya).|himatay
+nobya|bride; girlfriend|n|family||Z p. 112 [Sp]; nobyo = groom.|nobya
+eangas|naughtiness; noise|n|emotions||Z p. 45, 82, 114 (kaeangas = noise; maeangas = naughty; Ayaw maglinahog).|kalikutan
+kagahod|noise; din|n|daily||Z p. 81 (Basi ikaakig nana ro kagahod).|ingay
+biyahe|trip; journey|n|daily||Z p. 82 [Sp] (Naeayo-an ro magueang sa anang biyahe).|biyahe
+handom|ambition; wish; cherished dream|n|mind||Z p. 161 (Daya ro akong handom).|hangarin
+diskurso|speech; lecture|n|daily||Z p. 165 [Sp].|talumpati
+kabata-an|youth; childhood|n|time||Z p. 166 (halin sa anang kabata-an).|kabataan
+buot|will; mind; inner self|n|mind||Z p. 108 (hantop sa imong buot = with all your heart); root of kabubut-on, mabuot, buot-an.|loob
+pueos|use; worth|n|mind||Z p. 108 (owa it pueos = worthless); SR syn. kapuslanan.|silbi
+kalisdanan|hardships; difficulties|n|emotions|lisod|Z p. 39, 43 (akong kalisdanan = my misery), p. 67.|kahirapan
+malisod|difficult|adj|adjectives|lisod|Z p. 174 (degree chart); kalisod = very difficult.|mahirap
+maeumo|easy|adj|adjectives||Z p. 174, 184 (maeumo = easily).|madali
+pangalisod|suffering; hardship|n|emotions|lisod|Z p. 43, 136 (pang- + kalisod).|paghihirap
+pangabudlay|difficulties; toil|n|emotions|budlay|Z p. 136.|paghihirap
+panumdum|thinking; thought|n|mind|dumdum|Z p. 42 (pang- + dumdum).|pag-iisip
+pagdumdum|thought; remembering|n|mind|dumdum|Z p. 135.|pag-alala
+paghigugma|love|n|emotions|higugma|Z p. 135, 89 (paghigugma it Dyos).|pag-ibig
+pagkatawo|character; personality|n|mind|tawo|Z p. 38, 135.|pagkatao
+pagkamatay|death; dying|n|health|matay|Z p. 135 (pagka- fixed state).|pagkamatay
+kamatayon|death (the state)|n|health|matay|Z p. 138 (ka-…-on).|kamatayan
+kagutom|hunger|n|body|gutom|Z p. 129; kagutomon = state of hunger (p. 138).|gutom
+kaohawon|thirst|n|body|ohaw|Z p. 138.|uhaw
+kaga-oy|tiredness; fatigue|n|health|gaoy|Z p. 129.|pagod
+kasubo-an|sadness|n|emotions|subo|Z p. 138.|kalungkutan
+kalipayan|happiness|n|emotions|lipay|Z p. 138.|kaligayahan
+kaisog|bravery; courage|n|emotions|isog|Z p. 137; also Kaisog ta kakon (p. 168).|tapang
+kapuslanan|worth; value|n|mind|pueos|Z p. 67, 138 (may kapuslanan rong kalisdanan).|halaga
+kabangdanan|cause; reason|n|mind|bangod|Z p. 138.|dahilan
+katapusan|end|n|time|tapus|Z p. 138.|katapusan
+kinaaeam|wisdom; knowledge|n|mind|aeam|Z p. 138.|karunungan
+kinabuhi|life; one's whole life|n|mind|buhi|Z p. 138, 211 (agod gumayad ro imong kinabuhi).|buhay
+kahuhuya|shameful; disgraceful|adj|emotions|huya|Z p. 48.|kahiya-hiya
+pakamatay|suicide; killing oneself|n|health|matay|Z p. 139 (paka- noun). Recognise it; do not lead with it.|pagpapakamatay
+pakisama|get along with people; fit in|v|people||Z p. 139 (paki- noun/verb).|pakikisama
+pakiusap|request; plead|v|verbs||Z p. 139.|pakiusap
+kabulig|helper; assistant|n|people|bulig|Z p. 137.|katulong
+kasimaeay|housemate|n|people||Z p. 42, 138 (kasing- + baeay).|kasambahay
+kasimanwa|townmate; fellow citizen|n|people||Z p. 42, 138.|kababayan
+kasimaryo|barrio-mate|n|people||Z p. 138.|kabaryo
+isigkatawo|fellow man|n|people||Z p. 137.|kapwa
+igsu-on|godbrother; godsister|n|family||Z p. 137 (ig- relationship noun).|kinakapatid
+magama|father and child|n|family||Z p. 112, 137 (mag- pair).|mag-ama
+magina|mother and child|n|family||Z p. 137.|mag-ina
+magasawa|husband and wife|n|family||Z p. 112 (mag- + asawa).|mag-asawa
+magmaeanghod|brothers and sisters (three or more)|n|family|manghod|Z p. 137, 194 (Pila kamo magmaeanghod?).|magkakapatid
+ina|mother|n|family||Z p. 87, 112 (ro ina; magina). nanay in address.|ina
+tagbaeay|homeowner; householder|n|people||Z p. 139.|may-bahay
+tagabukid|from the mountains; highlander|n|people||Z p. 139.|taga-bundok
+tagariya|from here; local|n|people||Z p. 139.|taga-rito
+manunuro|teacher|n|people|turo|Z p. 110, 138 (also manogturo).|guro
+mananahi|seamstress; tailor|n|people||Z p. 138.|mananahi
+mabug-at|heavy|adj|adjectives|bug-at|Z p. 67 (mabug-at ron).|mabigat
+mahapdi|painful; smarting|adj|health|hapdi|Z p. 128, 169 (Mahapdi-an ka).|mahapdi
+mataas|tall; high|adj|adjectives||Z p. 167, 177.|mataas
+matambok|fat; stout|adj|adjectives||Z p. 169.|mataba
+mataeaw|cowardly; timid|adj|emotions||Z p. 169.|duwag
+maeangas|naughty; noisy|adj|emotions|eangas|Z p. 171.|malikot
+mabinuligon|helpful|adj|emotions|bulig|Z p. 171.|matulungin
+matinahuron|respectful|adj|emotions|tahod|Z p. 171.|magalang
+mahinigugmaon|loving|adj|emotions|higugma|Z p. 171.|mapagmahal
+matamaran|lazy|adj|adjectives|tamad|Z p. 171.|tamad
+makibaeus|vengeful|adj|emotions|baeos|Z p. 171 (maki- = fond of).|mapaghiganti
+makikwarta|money-loving; mercenary|adj|emotions|kwarta|Z p. 171.|gahaman sa pera
+paeahibayag|always laughing|adj|emotions|hibayag|Z p. 171 (paea- habitual).|palatawa
+makakueueba|fearsome; frightening|adj|emotions|kueba|Z p. 171.|nakakatakot
+buot-an|sensible; mature|adj|mind|buot|Z p. 170.|mabait
+biki-an|having a goitre|adj|health||Z p. 170.|may bosyo
+tawohon|haunted; inhabited by spirits|adj|folk|tawo|SR intro p. 9, 11 (Tawohon kuno ro kahoy ngara = this tree is said to be inhabited).|may nakatira (engkanto)
+bulok|bad; worthless; rotten|adj|adjectives||Z p. 46 (kabulokkan = worst of all).|bulok
+init|heat; hot|n|adjectives||Z p. 47, 179 (init-init = warm; kainit nga panahon).|init
+linaga|boiled (in water)|adj|daily|eaga|Z p. 45.|nilaga
+natawo|was born|v|family|tawo|Z p. 38, 123 (Kan-o ikaw natawo?).|ipinanganak
+nasaktan|was hurt; got hurt|v|health|sakit|Z p. 41, 128.|nasaktan
+parayaw|favourite; pet child|n|family|dayaw|Z p. 44.|paborito
+pandiho|move the bowels|v|body||Z p. 41 (pang- + diho); pandiho-an = toilet.|dumumi
+pamaligos|bathing; act of taking a bath|n|daily|paligos|Z p. 42.|pagligo
+panugid|narrating; telling|n|verbs|sugid|Z p. 43.|pagkukuwento
+panuro|teaching|n|daily|turo|Z p. 43.|pagtuturo
+panimba|going to church|n|folk|simba|Z p. 108 (vs pangsimba = church clothes).|pagsisimba
+baeay-baeay|doll house; play house|n|daily|baeay|Z p. 47 (reduplication = artificial or small).|bahay-bahayan
+kaon-kaon|nibble; taste a little|v|daily|kaon|Z p. 47.|kain-kain
+uli|go home; return home|v|verbs||Z p. 69, 105 (Mos, mauli eon kita; pauli = go home); SR ~p. 279 pauli' RV9.|uwi
+bayad|pay; payment|v|daily||General Visayan and Tagalog; not found in SR's OCR.|bayad
+isog|bravery; fierceness; also scold|n|emotions||Z p. 137, 168 (kaisog; Kaisog ta kakon); isog RV3 = scold (Z p. 91). maisog = brave, fierce.|tapang; pagalitan
+maisog|brave; fierce|adj|emotions|isog|Z p. 168 (kaisog = bravery).|matapang
+manaba|short (not tall); low|adj|adjectives|naba|SR ~p. 266 (manaba'; naba' RV6 = become shorter).|mababa
+maniwang|thin; skinny|adj|adjectives|niwang|SR ~p. 270 (niwang RV6 = get thinner).|payat
+barato|cheap; inexpensive|adj|adjectives||SR ~p. 86 [Sp] (barato ST5 = find inexpensive).|mura
+magahod|noisy|adj|adjectives|gahod|Z p. 81 (kagahod = noise, din).|maingay
+# Part 4, 2026-11-19: from the phonology, sentence-pattern and counting pages (Z) and dictionary entries cited there (SR p. = printed page).
+man-o|how much? (price)|pron|questions||Z p. 194 (Man-o ro manok ngara?); SR p. 304. With a glottal stop: mano = right side.|magkano
+idad|age|n|people||SR p. 225 [Sp] (Pila ro imong idad? = How old are you?; May idad eon imaw = he is old enough). Also edad.|edad
+pangidaron|be at a certain age|v|people|idad|SR p. 225 (RV6; Kat nagapangidaron imaw it dyes).|nasa edad
+bisis|time; occasion|n|time||SR p. 98 [Sp] (sambisis lang = just once; tatlong bisis eon = the third time already; pilambisis = how many times).|beses
+sambisis|once; one time|adv|time|bisis|SR p. 98.|minsan; isang beses
+kaywa|twice; the second time|adv|time||SR p. 133 (contraction of ikaywa).|dalawang beses
+ikatlo|third|num|numbers||SR p. 225 (ikatlong unga = third child); ika- + numeral = ordinal.|ikatlo
+ikapito|seventh|num|numbers||SR p. 309.|ikapito
+tigdaywa|two at a time; two by two|adv|numbers||Z p. 184 (Tigdaywa nagasaka rong sapat sa arka); tig- + numeral = N at a time.|dala-dalawa
+tigsambato|one at a time|adv|numbers||SR p. 95 (also tigsambilog).|isa-isa
+sambato|one|num|numbers||Z p. 163 (Sambato eang ro naka-abot); SR p. 33.|isa
+libo|thousand|num|numbers||SR p. 241 (daywang libo = 2,000).|libo
+napueo|ten|num|numbers||SR p. 268 (napueo'); napueong ka baeay = ten houses (Z p. 190).|sampu
+piso|peso|n|daily||SR p. 308 [Sp] (pisos lang = just one peso); mamiso = at one peso apiece.|piso
+salapi|fifty centavos; half a peso|n|daily||SR p. 330.|salapi
+medya|half (in time and money)|n|time||SR p. 261 [Sp] (alas says e medya = six thirty).|medya
+alas|o'clock (from two to twelve)|n|time||SR p. 49 [Sp] (alas tres; ala una = one o'clock); manga alas says = about six (Z p. 208).|alas
+manga|about; approximately (with numbers and times)|adv|quantity||Z p. 208 (Manga alas tres makaron); the same word as the plural marker mga.|mga
+utang|debt|n|daily||Z p. 27.|utang
+ilong|nose|n|body||Z p. 28.|ilong
+ngipon|tooth|n|body||Z p. 18.|ngipin
+namuk|mosquito|n|daily||Z p. 27.|lamok
+itlog|egg|n|daily||Z p. 25.|itlog
+gatas|milk|n|daily||Z p. 152, 153 (Nakabakae ka eon it gatas?).|gatas
+saging|banana|n|daily||Z p. 83, 151.|saging
+manok|chicken|n|daily||Z p. 194 (Man-o ro manok ngara?).|manok
+baboy|pig|n|daily||Z p. 29.|baboy
+kahoy|tree; wood|n|daily||Z p. 29 (pangahoy = gather wood).|kahoy; puno
+sapat|animal|n|daily||Z p. 184.|hayop
+kabayo|horse|n|daily||Z p. 133, 190 [Sp].|kabayo
+apo|grandchild|n|family||Z p. 29.|apo
+eapsag|baby; infant|n|family||Z p. 152 (ro amon nga eapsag).|sanggol
+bata|young; child|adj|people||Z p. 12 (bata' = young; kabata-an = youth; batang eaeaki = a young male, p. 43).|bata
+daeaga|young woman; maiden|n|people||Z p. 134 (Sanskrit loan).|dalaga
+ilo|orphan|n|family||Z p. 11, 20.|ulila
+pare|compadre; co-godparent|n|people||Z p. 25 [Sp] (pare' vs pari' = priest).|pare; kumpare
+titser|teacher|n|people||Z p. 133 [Eng].|titser
+tulay|bridge|n|places||Z p. 28.|tulay
+kalye|street|n|places||Z p. 26, 29 [Sp].|kalye
+daean|road; way|n|places||Z p. 164 (sa daean); SR (makasubeang kamo it mueto sa daean).|daan
+saeog|floor|n|daily||Z p. 153 (Magsilhig ka sa saeog).|sahig
+silhig|sweep|v|daily||Z p. 91, 153.|walis
+datag|field; open ground|n|places||Z p. 198 (May patay sa datag).|parang
+eaeawigan|province|n|places||Z p. 7 (the prestige word; probinsya is also used).|lalawigan
+kueon|cooking pot|n|daily||Z p. 14.|palayok
+kutsara|spoon|n|daily||Z p. 12 [Sp].|kutsara
+sabon|soap|n|daily||Z p. 28 [Sp].|sabon
+tsa|tea|n|daily||Z p. 134 [Ch].|tsaa
+baril|gun|n|daily||Z p. 12 [Sp].|baril
+puti|white|adj|adjectives||Z p. 25 (puti'); SR opp. itim.|puti
+dueom|dark; not bright|adj|adjectives||Z p. 14.|madilim
+damoe|thick|adj|adjectives||Z p. 14.|makapal
+eab-as|fresh (from the sea)|adj|daily||Z p. 14.|sariwa
+human|finished; done|adj|verbs||Z p. 11 (vs uman = repeat); Haeos human eon don (p. 203).|tapos
+huna|thought|n|mind||Z p. 11 (huna' vs una' = present, existing); huna-huna = think.|isip
+baho|odour; smell|n|body||Z p. 12 (baho' = odour; baho = bass).|amoy
+sako|busy|adj|daily||Z p. 12 (sako' = busy; sako = sack).|abala
+tubo|growth; interest (on money)|n|daily||Z p. 12 (tubo' = growth, interest; tubo = sugar cane; patubo = lend with interest).|tubo
+mukeat|open the eyes|v|body||Z p. 10.|dilat
+duea|lose; get lost|v|verbs||Z p. 123 (duea = get lost, Class II stative); SR p. 28 Naduea-an ako it kwarta = I lost some money.|wala
+wad-an|be bereaved of; suffer the loss of|v|emotions|waea|SR p. 28 (Nawad-an sanda it unga = they lost a child).|namatayan
+eumos|drown|v|health||Z p. 36, 208 (naeumos).|lunod
+batasan|manners; conduct|n|mind||Z p. 198 (owa imaw it batasan = he has no manners).|asal
+tinun-an|education; learning|n|mind|tuon|Z p. 198 (May tinun-an gid imaw).|pinag-aralan
+tikang|step; walk|v|verbs||Z p. 164 (nagatikang sa daean).|hakbang
+panag-on|season; time; era|n|time|dag-on|SR p. 154.|panahon
+pangadyi|prayer; pray|n|folk||Z p. 29 (pangadyi'); pangadyi-on = prayer.|dasal
+kahati|twenty-five centavos; a quarter|n|daily||SR p. 120, 150 [Oak].|kahati
+peseta|twenty centavos|n|daily||SR p. 150 [Sp].|peseta
+bakod|five centavos|n|daily||SR p. 71, 150 [slg].|singko
+panganay|eldest; first-born|n|family||SR p. 55.|panganay
+rong|the (plural): contraction of ro mga|part|grammar||Z p. 149 (Rong mangingilaw kuno nagakaon kay Pedro).|ang mga
 `);

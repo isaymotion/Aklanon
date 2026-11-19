@@ -3,6 +3,16 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.4', date: '2026-11-19', title: 'Seven more lessons and 232 dictionary entries from Zorc',
+    items: [
+      { type: 'content', text: 'Four grammar and culture lessons from the last unused chapters of Zorc: Pronunciation II (the e sound against y, l and g; glottal-stop minimal pairs such as bug-at heavy vs bughat relapse; the o/u spelling rule; stress pairs); Three Aklanons and a thousand loans (town, age and prestige dimensions, how Spanish, English, Chinese, Tagalog and Hiligaynon words are reshaped, and the dictionary\'s tags [Sp] [Hil] [Akl:] [Oak] [slg]); Sentence patterns (predicate first, ro vs do, persons are never direct objects, ku definite vs it indefinite, two-topic sentences, hay inversion and emphasis, may for there-is and has); Counting II (ka, ika- ordinals, bisis and kaywa, tig- distributives, money from kwarta to piso, the Spanish clock, dates, and age with idad).' },
+      { type: 'content', text: 'Three more Vocabulary lessons built from the dictionary: house, food, town and getting around; the everyday verbs (moving, giving and taking, speaking and thinking); describing people and things (opposites and Zorc\'s character adjectives).' },
+      { type: 'content', text: '232 dictionary entries, mostly words taken from Zorc\'s own example sentences with page citations (tinapay, karne, sueod, kilid, uyahon face, osoy look for, hakwat, subeang, hueam, sugo, pilit, kasayod, hibayag, hangae, hueay, kalisdanan, pangalisod, kamatayon, pakamatay, kinabuhi, kabulig, kasimanwa, mataeaw, matinahuron, mabinuligon, tawohon haunted, utang, ilong, ngipon, gatas, saging, apo, eapsag baby, daeaga, ilo, tulay, kalye, daean, saeog, baril, puti, dueom, human, duea lose, wad-an bereaved, eumos drown, batasan manners, tinun-an education, the weekdays, man-o how much, idad, bisis, tig- and ika- forms, libo, piso, salapi, medya, alas, manga about, pangidaron…). Now 1,173 entries in all.' },
+      { type: 'correction', text: 'Lesson 32: the money question is man-o (with a glottal stop); mano means the right side.' },
+      { type: 'update', text: 'Totals: 39 lessons, 11 sections, 127 phrases, 1,173 dictionary entries. The grammar has now been read end to end; what remains are its formal definitions and the appendix.' }
+    ]
+  },
+  {
     version: '0.2.3', date: '2026-11-19', title: 'Cognition section',
     items: [
       { type: 'content', text: 'New section Cognition: orientation, memory, attention — a bedside screen in MMSE order with 13 phrases: schooling first, orientation to time (pitsa, buean, dag-on) and place, president and mayor, registration of three words (baeay, lapis, isda), months backwards or serial sevens from isaea ka gatos, recall, naming, repetition using Zorc\'s own greeting (Mayad nga agahon kinyong tanan), a three-stage command (tuo nga alima, piloa, ibutang sa lamesa), reading and writing, and a judgement question set on a Kalibo road. 9 point-board replies (Indi ko madumduman; Ta-o ko; Owa ako makaeskwela…) and 14 dictionary entries (lapis, papel, yabi, relo, tuo, presidente, meyor, ta-o, dayon, hasta, baeot-baeot, kwenta…). pilo, tunga and piyong carry ⚑.' },
