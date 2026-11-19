@@ -1,6 +1,6 @@
 # Handoff: Mag-istorya Kita (Aklanon variant of Usap Tayo)
 
-Updated 2026-11-19 (late) after v0.2.2 (lessons 22–32, 929 entries), v0.2.1 (substances section), v0.2.0 (lessons 13–21 and dict-clinical.js), v0.1.6 (trauma section), v0.1.5 (source verification against the Zorc PDFs) and v0.1.4 (anxiety section). GitHub Pages is enabled: https://isaymotion.github.io/Aklanon/ (the sandbox shell cannot reach github.io; the user checks the live site). 0.1.2 added data/hospital.js and 0.1.3 fixed phone-menu scrolling (13 Nov).
+Updated 2026-11-19 (night) after v0.2.4 (lessons 33–39, 1,173 entries), v0.2.3 (cognition section), v0.2.2 (lessons 22–32, 929 entries), v0.2.1 (substances section), v0.2.0 (lessons 13–21 and dict-clinical.js), v0.1.6 (trauma section), v0.1.5 (source verification against the Zorc PDFs) and v0.1.4 (anxiety section). GitHub Pages is enabled: https://isaymotion.github.io/Aklanon/ (the sandbox shell cannot reach github.io; the user checks the live site). 0.1.2 added data/hospital.js and 0.1.3 fixed phone-menu scrolling (13 Nov).
 
 ## 1. Project and audience
 - App: **Mag-istorya Kita**, Aklanon ("Akeanon") for the psychiatric interview, for a psychiatrist who speaks Tagalog and English and will see patients in Kalibo, Aklan. Grammar lessons are the priority.
@@ -50,7 +50,7 @@ git -C /home/claude/aklanon fetch --depth 1 origin dev-tools && git -C /home/cla
 for f in js/*.js js/data/*.js data/*.js sw.js; do node --check $f || echo FAIL $f; done
 cd /home/claude/aklanon && (python3 -m http.server 8123 &) && python3 /home/claude/aklanon-devtools/tools/smoke_test.py
 ```
-Passing: every route body length > 900; LESSONS 32 / DICT 929 / SECTIONS 10 / phrases 114 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
+Passing: every route body length > 900; LESSONS 39 / DICT 1173 / SECTIONS 11 / phrases 127 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
 Design checks: skill `isaymotion-app-design` → `scripts/check_sw.py /home/claude/aklanon` (must pass) and `scripts/check_design.py` (warns about `hospital.js` and `icon-maskable-512` naming — both intentional).
 Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com"` and the Claude co-author trailer from the session reminder.
 
@@ -58,11 +58,11 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 | Item | Status |
 |---|---|
 | Engine fork, identity, icon, palette, banner, flags, #/review | done (v0.1.0) |
-| Current version | 0.2.2 (2026-11-19) |
-| Lessons | 32: 12 originals; 13–21 (0.2.0, from `sources/notes/zorc-grammar-notes.md`); 22–27 Vocabulary unit (0.2.2, `tools/lessons_vocab_source.py`, words only from the dictionary); 28–32 sound-changes, focus-ii, verb-classes, verbs-iii, questions-ii (0.2.2, from `sources/notes/zorc-grammar-notes-2.md`). Grammar page numbers = printed pages (PDF − 18). The grammar's remaining unused parts are phonology (pp. 7–33) and the noun/function-word formalities (pp. 130–153); little left worth a lesson |
-| Dictionary | 929 in the app: `dict-core.js` 418 + `dict-clinical.js` 512 (0.2.0 picks in `sources/notes/dict-clinical-picks-0.2.0.txt`, 0.2.2 second pass in `…-0.2.2.txt`; extraction `tools/extract_dict_entries.py`, filter logic described in the 0.2.0/0.2.2 notes below). The two passes have now reviewed every clean on-topic OCR row; a third pass would need the ~1,000 `?`-flagged rows re-read against page images. Still-draft: 0.1.5 changelog list, kigbot, sang-una, ⚑ entries, "spelling normalised" entries |
-| Phrase sections | 10 / ~14: opening, hpi, depression, suicide, psychosis, closing, mania, anxiety, trauma, substances (114 phrases) |
-| Point-board replies | common groups + 10 sections |
+| Current version | 0.2.4 (2026-11-19) |
+| Lessons | 39: 12 originals; 13–21 (0.2.0, notes 1); 22–27 Vocabulary (0.2.2); 28–32 (0.2.2, notes 2); 33–35 vocab-house/-verbs/-describing and 36–39 pronunciation, kalibo-dimensions, sentence-patterns, counting (0.2.4, from `sources/notes/zorc-grammar-notes-3.md`). **The grammar has now been read end to end**; only its formal definitions (pp. 34–38, 130–132) and appendix remain, not worth lessons. Further lessons would have to come from the dictionary (e.g. thematic vocabulary) or from new sources |
+| Dictionary | 1,173 in the app: `dict-core.js` 663 (incl. Part 3 = words from Zorc's example sentences, Part 4 = phonology/counting pages) + `dict-clinical.js` 512 (0.2.0 picks in `sources/notes/dict-clinical-picks-0.2.0.txt`, 0.2.2 second pass in `…-0.2.2.txt`; extraction `tools/extract_dict_entries.py`, filter logic described in the 0.2.0/0.2.2 notes below). The two passes have now reviewed every clean on-topic OCR row; a third pass would need the ~1,000 `?`-flagged rows re-read against page images. Still-draft: 0.1.5 changelog list, kigbot, sang-una, ⚑ entries, "spelling normalised" entries |
+| Phrase sections | 11 / ~14: opening, hpi, depression, suicide, psychosis, closing, mania, anxiety, trauma, substances, cognition (127 phrases) |
+| Point-board replies | common groups + 11 sections |
 | Audio | none (no TTS exists); recorded pack by native speaker later |
 | GitHub Pages | enabled 19 Nov 2026 |
 | Mania section (0.1.1) | 12 phrases, 11 replies, 26 dict entries; Z-marked where attested (sadya, akig, hambae, gasto, baligya, obra, pasikat); unmarked forms (madasig, dugay, kusog, gahum, maaeam, kinaandan, basol, hueag, halin) are author's Western Bisayan drafts to verify against the PDFs |
@@ -72,7 +72,7 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 
 ## 7. Next steps
 1. Dictionary verification is done (0.1.5). Remaining verification work, optional and separable: (a) the 63 ◌ sentences in `lessons.js` — check each against grammar examples in `sources/ocr/ED145705-grammar-ocr.txt` (search a distinctive word; e.g. `grep -n -i "owa.*kwarta"`), drop ◌ and add `(p. N)` when a matching example exists, N = PDF page − 17 for the grammar (checked: "Owa gid" example is PDF page 222 = printed p. 205; verify on the page, the front matter shifts it); (b) the still-draft words listed in the 0.1.5 changelog item 3 — most are loans or Hiligaynon and may simply have no SR entry.
-2. Next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4, `trauma` 0.1.6 done): `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Next content releases: 0.2.3 = cognition (orientation, recall, serial sevens in Aklanon numbers), then collateral, children, elderly.
+2. Next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4, `trauma` 0.1.6 done): `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Next content releases: 0.2.5 = collateral (family informant), then children, elderly; after that the native-review export and recorded audio are the real blockers.
 3. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
 ## 8. Pitfalls learned
@@ -120,3 +120,10 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 - 0.2.2 grammar lessons came from `zorc-grammar-notes-2.md` (Opus subagent; clean except the p. 95 inflection chart, ~12 cells [?]). Surprises worth remembering: the grammar never uses RV/CV/DV — those tags are defined in the dictionary's front matter (SR pp. 25–27, RV1–RV9 not RV1–RV8); the -um- conjugation "does not exist in current Aklanon"; kan-o = when (past) vs hin-uno = when (future); Sino ro imong ngaean? is the native idiom; sin- is the Kalibo quotative (kun- in the north); lipong is attested after all.
 - Dictionary pass 2: 2,544 OCR-confirmed headword rows not seen in pass 1 → topic filter → 588 → 181 picked by hand → 30 respellings failed verify_dict (11 dropped, 14 kept with ⚑) → 170 added, plus 9 base words the vocabulary lessons needed. Pass 1 + 2 together mean every clean row with a readable POS has been looked at once.
 - Vocabulary lessons list only words present in the dictionary (checked by script); if a dictionary line is renamed, re-run that check (`node` snippet in the 0.2.2 build: compare `<tr><td>` first cells against DICT_RAW headwords).
+
+## Note, 19 Nov 2026 night (versions 0.2.3 and 0.2.4, pushed)
+- Cognition section: MMSE order; repetition item is Zorc's own greeting (p. 191); three-stage command uses tuo (right, SR) and ⚑ pilo/tunga; reading card PIYONGA RO MATA ⚑. Age question attested as "Pila ro imong idad?" (SR D. 225); date as "Ano'ng pitsaha makaron?" (D. 309).
+- notes-3 findings: money question is **man-o** (mano = right side); "una" = first is not in either book (anay / panganay / ala una); native 11–99 are not recorded (Spanish numbers used); pila ka bisis is not attested (pilambisis, sambisis, kaywa are); tiyan is a Chinese loan; prestige speech prefers ro/raya over do/daya; "Aklanon has no l" is false (l next to i: likod, alima, ilo, uli, ulihi, puril).
+- Dictionary Parts 3–4 in dict-core.js came from Zorc's example sentences (clean text, so no ⚑); the script that found them: collect Aklanon tokens from the notes' examples, subtract DICT_RAW headwords, pick by hand.
+- Vocabulary lessons: a script checks every `<tr><td>` first cell against DICT_RAW (run it after any dictionary rename). Current misses are only derived forms (nalipay, nagaoy…) and multiword phrases.
+- Vocabulary coverage by category now: body 70, health 105, emotions 110, mind 60, family 55, people 50, time 60, daily 150, places 25, folk 27, substances 16, verbs 200, adjectives 90.
