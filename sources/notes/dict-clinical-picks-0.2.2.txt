@@ -1,0 +1,190 @@
+# orig[>new]|english|pos|category|tagalog
+adlaw-adlaw-|daily; every day|adv|time|araw-araw
+aeindog|accompany; walk side by side with|v|people|sama
+aga-aga|very early morning|n|time|madaling-araw
+agrabyo|frustrate; take advantage of; extort|v|verbs|agrabyado
+ama-dma>ama-ama|stepfather|n|family|amain
+angdn-angan>angan-angan|wait a little while; idle for a time|v|time|
+apin|take the side of; ally oneself with|v|people|kampi
+arisgar|risk; take a chance|v|verbs|sugal
+artista|actor; movie star|n|people|artista
+baktas|hike; walk; go on foot|v|verbs|lakad
+bakukdng>bakukang|tropical ulcer; abscess|n|health|pigsa
+bingkoe|become stubborn; hard-headed|v|mind|matigas ang ulo
+basin|toilet bowl; potty|n|daily|inidoro
+bastos|crude; rude; ill-mannered|adj|adjectives|bastos
+batyag|feel; sense; perceive|v|mind|dama
+beeo>baeo|become a widow or widower|v|family|biyuda
+bemhaw>banhaw|rise from the dead|v|folk|muling mabuhay
+bigaw|shoo; drive away; evict|v|verbs|bugaw
+bilog|solid; whole; entire|adj|quantity|buo
+binggaroe|bully|n|people|siga
+bio|lively; full of life; vivacious|adj|emotions|masigla
+bisto|see clearly; understand; know|v|mind|kita
+botilya|small bottle; medicine bottle|n|health|botelya
+bueutho-an|school|n|places|eskwelahan
+bug-akon|proud; boastful; inventing stories|adj|mind|mayabang
+bugaeen>bugaeon|proud; vain|adj|mind|mapagmataas
+busog|full; satisfied after eating|v|body|busog
+dadyan-dayan>dayan-dayan|sluggish; slow to do things|v|adjectives|makupad
+danga-dangaa>danga-danga|pant; breathe quickly|v|health|hingal
+dawat|pass; hand over; give|v|verbs|abot
+dipara|take good care of; pay attention to|v|verbs|alaga
+diritso|go straight ahead|v|verbs|diretso
+disgesto>disgusto|quarrel; argue with|v|verbs|away
+doktora|female doctor|n|people|doktora
+dupilok|fall asleep; doze off|v|body|idlip
+eaag-ok|swallow; gulp liquids|v|body|lagok
+eabed|welt; bruise|n|health|pasa
+eadway|salivate; froth at the mouth|v|health|laway
+eambot|reach; arrive at; get to|v|verbs|abot
+eampita'>eampita|stutter; stammer|v|health|utal
+eansong|be together in one place; do together|v|people|sabay
+easgas|scratch; put a scratch or scar on|v|health|gasgas
+eigot-edgot>eigot-eogot|grind one's teeth|v|health|ngalit
+eimbong|shirt; blouse; dress|n|daily|damit
+eo|hoarse; raspy-voiced|adj|health|paos
+estar|dwell; live at|v|daily|tira
+gaga|foolish; silly (woman)|adj|mind|gaga
+gamhanan|powerful; forceful|adj|adjectives|makapangyarihan
+gang|fight; quarrel with|v|verbs|away
+garde-garde|tremulous; quivering (voice)|adj|body|nanginginig
+gistoh>gusto|wish; desire; liking|n|mind|gusto
+grasyahen>grasyahon|blessed; full of grace|adj|folk|pinagpala
+guapo|handsome|adj|adjectives|guwapo
+hab-on|put away; put aside; hide|v|verbs|tago
+haega|price; asking price|n|daily|halaga
+hagohg>hagong|groan; moan from severe pain or sickness|v|health|daing
+hanabo'>hanabo|accident|n|health|aksidente
+hangdan|few; not many|adj|quantity|iilan
+hapit|stop by for; pick up on the way|v|verbs|daan
+hapot|pant; breathe fast|v|health|hingal
+heeong>haeong|treat carefully; be careful with; respect|v|verbs|ingat
+higigma>higugma|love; be in love with|v|emotions|mahal
+hikdo'>hikdo|gasp for breath (after crying)|v|body|hikbi
+himet>himot|bear a grudge; plot against|v|emotions|sama ng loob
+hin-isaa>hin-isa|the day after tomorrow|adv|time|samakalawa
+hutik|whisper|v|verbs|bulong
+iambog>hambog|proud; swell-headed; boastful|adj|mind|hambog
+iasla>asla|be bored; be satiated; lose desire|v|emotions|sawa
+igo'>igo|sufficient; enough; fits|adj|quantity|sapat
+ihadpon>ihapon|supper; evening meal|n|daily|hapunan
+inanoy>inanay|gradually; little by little|adv|time|unti-unti
+ioto>oto|mourn for|v|emotions|magluksa
+iras|wedding; marriage ceremony|n|family|kasal
+iswang>aswang|be under the spell of an aswang|v|folk|aswang
+kaanyag|beauty; charm|n|adjectives|ganda
+kabubtit-on>kabubut-on|heart (figurative); interior self; deep inside oneself|n|mind|kalooban
+kaeasdeon>kaeasaeon|engaged; about to be married|adj|family|nakatakdang ikasal
+kaghat|regret; feel sorry for; repent|v|emotions|pagsisisi
+karsada|road; street|n|places|kalsada
+kasae|wed; be married|v|family|kasal
+kasaea'>kasaea|sin; commit a sin|v|folk|magkasala
+kastigo|punish; castigate; whip|v|verbs|parusa
+kataeigman|premonition; foreboding; fate|n|folk|kutob
+kdalma>kalma|calm; serene; unrattled|adj|emotions|kalma
+kdeang>kueang|run short of; lack|v|quantity|kulang
+kditis>kutis|complexion; skin colour|n|body|kutis
+kdop>kup-kop|embrace; hold tightly|v|verbs|yakap
+kegbot>kigbot|surprise; frighten; startle|v|emotions|gulat
+kinatawohtin>kinatawohan|birthday|n|time|kaarawan
+kisaew-kisaw>kisaw-kisaw|flicker; have a tic (eye)|v|health|kibot
+kubos|lowly; humble|adj|adjectives|hamak
+kueds>kueas|flee; run away|v|verbs|takas
+kumkum|hold one's hand closed; clench|v|body|kuyom
+kwartahan|moneyed; rich|adj|people|mayaman
+laelis>eaelis|stubborn; hard-headed|adj|mind|matigas ang ulo
+ligtas|escape; get free|v|verbs|ligtas
+limbong|conceal; deceive (with good intent)|v|verbs|linlang
+mabinaeak-on|well-intentioned; concerned; helpful|adj|emotions|maalalahanin
+mabtot>mabuot|good; kind; meek; not quarrelsome|adj|emotions|mabait
+mahde>mahae|dear; beloved; costly; expensive|adj|adjectives|mahal
+mahdeong>mahaeong|careful; respectful|adj|adjectives|maingat
+mahiea'>mahiea|pillow|n|daily|unan
+mahigko'-|dirty|adj|adjectives|marumi
+mahinukeedgon>mahinukeogon|sympathetic; compassionate; kind-hearted|adj|emotions|mahabagin
+mahisa'>mahisa|envious; selfish; possessive|adj|emotions|mainggitin
+maimon|possessive; overly protective; selfish|adj|emotions|seloso
+makaeuetiay>makaeueuoy|pitiable; inspires pity|adj|emotions|kaawa-awa
+makahilidlaw|causes homesickness or longing|adj|emotions|nakakamiss
+makidyos|overly religious; always mentioning God|adj|folk|
+mampilok|doze off|v|body|idlip
+mangingisda'>mangingisda|fisherman|n|people|mangingisda
+mapainubsanon|humble; modest; meek|adj|emotions|mapagpakumbaba
+mapait|bitter|adj|adjectives|mapait
+masmas|discover; find out; notice; realize|v|mind|mapansin
+matag-od|short (time or length)|adj|time|maikli
+matea-mata>mata-mata|look down on; belittle|v|emotions|maliitin
+mdagehon>madagahon|the following morning|adv|time|kinaumagahan
+mpa'>sumpa|promise; oath; vow|n|verbs|sumpa
+mt-i'>ut-i|senile|adj|health|ulyanin
+mteaw>mataw|be awakened suddenly; jolted out of sleep|v|body|magising nang bigla
+mueay|scold; reprimand|v|verbs|pagalitan
+muok|fall into a deep, sound sleep|v|body|mahimbing
+naog|go down (stairs); get off|v|verbs|baba
+obligasyon|obligation; duty|n|daily|obligasyon
+obliger>obligar|force; compel; obligate|v|verbs|pilitin
+paakeos|skin abrasion; scratch|n|health|galos
+pabigtaw>pabugtaw|wake someone up|v|daily|gisingin
+pabtiyog>pabuyog|cause dizziness; drive crazy|v|health|
+paldado|disabled; crippled; having a broken bone|adj|health|baldado
+pamirraw>pamahaw|breakfast; snack|n|daily|almusal
+pandihe-an>pandiho-an|toilet|n|daily|kubeta
+pangadyi-on|prayer|n|folk|dasal
+pangaman|plan ahead; look ahead|v|mind|paghahanda
+panghayhay|sigh (from boredom or sadness)|v|emotions|buntong-hininga
+pangisog|scold; reprimand|v|verbs|pagalitan
+pantalen>pantalon|trousers; pants|n|daily|pantalon
+pari'>pari|priest|n|people|pari
+pasaket>pasaka|hasten; rush; hurry|v|verbs|magmadali
+patalikod|make someone turn around; do behind one's back|v|verbs|patalikod
+pbaeos>baeos|revenge; repayment|n|emotions|ganti
+pdida>pidida|bone fracture|n|health|bali
+pisngi|cheek|n|body|pisngi
+pindo|stop|v|verbs|hinto
+pungod|stop; halt|v|verbs|tigil
+preparado|prepared; ready|adj|adjectives|handa
+presohen>presohan|prison; jail|n|places|bilangguan
+prima|first cousin (female)|n|family|pinsan
+primo|first cousin (male)|n|family|pinsan
+promisa|promise|v|verbs|pangako
+ptepue>tapue|put medicinal herbs on a wound|v|folk|tapal
+ptino'>puno|leader; head|n|people|puno
+pugto|snap; break; give way|v|verbs|putol
+pwersido|forceful; powerful|adj|adjectives|malakas
+renta|rent|n|daily|renta
+sakdag|support; be responsible for; take care of|v|family|suporta
+salipod|partially hide; cover; overshadow|v|verbs|takip
+sawa|snake|n|daily|ahas
+saya|skirt|n|daily|palda
+shipos>hipos|keep silent; be quiet|v|verbs|tahimik
+sid-o't>sid-ot|hiccup|v|body|sinok
+siewae|pants; trousers|n|daily|salawal
+siko|elbow|n|body|siko
+silat|punish; penalize|v|verbs|parusa
+singad|chin|n|body|baba
+sipsip|sip; suck|v|body|sipsip
+skimi'>kimi|shy; timid|adj|emotions|mahiyain
+steang>sueang|fetch; go to get; call for|v|verbs|sundo
+sueopaktopn>sueopakton|stubborn; cannot be convinced|adj|mind|matigas ang ulo
+supeot|bully; pick on someone weaker|v|verbs|api
+swerte|luck; fortune|n|folk|suwerte
+swildo>sweldo|salary; pay|n|daily|sweldo
+syete-syete|premature child (born at seven months)|n|health|pitong buwan
+tago'|hide; conceal; put away|v|verbs|tago
+tahaw|calm down; cool off; subside|v|emotions|humupa
+tahiras|cot; small folding bed|n|daily|teheras
+tambae|stop bleeding|v|health|pampatigil ng dugo
+tanaen>tanan|all; every|adj|quantity|lahat
+tangpad|face; confront|v|verbs|harapin
+tarong|become righteous; do right|v|folk|tumuwid
+tibawag|overcome hardship; lessen the burden|v|emotions|
+tigguedtom->tiggutom|famine; time of hunger|n|daily|taggutom
+tigsililak>tigsilak|dry season; summer|n|time|tag-init
+tinggean>tinguean|rainy season|n|time|tag-ulan
+toeang|go astray; err; take the wrong way|v|mind|maligaw
+waed>waea|left (side)|n|body|kaliwa
+walid|crippled; unable to stand or walk|adj|health|lumpo
+wibre>libre|get free; escape; free|v|verbs|libre
+wminga-linga>linga-linga|hard of hearing; not listening|adj|health|bingi-bingihan
+btghat>bughat|relapse; get sick again (often after childbirth)|v|health|binat
