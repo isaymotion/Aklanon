@@ -321,4 +321,38 @@ palibot|surroundings; around|n|daily||Sa palibot = around (someone).|paligid
 pasikat|showy; acting above one's status|adj|people||Z (~p. 300). Family's word for grandiose behaviour.|mayabang
 motor|motorcycle|n|daily||Common asset sold in manic spending.|motor
 ayad|get well; improve|v|health||nag-ayad = got better; cf. mayad.|galing
+ginakulbaan|feel nervous; have palpitations|v|emotions|kulba|Ginakulbaan ako = I feel nervous / my heart is pounding. Ask which the patient means.|kinakabahan
+ginakabalak-an|the thing worried about|v|emotions|balaka|Ano ro ginakabalak-an mo? = What do you worry about?|inaalala
+kahadlok|fear; being afraid|n|emotions|hadlok|ginhadlukan = was seized by fear.|takot
+butang|thing; matter|n|daily||Madamo nga butang = many things.|bagay
+gamay|small; little|adj|quantity||gagmay = small (plural). Gamay lang = just a little.|maliit
+gagmay|small (plural)|adj|quantity|gamay|Bisan gagmay lang = even small ones.|maliliit
+kontrol|control|n|mind||Spanish loan; makontrol = can control.|kontrol
+budlay|difficulty; hardship|n|adjectives||mabudlay = difficult, hard. Western Bisayan form to verify for Kalibo.|hirap
+mabudlay|difficult; hard to do|adj|adjectives|budlay|Mabudlay magginhawa = hard to breathe.|mahirap
+tungod|because of; due to|prep|grammar||Tungod sa kabalaka = because of worry.|dahil
+hugot|tightness; tight|adj|body||mahugot ro eawas = the body is tense.|higpit
+abaga|shoulder|n|body|||balikat
+gulpi|suddenly; all at once|adv|time||Spanish loan (golpe). Gulpi lang = just suddenly.|bigla
+kurog|tremble; shake|v|body||nagakurog = is shaking.|panginginig
+baehas|sweat|n|body||nagbaehas = sweated. Draft form from Hiligaynon balhas; verify Aklanon spelling.|pawis
+atake|attack (of illness); panic attack|n|health||Spanish loan; used for any sudden episode, incl. heart attack.|atake
+minuto|minute|n|time||Spanish loan.|minuto
+rason|reason|n|mind||Spanish loan. Owa it rason = no reason.|dahilan
+lugar|place|n|daily||Spanish loan. Pila ka lugar = certain places.|lugar
+sitwasyon|situation|n|mind||Spanish loan.|sitwasyon
+palengke|public market|n|places||Spanish loan (palenque); the Kalibo market as an agoraphobic setting.|palengke
+sakay|ride; board a vehicle|v|verbs||magsakay it jeep = ride the jeep; pagsakay = riding.|sakay
+jeep|jeepney|n|daily||Also dyip.|jeep
+likaw|avoid|v|verbs||ginalikawan = is avoided. Western Bisayan form to verify.|iwas
+upang|hinder; obstruct|v|verbs||nakaupang = has hindered. Western Bisayan form to verify.|hadlang
+gwa|go out; outside|v|verbs||maggwa sa baeay = go out of the house; sa gwa = outside. Also guwa.|labas
+bantay|watch; guard|v|verbs||ginabantayan = is being watched.|bantay
+husga|judge (a person)|v|verbs||Spanish loan (juzgar); ginahusgahan = is being judged.|husga
+atubangan|front; in front of|n|daily||Sa atubangan nanda = in front of them.|harapan
+kaimaw|together with; companion|prep|people||Z (imaw). Kaimaw nanda = with them.|kasama
+nahuya|embarrassed; shy|adj|emotions|huya|Z (huya). Ordinary shyness; distinguish from social anxiety.|nahihiya
+kape|coffee|n|daily||Spanish loan.|kape
+botika|pharmacy; drugstore|n|places||Spanish loan.|botika
+para|for; in order to|prep|grammar||Spanish loan. Para makatueog = in order to sleep.|para
 `);

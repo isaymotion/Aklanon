@@ -139,6 +139,19 @@ window.PSYCH_ANSWERS = {
       ['Bukon ako it buang. Ro pamilya ko ro may problema.', 'I\'m not crazy. My family is the one with the problem.', 'Poor insight; keep rapport, avoid arguing.'],
       ['Sadto natabo eon raya, pero nag-ayad man.', 'This happened before, but it got better too.', 'Prior episode; ask about treatment and depression between episodes.']
     ],
+    anxiety: [
+      ['Pirme ako ginakulbaan, bisan owa it rason.', 'I\'m always nervous, even without a reason.', 'Free-floating anxiety; screen GAD and panic.'],
+      ['Madamo ako it ginakabalak-an: kwarta, mga unga, ro akon eawas.', 'I worry about many things: money, the children, my body.', 'Multiple domains; ask duration and control.'],
+      ['Indi ko mauntat ro paghunahuna.', 'I can\'t stop the thinking.', 'Uncontrollable worry; distinguish rumination from obsessions.'],
+      ['Gulpi lang madasig ro tagipusuon ko, daw mapatay ako.', 'Suddenly my heart races, as if I would die.', 'Panic attack; ask duration, triggers, cardiac history.'],
+      ['Mabudlay ako magginhawa ag nagakurog ako.', 'I have trouble breathing and I shake.', 'Autonomic symptoms; rule out thyroid, caffeine, asthma.'],
+      ['Nahadlok ako maggwa sa baeay.', 'I\'m afraid to leave the house.', 'Agoraphobic avoidance; ask what is feared outside.'],
+      ['Indi ako magsakay it jeep kon madamo ro tawo.', 'I don\'t ride the jeep when there are many people.', 'Situational avoidance; ask functional impact.'],
+      ['Nahuya ako maghambae sa atubangan it madamo nga tawo.', 'I\'m embarrassed to speak in front of many people.', 'Social anxiety versus ordinary shyness; ask about impairment.'],
+      ['Indi ako makatueog, pirme ako nagahunahuna.', 'I can\'t sleep, I keep thinking.', 'Worry-driven initial insomnia.'],
+      ['Masakit ro ueo ag abaga ko tungod sa kabalaka.', 'My head and shoulders hurt because of worry.', 'Somatic tension; common presenting complaint.'],
+      ['Nagainom ako it tambae nga binakae sa botika para makatueog.', 'I take medicine bought at the pharmacy to sleep.', 'Get the name; pharmacy benzodiazepine or antihistamine use.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it tambae?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],

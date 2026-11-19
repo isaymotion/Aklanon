@@ -3,6 +3,13 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.1.4', date: '2026-11-19', title: 'Anxiety section',
+    items: [
+      { type: 'content', text: 'New interview section Anxiety, worry and panic: 13 phrases in respectful and everyday register covering generalised worry (content, control, six-month duration, muscle tension and sleep), panic attacks (sudden onset, pounding heart, shaking, breathlessness, dizziness and sweating, fear of dying or going mad, duration, cued or unexpected), agoraphobic fears with Kalibo examples (crowds, the palengke, the jeep, being far from home), avoidance and impairment, social fear of being watched or judged, and caffeine, alcohol or pharmacy sedatives taken for the nerves; 11 point-board replies with clinical notes; 34 new dictionary entries (ginakulbaan, kahadlok, butang, gagmay, mabudlay, tungod, hugot, abaga, gulpi, kurog, baehas, atake, likaw, upang, gwa, bantay, husga, atubangan, kaimaw, nahuya, botika and others, with Tagalog equivalents). All lines are unreviewed draft; Western Bisayan forms not yet found in Zorc (mabudlay, baehas, likaw, upang, gwa, hugot, kurog) are named in the notes for the reviewer.' },
+      { type: 'update', text: 'Totals: 8 sections, 90 phrases, 349 dictionary entries. Next: trauma, substances, cognition, collateral, children, elderly.' }
+    ]
+  },
+  {
     version: '0.1.3', date: '2026-11-13', title: 'Menu scrolling fixed',
     items: [
       { type: 'correction', text: 'The menu that opens from More now scrolls on phones and tablets. Before, it was taller than the screen and could not be scrolled, so the items at the bottom of the list (such as Settings and About) could not be reached from it.' }
