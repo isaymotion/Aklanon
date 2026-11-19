@@ -165,6 +165,19 @@ window.PSYCH_ANSWERS = {
       ['Nagakatabo pa raya makaron.', 'It is still happening now.', 'Active danger: safety plan, VAW desk, admission if needed.'],
       ['Owa ako it maistorya parte raya.', 'I have no one to talk to about it.', 'Isolation; identify one safe person; follow-up soon.']
     ],
+    substances: [
+      ['Tuba lang, sa hapon, kaimaw it mga abyan.', 'Only tuba, in the afternoon, with friends.', 'Normal pattern in Aklan; still quantify.'],
+      ['Adlaw-adlaw ako nagainom.', 'I drink every day.', 'Daily use; ask amount and morning drinking.'],
+      ['Isaea ka bote lang.', 'Only one bottle.', 'Ask which bottle; a gallon of tuba is also \'one\'.'],
+      ['Kon may okasyon lang, bukon it permi.', 'Only on occasions, not always.', 'Ask binge amount on those occasions.'],
+      ['Nagakurog ako sa aga kon owa ako it inom.', 'I shake in the morning when I have not had a drink.', 'Withdrawal; dependence likely; plan detox.'],
+      ['Indi ko mabawasan.', 'I cannot cut down.', 'Loss of control; CAGE positive.'],
+      ['Naanad eon ako magsigarilyo.', 'I am already used to smoking.', 'Zorc p. 17; ask sticks per day and quit attempts.'],
+      ['Naggamit ako it shabu kato anay, pero owa eon.', 'I used shabu long ago, but not any more.', 'Ask last use, route, and psychotic symptoms then.'],
+      ['Nag-away kami ku akon asawa tungod sa inom.', 'My spouse and I fought because of the drinking.', 'Harm to relationships; ask about violence and safety.'],
+      ['Owa ako it problema sa inom.', 'I have no problem with drinking.', 'Minimising; get collateral from family.'],
+      ['Nagamama ako adlaw-adlaw.', 'I chew betel every day.', 'Oral lesions; note tobacco in the quid.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it bueong?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],

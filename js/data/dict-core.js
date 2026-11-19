@@ -400,4 +400,21 @@ kalma|calm; serene|adj|emotions||SR ~p. 122 [Sp] (syn. hasay).|kalma
 linong|calm; peaceful|adj|emotions||SR ~p. 245 (syn. linaw; cf. tawhay, tagnong).|payapa
 saeanhon|alone; individual|adj|people||SR ~p. 328.|mag-isa
 sang-una|before; in the past|adv|time||Draft (Western Bisayan); SR gives kato anay. ⚑ verify.|dati
+alkuhol|alcohol|n|substances||SR ~p. 50 [Sp].|alkohol
+bote|bottle|n|daily||SR ~p. 113 [Sp] (alt. boti).|bote
+tagayan|cup; drinking cup|n|daily|tagay|SR ~p. 368 (Akl for Spanish tasa); tagay = pour out slowly.|tasa
+makahilong|intoxicating; quickly makes one drunk|adj|substances|hilong|SR ~p. 213.|nakakalasing
+paeahilong|drunkard; habitual drinker|n|substances|hilong|SR ~p. 213 (paea- = habitual person).|lasenggo
+pasuebo|drink alcohol during a hangover (to cure it)|v|substances||SR ~p. 301 [idm] (RV5).|tagay sa hangover
+abano|large cigar|n|substances||SR ~p. 39 [Sp].|tabako
+binga|betel nut|n|substances||SR ~p. 109 (Areca catechu).|bunga
+apog|powdered lime for the betel quid|n|substances||SR ~p. 60.|apog
+apyan|opium|n|substances||SR ~p. 61 [Sp] (alt. opyo); apyaniro = dope addict.|opyo
+droga|drug; illegal drug|n|substances||Spanish loan in general use; not in SR. shabu, marijuana likewise.|droga
+anad|be accustomed to; be used to|v|mind||Z p. 17 (Naanad eon ako magsigarilyo = I'm already used to smoking).|sanay
+abyan|friend|n|people||SR ~p. 40.|kaibigan
+problema|problem|n|mind||SR ~p. 310 [Sp]; problema ST5 = to have problems; Tueogi ring problema = sleep off your problem.|problema
+reklamo|complain; complaint|v|verbs||Spanish loan in general use; not in SR as a headword.|reklamo
+okasyon|occasion|n|time||Spanish loan.|okasyon
+reseta|prescription|n|health||Spanish loan.|reseta
 `);

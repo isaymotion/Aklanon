@@ -6,7 +6,7 @@
 
 **App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com**
 
-Version **0.2.0** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
+Version **0.2.1** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
 
 **Live site:** https://isaymotion.github.io/Aklanon/ (after GitHub Pages is switched on; see below)
 
@@ -20,12 +20,12 @@ The learner is assumed to **speak Tagalog already**. Lessons are contrastive (wh
 
 | Section | What it does |
 |---|---|
-| **Psychiatry Aklanon** | Interview phrase sections, each phrase in a respectful (*kamo*) and an everyday (*ikaw*) form, with Study, Recall and two quiz modes. 9 sections, 102 phrases: opening and rapport, history of present illness, depressed mood and SIGECAPS, suicide risk, elevated mood and DIGFAST, anxiety, worry and panic, trauma and its aftermath, hallucinations and delusions, closing and follow-up. Route `#/psych/s/<section id>`. |
+| **Psychiatry Aklanon** | Interview phrase sections, each phrase in a respectful (*kamo*) and an everyday (*ikaw*) form, with Study, Recall and two quiz modes. 10 sections, 114 phrases: opening and rapport, history of present illness, depressed mood and SIGECAPS, suicide risk, elevated mood and DIGFAST, anxiety, worry and panic, trauma and its aftermath, alcohol, tobacco, betel and drugs, hallucinations and delusions, closing and follow-up. Route `#/psych/s/<section id>`. |
 | **Point board** (*Itudlo*) | Turn the phone around: the patient taps a reply, the phone speaks it and the interviewer reads the English. General replies (yes/no, how often, since when, how much, how I feel, I need…), a 0–10 scale, and replies per interview section. Nothing is saved. Route `#/psych/point?s=<section>`. |
 | **Listening drill** | Hear a patient reply, choose its meaning from four, then see the Aklanon. Pool: the point-board replies. Route `#/psych/listen?s=<section>`. |
 | **For review** | Every phrase and point-board reply has a **⚑** flag. Flagged lines, with an optional one-line comment, are listed by section at `#/review` (App menu), with **Copy all** (plain text) and **Clear**. This is the worklist for the native-speaker reviewer. |
 | **Lessons** | 21 contrastive grammar and culture lessons with quizzes, written for a Tagalog speaker and citing Zorc & de la Cruz (1968) by page. Foundations: sounds and the Aklanon *e*; *ang/ng/sa → ro/it(ku)/sa*; pronouns; demonstratives; *may/owa* and the four negators; question words. Verbs: focus; aspect; stative verbs (feelings as verbs); mood (*maka-*, *hi-*, the four imperatives, polite and negative commands); the *pa-* causative. Sentences: particles; modal and quotative particles; numbers and time; adjectives and comparison; possession and linkers; conjunctions; time, manner and place words. Word building: noun derivation (*pag-*, *ka-…-an*, *ig-*, *isigka-*, *paea-*). Culture: respect without *po*; real Kalibo speech. Lines marked ◌ are the author's reconstructions, not quotations. |
-| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 734 core and clinical entries (dict-core.js 392 + dict-clinical.js 343, one homonym merged in the app, the latter all drawn from Salas Reyes et al. 1969 with page references); entries whose note says Z or SR ~p. N are attested in Zorc & de la Cruz (1968) or in Salas Reyes et al. (1969), the Aklanon dictionary (SR page numbers are approximate, from the ERIC scan). |
+| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 751 core and clinical entries (dict-core.js 409 + dict-clinical.js 343, one homonym merged in the app, the latter all drawn from Salas Reyes et al. 1969 with page references); entries whose note says Z or SR ~p. N are attested in Zorc & de la Cruz (1968) or in Salas Reyes et al. (1969), the Aklanon dictionary (SR page numbers are approximate, from the ERIC scan). |
 | **Universal search** | One search bar (press `/`) across words, phrases, lessons and pages. |
 | **Flashcards** | Spaced repetition with topic decks, psychiatry decks and an automatic "My mistakes" deck. |
 | **You** | Streaks, XP, progress, backup export/import (review flags included), settings, What's New, About. |

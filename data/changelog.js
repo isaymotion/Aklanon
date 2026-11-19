@@ -3,6 +3,13 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.1', date: '2026-11-19', title: 'Substances section',
+    items: [
+      { type: 'content', text: 'New interview section Alcohol, tobacco, betel and drugs: 12 phrases in both registers — the local drinks (tuba, beer, gin), the three AUDIT-C questions (how often, how much in bottles or tagayan, six or more in one sitting), the CAGE ideas (cut down, complaints, trouble caused, morning drinking and the Aklanon hangover idiom pasuebo), withdrawal (shaking, sweating, seeing things), cigarettes per day and mama (betel), shabu and marijuana with a face-saving \'even once\', and pharmacy medicines without a prescription. 11 point-board replies including the usual minimising answers; 17 dictionary entries (alkuhol, bote, tagayan, makahilong, paeahilong, pasuebo, abano, binga, apog, apyan, droga, anad, abyan, problema, reklamo, okasyon, reseta). A note warns that baso means foolish in Aklanon, not glass.' },
+      { type: 'update', text: 'Totals: 10 sections, 114 phrases, 751 dictionary entries. Next: cognition, collateral, children, elderly.' }
+    ]
+  },
+  {
     version: '0.2.0', date: '2026-11-19', title: 'Nine new grammar lessons and 343 dictionary entries from the reference books',
     items: [
       { type: 'content', text: 'Lessons 13–21, written from a fresh OCR of Zorc & de la Cruz (1968) with page-cited examples: Feelings are verbs (stative verbs na-/ma-, ka- nouns, maka- adjectives); Can, happened to, and commands (maka-, hi-, the four imperatives, polite and negative commands); pa- causative (feed, remind, have the doctor called); Adjectives (degrees, ka- intensive, comparison, qualifiers, illness adjectives in -an/-on); Whose, which and where (pronoun table, possession, nga as relative, relator nouns); Hedges and colour (basi, siguro, kunta, matsa, gali, abi, makon, mana, tags, Zorc\'s Aklanon-to-Pilipino key); Joining ideas (ag, ukon, pero, kon, agod, bisan, samtang, bangod, busa); When, how and where (time words, manner with it, the four-distance place words); Making words (pag-, ka-…-an, ka-…-on, kina-, ig-, mag-, isigka-, mang-, paea-, taga-). Each ends with a clinical note and a four-question quiz.' },

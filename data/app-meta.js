@@ -3,7 +3,7 @@ window.APP_META = {
   name: 'Mag-istorya Kita',
   short: 'Mag-istorya Kita',
   tagline: 'Aklanon for the psychiatric interview',
-  version: '0.2.0',
+  version: '0.2.1',
   repo: 'Aklanon',
   updated: 'November 2026',
   author: 'Isabella Navarro, MD',
