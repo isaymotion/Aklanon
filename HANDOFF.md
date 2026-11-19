@@ -51,6 +51,12 @@ git -C /home/claude/aklanon fetch --depth 1 origin dev-tools && git -C /home/cla
 for f in js/*.js js/data/*.js data/*.js sw.js; do node --check $f || echo FAIL $f; done
 cd /home/claude/aklanon && (python3 -m http.server 8123 &) && python3 /home/claude/aklanon-devtools/tools/smoke_test.py
 ```
+Drill checks (0.2.6), with the server running on the port given:
+```
+node tools/check_drills_data.js /home/claude/aklanon/js/data/drills.js      # expect "bad 0"
+python3 tools/lesson_gaps_report.py 8123 | tail -1                         # expect "lessons>=4: 18" (or more)
+python3 tools/drills_playthrough.py 8123                                   # expect 10 / 10 three times, two PDFs, ERRORS []
+```
 Passing: every route body length > 900; LESSONS 39 / DICT 1186 / SECTIONS 12 / phrases 142 (routes now include every drill, vocab mode and handout) (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
 Design checks: skill `isaymotion-app-design` → `scripts/check_sw.py /home/claude/aklanon` (must pass) and `scripts/check_design.py` (warns about `hospital.js` and `icon-maskable-512` naming — both intentional).
 Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com"` and the Claude co-author trailer from the session reminder.
@@ -75,7 +81,7 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 
 ## 7. Next steps
 1. Dictionary verification is done (0.1.5). Remaining verification work, optional and separable: (a) the 63 ◌ sentences in `lessons.js` — check each against grammar examples in `sources/ocr/ED145705-grammar-ocr.txt` (search a distinctive word; e.g. `grep -n -i "owa.*kwarta"`), drop ◌ and add `(p. N)` when a matching example exists, N = PDF page − 17 for the grammar (checked: "Owa gid" example is PDF page 222 = printed p. 205; verify on the page, the front matter shifts it); (b) the still-draft words listed in the 0.1.5 changelog item 3 — most are loans or Hiligaynon and may simply have no SR entry.
-2. Section units done: mania 0.1.1, anxiety 0.1.4, trauma 0.1.6, substances 0.2.1, cognition 0.2.3, collateral 0.2.5. Next content releases: 0.2.7 = `children` (child and adolescent: school, bullying, development, the parent as informant), then `elderly`; after that the native-review export and recorded audio are the real blockers.
+2. Section units done: mania 0.1.1, anxiety 0.1.4, trauma 0.1.6, substances 0.2.1, cognition 0.2.3, collateral 0.2.5. **Next: 0.2.7 = `children`** (child and adolescent; the parent as informant: pregnancy and birth (mabdos SR), milestones (panaw = walk, hambae = talk), school (eskwela), bullying, play, behaviour at home, discipline, abuse screen with the child alone, adolescent HEADSS). Section id `children`, append after `collateral` in PSYCH_SECTIONS and PSYCH_ANSWERS.sections; add the three routes to smoke_test.py; next dictionary Part 6 in dict-core.js; changelog 0.2.7 newest first; bump app-meta.js, changelog.js, sw.js VERSION and README (12→13 sections, phrase and dict counts). Then `elderly` (0.2.8); after that the native-review export and recorded audio are the real blockers.
 3. Drills, optional: more DRILL_* items as lessons grow; hand-write LESSON_GAPS for verbs-iii, focus, focus-ii, word-building and the Sounds unit (all 0 items now); a few automatic items offer a second grammatical option (e.g. pronoun blanks): replace with LESSON_GAPS where a reviewer flags one.
 4. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
