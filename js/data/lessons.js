@@ -245,8 +245,8 @@ window.LESSONS = [
 <h3>Clinical sentences built from the table</h3>
 <table><tr><th>Tagalog</th><th>Aklanon</th><th>English</th></tr>
 <tr><td>Natulog ka ba kagabi?</td><td>Nakatueog ka kabii?</td><td>Did you sleep last night? ◌</td></tr>
-<tr><td>Umiinom ka ba ng gamot?</td><td>Nagainom ka it tambae?</td><td>Are you taking medicine? ◌</td></tr>
-<tr><td>Iinom mo ba ang gamot?</td><td>Imnon mo ro tambae?</td><td>Will you take the medicine? ◌</td></tr>
+<tr><td>Umiinom ka ba ng gamot?</td><td>Nagainom ka it bueong?</td><td>Are you taking medicine? ◌</td></tr>
+<tr><td>Iinom mo ba ang gamot?</td><td>Imnon mo ro bueong?</td><td>Will you take the medicine? ◌</td></tr>
 <tr><td>Kumakain ka ba nang maayos?</td><td>Nagakaon ka it mayad?</td><td>Are you eating well? ◌</td></tr>
 <tr><td>Hindi ako makatulog.</td><td>Indi ako makatueog.</td><td>I can't sleep. ◌</td></tr>
 <tr><td>Hindi ako nakatulog.</td><td>Owa ako makatueog.</td><td>I couldn't sleep. ◌</td></tr>
@@ -275,7 +275,7 @@ window.LESSONS = [
 <table><tr><th>Tagalog</th><th>Aklanon</th><th>Meaning</th><th>Example (Zorc page)</th></tr>
 <tr><td>na</td><td><b>eon</b> (also <i>ron</i>)</td><td>now, already</td><td><i>Nakakaon ka eon?</i> Have you eaten? (p. 201) · <i>Husto eon.</i> That's enough. (p. 201)</td></tr>
 <tr><td>pa</td><td><b>pa</b></td><td>still, yet, more</td><td><i>Una pa imaw?</i> Is he still there? (p. 201) · <i>Owa pa.</i> Not yet.</td></tr>
-<tr><td>talaga</td><td><b>gid</b></td><td>really, very, at all</td><td><i>Owa gid.</i> None at all. (p. 205) · <i>Salamat gid.</i> Thank you very much. ◌</td></tr>
+<tr><td>talaga</td><td><b>gid</b></td><td>really, very, at all</td><td><i>Owa gid.</i> None at all. (p. 205) · <i>Saeamat gid.</i> Thank you very much. ◌</td></tr>
 <tr><td>din / rin</td><td><b>man</b></td><td>also, too</td><td><i>Mayad nga hapon man.</i> Good afternoon to you too. (p. 205)</td></tr>
 <tr><td>lang / lamang</td><td><b>lang</b>, <b>eang</b></td><td>just, only</td><td><i>Sige lang.</i> Go ahead. (p. 205) · <i>Sangkurot eang.</i> Just a little. (p. 205)</td></tr>
 <tr><td>muna</td><td><b>anay</b></td><td>first; please</td><td><i>Lingkod anay kamo.</i> Please sit down. (p. 68) · <i>Obraha anay raya.</i> Do this first. (p. 200)</td></tr>
@@ -291,7 +291,7 @@ window.LESSONS = [
 <h3>Three particles you hear in every clinic conversation</h3>
 <ul>
 <li><b>eon</b> for change of state: <i>Mayad eon ako.</i> I'm better now. ◌ <i>Owa eon.</i> Not anymore. ◌</li>
-<li><b>gid</b> for intensity, and in <i>Salamat gid</i>: your most-used polite phrase.</li>
+<li><b>gid</b> for intensity, and in <i>Saeamat gid</i>: your most-used polite phrase.</li>
 <li><b>anay</b> to soften any request: <i>Hueat anay.</i> Please wait. ◌ <i>Sugidi ako anay.</i> Please tell me. ◌</li>
 </ul>
 <div class="note">False friend: Aklanon <b>man</b> is Tagalog <i>din/rin</i>, not Tagalog <i>man</i> ("even"). <i>Ako man.</i> = Me too.</div>`,
@@ -333,9 +333,9 @@ window.LESSONS = [
 <tr><td>sa susunod na linggo</td><td><b>sa masunod nga semana</b></td><td>next week (p. 166)</td></tr>
 <tr><td>Kailan pa?</td><td><b>Kan-o pa?</b></td><td>Since when? ◌</td></tr>
 <tr><td>araw-araw</td><td><b>adlaw-adlaw</b></td><td>every day ◌</td></tr>
-<tr><td>palagi / lagi</td><td><b>pirme</b></td><td>always ◌</td></tr>
-<tr><td>minsan</td><td><b>kun kaisa</b> / <b>kaisa-isa</b> ◌</td><td>sometimes</td></tr>
-<tr><td>bihira</td><td><b>talagsa</b> ◌</td><td>rarely</td></tr>
+<tr><td>palagi / lagi</td><td><b>permi</b></td><td>always (SR ~p. 16)</td></tr>
+<tr><td>minsan</td><td><b>kon amat</b> (SR ~p. 142)</td><td>sometimes</td></tr>
+<tr><td>bihira</td><td><b>paeangta</b> (SR ~p. 289)</td><td>rarely</td></tr>
 <tr><td>hindi kailanman</td><td><b>owa gid</b></td><td>never (did) ◌</td></tr></table>
 <p>Zorc has no frequency section; the frequency words above are the author's and are a priority for native-speaker review. The duration formula <b>NUMBER ka UNIT eon</b> = "for N units now / N units ago" is attested (pp. 165–166) and covers most of the HPI.</p>
 <div class="note">HPI template: <i>Kan-o nagsugod?</i> (When did it start?) → <i>Daywang semana eon.</i> (Two weeks now.) <i>Pila ka beses sa isaea ka semana?</i> (How many times a week?) ◌</div>`,
@@ -363,7 +363,7 @@ window.LESSONS = [
 <tr><td>boy, young man</td><td><b>Toto</b> ◌</td><td>Totoy</td></tr>
 <tr><td>girl, young woman</td><td><b>Inday</b> ◌</td><td>Neneng</td></tr>
 <tr><td>a doctor</td><td><b>Dok</b>, <b>Doktor / Doktora</b></td><td>Dok</td></tr></table>
-<p>Use the title at the end of the sentence the way you would place <i>po</i>: <i>Lingkod anay kamo, Nay.</i> <i>Salamat gid, Tay.</i></p>
+<p>Use the title at the end of the sentence the way you would place <i>po</i>: <i>Lingkod anay kamo, Nay.</i> <i>Saeamat gid, Tay.</i></p>
 <h3>3. anay</h3>
 <p><b>anay</b> (= <i>muna</i>, Zorc pp. 68, 200) softens commands into requests: <i>Hueat anay.</i> Please wait. ◌ <i>Lingkod anay kamo.</i> Please sit down. (Zorc p. 68) <i>Istorya anay kita.</i> Let's talk first. ◌ Also <b>palihog</b> / <b>paki-</b> for "please" in requests (<i>Palihog sueat riya</i>, please write here ◌; Zorc's dictionary lists the <i>paki-</i> prefix).</p>
 <h3>4. Formulae</h3>
@@ -371,7 +371,7 @@ window.LESSONS = [
 <tr><td>Magandang umaga po.</td><td><b>Mayad nga aga.</b> / <b>Mayad-ayad nga aga.</b></td><td>Zorc p. 205 attests <i>Mayad nga hapon</i>; the reduplicated <i>mayad-ayad</i> is the warm, typical Aklanon greeting. ◌</td></tr>
 <tr><td>Magandang hapon / gabi po.</td><td><b>Mayad nga hapon / gabii.</b></td><td></td></tr>
 <tr><td>Kumusta po kayo?</td><td><b>Kamusta kamo?</b></td><td>Reply: <i>Mayad man.</i> (Fine too.) ◌</td></tr>
-<tr><td>Salamat po.</td><td><b>Salamat.</b> / <b>Salamat gid.</b></td><td>gid = talaga</td></tr>
+<tr><td>Salamat po.</td><td><b>Saeamat.</b> / <b>Saeamat gid.</b></td><td>gid = talaga</td></tr>
 <tr><td>Walang anuman.</td><td><b>Owa it anuman.</b> ◌</td><td></td></tr>
 <tr><td>Pasensya na po.</td><td><b>Pasensya eon.</b> ◌</td><td>Zorc's dictionary lists <i>pasensya</i>.</td></tr>
 <tr><td>Tuloy po kayo.</td><td><b>Dayon kamo.</b></td><td>come in; <i>dayon</i> "stay, dwell" in Zorc's dictionary</td></tr>

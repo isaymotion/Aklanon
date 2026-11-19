@@ -6,7 +6,7 @@
 
 **App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com**
 
-Version **0.1.4** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
+Version **0.1.5** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
 
 **Live site:** https://isaymotion.github.io/Aklanon/ (after GitHub Pages is switched on; see below)
 
@@ -25,7 +25,7 @@ The learner is assumed to **speak Tagalog already**. Lessons are contrastive (wh
 | **Listening drill** | Hear a patient reply, choose its meaning from four, then see the Aklanon. Pool: the point-board replies. Route `#/psych/listen?s=<section>`. |
 | **For review** | Every phrase and point-board reply has a **⚑** flag. Flagged lines, with an optional one-line comment, are listed by section at `#/review` (App menu), with **Copy all** (plain text) and **Clear**. This is the worklist for the native-speaker reviewer. |
 | **Lessons** | 12 contrastive grammar and culture lessons with quizzes, written for a Tagalog speaker and citing Zorc & de la Cruz (1968) by page: sounds and the Aklanon *e*; *ang/ng/sa → ro/it(ku)/sa*; pronouns; demonstratives; *may/owa* and the four negators; question words; verb focus; aspect (*nag-/naga-/maga-/mag-*, *gin-/gina-/-on*); particles; numbers and time; respect without *po*; real Kalibo speech, *hay* and interpreting. Lines marked ◌ are the author's reconstructions, not quotations. |
-| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 349 core and clinical entries; entries marked Z in the file are attested in Zorc's grammar or dictionary. |
+| **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 369 core and clinical entries; entries whose note says Z or SR ~p. N are attested in Zorc & de la Cruz (1968) or in Salas Reyes et al. (1969), the Aklanon dictionary (SR page numbers are approximate, from the ERIC scan). |
 | **Universal search** | One search bar (press `/`) across words, phrases, lessons and pages. |
 | **Flashcards** | Spaced repetition with topic decks, psychiatry decks and an automatic "My mistakes" deck. |
 | **You** | Streaks, XP, progress, backup export/import (review flags included), settings, What's New, About. |
