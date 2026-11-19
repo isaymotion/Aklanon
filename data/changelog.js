@@ -3,6 +3,13 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.3', date: '2026-11-19', title: 'Cognition section',
+    items: [
+      { type: 'content', text: 'New section Cognition: orientation, memory, attention — a bedside screen in MMSE order with 13 phrases: schooling first, orientation to time (pitsa, buean, dag-on) and place, president and mayor, registration of three words (baeay, lapis, isda), months backwards or serial sevens from isaea ka gatos, recall, naming, repetition using Zorc\'s own greeting (Mayad nga agahon kinyong tanan), a three-stage command (tuo nga alima, piloa, ibutang sa lamesa), reading and writing, and a judgement question set on a Kalibo road. 9 point-board replies (Indi ko madumduman; Ta-o ko; Owa ako makaeskwela…) and 14 dictionary entries (lapis, papel, yabi, relo, tuo, presidente, meyor, ta-o, dayon, hasta, baeot-baeot, kwenta…). pilo, tunga and piyong carry ⚑.' },
+      { type: 'update', text: 'Totals: 32 lessons, 11 sections, 127 phrases, 943 dictionary entries. Next: collateral, children, elderly.' }
+    ]
+  },
+  {
     version: '0.2.2', date: '2026-11-19', title: 'Eleven more lessons and 177 dictionary entries',
     items: [
       { type: 'content', text: 'Five grammar lessons from the parts of Zorc not used before: Why words change shape (the ten sound changes: imna, kan-on, pamahaw, panumdum, the rang/ring/raa contractions); Choosing a focus (roles, the two book paradigms, the idioms that must be object focus, why all-actor-focus sounds childish); Reading the dictionary (the full tense set, owa + mag- past vs indi + mag- future, manog-, the participle, and what RV1–RV9, ST1–ST5, CV and DV mean); Doing a lot, doing together, becoming (pang-, mang- occupations, maging-, mag- kin pairs, makig- sharing, -in- languages, the ka-/-eV-/-in-/-ilin- qualifiers); Question words II and the time markers (kan-o vs hin-uno, Sino ro imong ngaean, haman, mauno, ku/it/sa, mga and ka, the Kalibo sin- quotative, ka-…-ta exclamations).' },

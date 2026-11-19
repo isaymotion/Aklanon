@@ -178,6 +178,17 @@ window.PSYCH_ANSWERS = {
       ['Owa ako it problema sa inom.', 'I have no problem with drinking.', 'Minimising; get collateral from family.'],
       ['Nagamama ako adlaw-adlaw.', 'I chew betel every day.', 'Oral lesions; note tobacco in the quid.']
     ],
+    cognition: [
+      ['Indi ko madumduman.', 'I cannot remember.', 'Recall failure; note how many of three.'],
+      ['Lipat eon ako. Mabuhay eon nga nagalipat ako.', 'I forget now. I have been forgetful a long time.', 'Duration of memory loss; ask family for onset.'],
+      ['Ta-o ko.', 'I do not know.', 'Zorc p. 206; distinguish \'don\'t know\' from refusal.'],
+      ['Huwebes makaron, siguro.', 'It is Thursday today, I think.', 'Hedged orientation; score the answer, note the hedge.'],
+      ['Riya kita sa ospital sa Kalibo.', 'We are here at the hospital in Kalibo.', 'Oriented to place.'],
+      ['Owa ako makaeskwela. Indi ako makabasa.', 'I did not go to school. I cannot read.', 'Skip reading and writing items; do not score them.'],
+      ['Ano eon man ro ginhambae ninyo?', 'What was it you said again?', 'Attention or hearing; repeat once, then score.'],
+      ['Baeay... lapis... owa eon ako kasayod ku isaea.', 'House... pencil... I no longer know the third.', 'Two of three recalled; offer a category cue.'],
+      ['Syento, nobenta y tres, otsenta y sais...', 'One hundred, ninety-three, eighty-six...', 'Spanish-derived numbers are the norm for arithmetic; accept them.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it bueong?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],

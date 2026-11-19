@@ -426,4 +426,18 @@ sip-on|mucus; a cold|n|health||Z p. 170 (sip-onan = having a cold).|sipon
 matay|die|v|health||Z p. 123 (Class II stative: namatay = died); SR ~p. 258.|mamatay
 pangabuhi|life; livelihood|n|daily||Z p. 136 (panga- noun); SR ~p. 106 pangabuhi-an = occupation.|kabuhayan
 mangunguma|farmer|n|people||Z p. 138 (occupational maNV- noun).|magsasaka
+lapis|pencil|n|daily||SR ~p. 240 [Sp] (Isueat mo ro lapis ngara = write with this pencil, SR ~p. 24).|lapis
+papel|paper|n|daily||SR ~p. 286 [Sp].|papel
+yabi|key|n|daily||SR ~p. 393 [Sp] (alt. yawi, lyabe).|susi
+relo|watch; clock|n|daily||SR ~p. 35 [Sp] (relo RV5 = wear a watch).|relo
+lamesa|table|n|daily||Spanish loan in general use.|mesa
+tuo|right (side, hand)|n|body||SR ~p. 162 (Akl for Spanish dimano; opp. waea).|kanan
+presidente|president|n|people||SR ~p. 318 [Sp]; Z p. 197 \"Imaw hay presidente\".|presidente
+meyor|mayor|n|people||SR ~p. 49 (syn. alkalde); \"Binaligya ku meyor ro baeay\" (SR intro).|alkalde
+ta-o|I don't know (particle)|part|grammar||Z p. 206 (ta-o ngani = I just don't know). Tagalog ewan/aywan.|ewan
+dayon|then; next; right away|adv|time||Z p. 64 (mapanaw dayon kita = then we will leave).|tapos; agad
+hasta|until; up to|prep|grammar||Z p. 166 [Sp] (syn. tubtub).|hanggang
+grado|grade (in school)|n|daily||Spanish loan.|grado
+baeot-baeot|repeat|v|verbs||SR ~p. 75 (syn. uman).|ulit
+kwenta|count; settle money matters; value|v|mind||SR ~p. 151 [Sp] (Akl: husay); owa it kwenta = worthless.|kuwenta
 `);
