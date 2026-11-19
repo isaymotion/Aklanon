@@ -149,7 +149,7 @@ inday|girl; young woman (address)|n|family|||neneng
 pamilya|family|n|family|||pamilya
 amigo|friend (male)|n|people||Z.|kaibigan
 amiga|friend (female)|n|people|||kaibigan
-kaibahan|companion|n|people|||kasama
+kaibahan|companion; someone one lives or goes with|n|people|iba|SR ~p. 224; Z p. 16 (from iba = go together). Attested where kaimaw is not.|kasama
 kaingod|neighbour|n|people||SR ~p. 121 (alt. kahilapit).|kapitbahay
 doktor|doctor|n|people|||doktor
 nars|nurse|n|people||SR ~p. 268 [Eng].|nurse
@@ -262,7 +262,7 @@ sueat|write|v|verbs||SR ~p. 349.|sulat
 basa|read|v|verbs||Z (Basaha ra).|basa
 tan-aw|look at|v|verbs||Z (Tan-awa).|tingin
 tudlo|point; teach|v|verbs||Itudlo = point to.|turo
-sugod|start|v|verbs|||simula
+sugod|enter; go into|v|verbs||Z p. 28 (minimal pair sugód "enter, go into"). Not "start": that sense is Hiligaynon; Aklanon start = umpisa (corrected 0.2.5).|pasok
 untat|stop|v|verbs|||tigil
 bakae|buy|v|verbs||Z (ginbakae).|bili
 bahoe|big; large|adj|adjectives||SR ~p. 78 (mabahoe = big, huge; nagbahoe = grew). dako is Hiligaynon and not in SR.|malaki
@@ -673,4 +673,18 @@ peseta|twenty centavos|n|daily||SR p. 150 [Sp].|peseta
 bakod|five centavos|n|daily||SR p. 71, 150 [slg].|singko
 panganay|eldest; first-born|n|family||SR p. 55.|panganay
 rong|the (plural): contraction of ro mga|part|grammar||Z p. 149 (Rong mangingilaw kuno nagakaon kay Pedro).|ang mga
+# Part 5, 2026-11-19 (0.2.5): collateral-history words, each checked against SR before use.
+umpisa|begin; start|v|verbs||SR ~p. 280 [Sp] (Umpisahi ring obra = Start your work; opp. tapos). Kan-o nag-umpisa? = When did it start?|simula
+trangka|lock up; bar|v|verbs||SR ~p. 389 [Sp].|ikandado; ikulong
+balighot|tie up|v|verbs||SR ~p. 80 (opp. hubad = untie).|gapos; tali
+atipan|watch over; guide; take care of|v|verbs||SR ~p. 65.|alaga
+uyon|agree with; be in favour of|v|verbs||SR ~p. 68.|sang-ayon
+bisyo|vice; bad habit (smoking, drinking)|n|substances||SR ~p. 98 [Sp].|bisyo
+bagwas|separate; leave; divorce|v|family||SR ~p. 77.|hiwalay
+kambyado|changed; changeable|adj|mind||SR ~p. 123 [Sp].|nagbago
+panubli-on|inheritance; inherited trait|n|family||SR ~p. 295.|mana
+lagaw|go around; travel about; wander|v|verbs||SR ~p. 238. naglagaw-lagaw = wandered about.|gala
+ampon|adopt; adopted child|v|family||SR ~p. 54.|ampon
+basag|broken|adj|adjectives||SR ~p. 87 (syn. pusa'). buong (break) is Hiligaynon.|basag; sira
+barang|be cursed or bewitched (illness sent by sorcery)|v|folk||SR ~p. 86 (ST4). nabarang = bewitched.|kulam
 `);

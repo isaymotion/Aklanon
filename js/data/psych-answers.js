@@ -79,7 +79,7 @@ window.PSYCH_ANSWERS = {
       ['Owa ako it problema.', 'I have no problem.', 'Denial of illness; explore gently through the family\'s concern.']
     ],
     hpi: [
-      ['Nagsugod kato pagkapatay it tatay ko.', 'It started when my father died.', 'Grief or loss as precipitant.'],
+      ['Nag-umpisa kato pagkapatay it tatay ko.', 'It started when my father died.', 'Grief or loss as precipitant.'],
       ['Hinali lang.', 'It was sudden.'],
       ['Amat-amat lang.', 'It came slowly.'],
       ['Nagagrabe.', 'It is getting worse.'],
@@ -188,6 +188,19 @@ window.PSYCH_ANSWERS = {
       ['Ano eon man ro ginhambae ninyo?', 'What was it you said again?', 'Attention or hearing; repeat once, then score.'],
       ['Baeay... lapis... owa eon ako kasayod ku isaea.', 'House... pencil... I no longer know the third.', 'Two of three recalled; offer a category cue.'],
       ['Syento, nobenta y tres, otsenta y sais...', 'One hundred, ninety-three, eighty-six...', 'Spanish-derived numbers are the norm for arithmetic; accept them.']
+    ],
+    collateral: [
+      ['Igmanghod ko imaw.', 'He is my brother (she is my sister).', 'Ask who lives with the patient day to day.'],
+      ['Kaibahan ko imaw sa baeay.', 'He lives with me.', 'Good informant; ask what they saw themselves.'],
+      ['Mahipos imaw kato anay, mayad nga tawo.', 'He used to be quiet, a good person.', 'Premorbid baseline; note sudden change.'],
+      ['Duha ka semana eon nga owa imaw it tueog.', 'For two weeks now he has not slept.', 'Acute onset; screen mania and psychosis.'],
+      ['Nagahambae imaw nga isaea lang sa gabii.', 'He talks to himself at night.', 'Likely hallucinations; ask what he says.'],
+      ['Naakig imaw ag ginbunae na ro anang tatay.', 'He got angry and hit his father.', 'Violence; assess safety at home and weapons.'],
+      ['Ginbalighot namon imaw bangod indi namon imaw makontrol.', 'We tied him up because we could not control him.', 'Home restraint; check injuries; consider admission.'],
+      ['Owa eon nana ginainom ro bueong.', 'He stopped taking his medicine.', 'Non-adherence; ask why: cost, side effects, insight.'],
+      ['Ro anang lolo hay parehas man.', 'His grandfather was the same.', 'Positive family history; ask diagnosis and outcome.'],
+      ['Nabarang kuno imaw, hambae it kurandero.', 'He was bewitched, the healer said.', 'Explanatory model; respect it, negotiate treatment.'],
+      ['Ako ro magaatipan kana.', 'I will be the one to look after him.', 'Named caregiver; teach doses and warning signs.']
     ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],

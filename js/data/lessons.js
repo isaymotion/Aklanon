@@ -185,7 +185,7 @@ window.LESSONS = [
 <tr><td>what</td><td>ano</td><td><b>ano</b> (also <i>nano</i>)</td><td><i>Ano ro ngaean mo?</i> What is your name? ◌ · <i>Ano ron?</i> What is that? (Zorc p. 161)</td></tr>
 <tr><td>who</td><td>sino</td><td><b>sin-o</b></td><td><i>Sin-o ro kaibahan mo?</i> Who is with you? ◌</td></tr>
 <tr><td>where</td><td>saan / nasaan</td><td><b>siin</b></td><td><i>Siin ka gaadto?</i> Where are you going? (Zorc p. 117) · <i>Siin ka nagaistar?</i> Where do you live? ◌</td></tr>
-<tr><td>when (past)</td><td>kailan</td><td><b>kan-o</b></td><td><i>Kan-o ikaw natawo?</i> When were you born? (Zorc p. 122) · <i>Kan-o nagsugod?</i> When did it start? ◌</td></tr>
+<tr><td>when (past)</td><td>kailan</td><td><b>kan-o</b></td><td><i>Kan-o ikaw natawo?</i> When were you born? (Zorc p. 122) · <i>Kan-o nag-umpisa?</i> When did it start? ◌</td></tr>
 <tr><td>when (future)</td><td>kailan</td><td><b>hin-uno</b></td><td><i>Hin-uno kamo mabalik?</i> When will you come back? ◌</td></tr>
 <tr><td>how many / much</td><td>ilan / magkano</td><td><b>pila</b></td><td><i>Pila ro edad mo?</i> How old are you? ◌ · <i>Pila ruyon?</i> How much is that? (Zorc p. 161)</td></tr>
 <tr><td>why</td><td>bakit</td><td><b>ham-at</b> (also <i>ham-an</i>)</td><td><i>Ham-at nag-abot ka riya?</i> Why did you come here? ◌</td></tr>
@@ -353,7 +353,7 @@ window.LESSONS = [
 <tr><td>bihira</td><td><b>paeangta</b> (SR ~p. 289)</td><td>rarely</td></tr>
 <tr><td>hindi kailanman</td><td><b>owa gid</b></td><td>never (did) ◌</td></tr></table>
 <p>Zorc has no frequency section; the frequency words above are the author's and are a priority for native-speaker review. The duration formula <b>NUMBER ka UNIT eon</b> = "for N units now / N units ago" is attested (pp. 165–166) and covers most of the HPI.</p>
-<div class="note">HPI template: <i>Kan-o nagsugod?</i> (When did it start?) → <i>Daywang semana eon.</i> (Two weeks now.) <i>Pila ka beses sa isaea ka semana?</i> (How many times a week?) ◌</div>`,
+<div class="note">HPI template: <i>Kan-o nag-umpisa?</i> (When did it start?) → <i>Daywang semana eon.</i> (Two weeks now.) <i>Pila ka beses sa isaea ka semana?</i> (How many times a week?) ◌</div>`,
   quiz: [
     ['Aklanon for four:', ['apat', 'ap-at', 'upat', 'kwatro only'], 1, 'ap-at, with the glottal stop written as a hyphen.'],
     ['"Five months now / five months ago" (Zorc p. 165):', ['lima buean na', 'limang ka buean eon', 'lima nga buean pa', 'sa lima ka buean'], 1, 'NUMBER ka UNIT eon.'],
@@ -666,7 +666,7 @@ window.LESSONS = [
 <p>Zorc's most clinical sentence (p. 211): <i><b>Pwede pa nga ikaw magpalugyat, maskin mayad ka eon.</b></i> You might still relapse, even if you feel well now. Keep it for the discharge talk.</p>
 <h3>Building history questions ◌</h3>
 <ul>
-<li><i>Nagsugod raya <b>kon</b> may natabo, <b>ukon</b> owa lang it rason?</i> Did this start when something happened, or for no reason?</li>
+<li><i>Nag-umpisa raya <b>kon</b> may natabo, <b>ukon</b> owa lang it rason?</i> Did this start when something happened, or for no reason?</li>
 <li><i>Nagainom kamo it bueong <b>pero</b> owa gihapon it kaayuhan?</i> You take the medicine but there is still no improvement?</li>
 <li><i>Indi kamo makatueog <b>bangod</b> sa kabalaka, <b>ukon bangod</b> sa sakit?</i> Can't you sleep because of worry, or because of pain?</li>
 <li><i>Nagahambae imaw <b>samtang</b> owa it tawo?</i> Does he talk while nobody is there?</li>
@@ -713,7 +713,7 @@ window.LESSONS = [
 <p>For motion or pointing there is an emphatic set, <b>rikara, rikaron, rikana, rikato</b> (also with d-): <i>Dikara eang ako mabapit.</i> I'll just drop in over here. (p. 186)</p>
 <p><i>Iya si Carlos?</i> Is Carl here? · <i>Owa riya si Nene.</i> Nene is not here. · <i>Si Henry runa sa baeay.</i> Henry is there at home. · <i>Una kimo ro makinilya?</i> Is the typewriter there with you? (p. 185) · <i>Ma-agi kita dikato.</i> Let's pass that way. (p. 186). Tagalog <i>dito</i> is a false friend: Aklanon <i>dito/rito</i> is <b>far away</b>; here is <i>riya</i>.</p>
 <p>Deictics also carry attitude (pp. 186–187): <i>si Marde <b>ngara</b></i> this Marde (approving) vs <i>si Marde <b>ngaron</b></i> / <i>ngato</i> (disapproving, distancing).</p>
-<div class="note">Timeline questions ◌: <i>Kan-o nagsugod? Kaina, kabi-i, kahapon, ukon kato anay pa?</i> When did it start? Earlier today, last night, yesterday, or long ago? <i>Adlaw-adlaw raya, ukon taeagsa lang?</i> Every day, or only seldom? <i>Siin masakit, riya?</i> Where does it hurt, here? (pointing)</div>`,
+<div class="note">Timeline questions ◌: <i>Kan-o nag-umpisa? Kaina, kabi-i, kahapon, ukon kato anay pa?</i> When did it start? Earlier today, last night, yesterday, or long ago? <i>Adlaw-adlaw raya, ukon taeagsa lang?</i> Every day, or only seldom? <i>Siin masakit, riya?</i> Where does it hurt, here? (pointing)</div>`,
   quiz: [
     ['Aklanon for "tomorrow" is:', ['bukas', 'hin-aga', 'hinduna', 'buwas'], 1, 'hin-aga = tomorrow; hinduna = later on today (p. 184).'],
     ['"Nagaobra imaw it mayad" means:', ['He is a good worker.', 'He works well.', 'He made it well.', 'He is well.'], 1, 'it marks the manner adverb; nga would make mayad an adjective on a noun (p. 181).'],
@@ -933,7 +933,7 @@ window.LESSONS = [
 <h3>Units and the day</h3>
 <p><i>minuto</i> · <i>oras</i> hour · <i>adlaw</i> day · <i>semana, dominggo</i> week · <i>buean</i> month · <i>dag-on</i> year · <i>kinatawohan</i> birthday · <i>pitsa</i> date. The day: <i>aga-aga</i> dawn · <i>aga</i> morning · <i>udto</i> noon · <i>hapon</i> afternoon · <i>gabii</i> night · <i>nagob</i> midnight. Meals: <i>pamahaw</i> breakfast · <i>ihapon</i> supper. Routine verbs: <i>bugtaw, pikaw</i> wake · <i>bangon</i> get up · <i>paligos</i> bathe · <i>kaon, inom</i> · <i>obra, trabaho</i> work · <i>pahuway</i> rest · <i>tueog</i> sleep · <i>puka</i> stay up late.</p>
 <h3>Frames</h3>
-<p><i>Kahapon imaw nagpanaw.</i> He left yesterday. (Z p. 182) · <i>Hinduna mabalik ako.</i> I'll be back later. (Z p. 182) · <i>Permi ako nagakaon it humay.</i> I always eat rice. (SR) · <i>Pila kabuhay eon?</i> How long has it been? ◌ · <i>Kan-o nagsugod?</i> When did it start? ◌ · <i>Anong oras kamo nagatueog ag nagabugtaw?</i> What time do you sleep and wake? ◌</p>
+<p><i>Kahapon imaw nagpanaw.</i> He left yesterday. (Z p. 182) · <i>Hinduna mabalik ako.</i> I'll be back later. (Z p. 182) · <i>Permi ako nagakaon it humay.</i> I always eat rice. (SR) · <i>Pila kabuhay eon?</i> How long has it been? ◌ · <i>Kan-o nag-umpisa?</i> When did it start? ◌ · <i>Anong oras kamo nagatueog ag nagabugtaw?</i> What time do you sleep and wake? ◌</p>
 <div class="note">For a timeline, offer anchors the patient can pick: <i>kaina, kabii, kahapon, isaea ka semana, isaea ka buean, kato anay</i>. For frequency use the scale <i>permi · daeas · kon amat · paeangta · owa gid</i>.</div>`,
   quiz: [
     ['Aklanon for "sometimes" attested in SR is:', ['kun kaisa', 'kon amat', 'minsan', 'talagsa'], 1, 'kon amat (SR ~p. 142); kis-a also appears. talagsa is Hiligaynon; SR gives paeangta for seldom.'],
@@ -1214,14 +1214,14 @@ window.LESSONS = [
 <tr><td><b>mauno</b></td><td>how, of what quality</td><td>kumusta; paano</td></tr></table>
 <p>Zorc's examples: <i>Sino ro imong ngaean?</i> What is your name? (the native idiom; <i>Ano ro imong ngaean?</i> is a borrowing, now also accepted, p. 192) · <i>Kanyo nakon itao ro kwarta?</i> To whom should I give the money? (p. 192) · <i>Kan-o imaw nag-abot?</i> When did he arrive? · <i>Hin-uno sanda maadto?</i> When will they go? (p. 193) · <i>Haman indi ikaw mamunot?</i> Why aren't you going along? (p. 194) · <i>Pa-ano ro paghambae karon sa Ininglis?</i> How do you say that in English? (p. 194) · <i>Mauno ro imong pamatyag?</i> How do you feel? (p. 194)</p>
 <h3>Two whens</h3>
-<p><b>kan-o</b> looks back and takes the past-conditioned verb: <i>Kan-o nagsugod ro sakit?</i> When did the illness start? ◌ <b>hin-uno</b> looks forward: <i>Hin-uno kamo mabalik?</i> When will you come back? ◌ · <i>Hin-uno imaw pagpukawon?</i> At what time is he to be awakened? (p. 98). Tagalog has one <i>kailan</i>; the Aklanon pair is a frequent slip.</p>
+<p><b>kan-o</b> looks back and takes the past-conditioned verb: <i>Kan-o nag-umpisa ro sakit?</i> When did the illness start? ◌ <b>hin-uno</b> looks forward: <i>Hin-uno kamo mabalik?</i> When will you come back? ◌ · <i>Hin-uno imaw pagpukawon?</i> At what time is he to be awakened? (p. 98). Tagalog has one <i>kailan</i>; the Aklanon pair is a frequent slip.</p>
 <h3>Placing an event in time: ku, it, sa (pp. 165–166)</h3>
 <table><tr><th>Marker</th><th>Time</th><th>Examples</th></tr>
 <tr><td><b>ku</b></td><td>a completed past point</td><td>ku Lunes last Monday · ku Enero last January · ku isaeang adlaw the day before yesterday · ku isaeang dominggo the week before last · ku gerra during the war</td></tr>
 <tr><td><b>… eon</b></td><td>counted back from now</td><td>daywang adlaw eon two days ago · limang ka buean eon five months ago · tatlo ka dag-on eon three years ago</td></tr>
 <tr><td><b>it</b></td><td>time within</td><td>kahapon it hapon yesterday afternoon · sa sueod it daywang oras within the next two hours</td></tr>
 <tr><td><b>sa</b></td><td>future</td><td>sa Lunes on Monday · sa masunod nga dominggo next week · sa daywa pang adlaw in two more days</td></tr></table>
-<p>◌ History-taking: <i>Nagsugod raya ku Enero?</i> Did this begin last January? · <i>Tatlo ka buean eon?</i> Three months ago? · <i>Balik kamo sa masunod nga dominggo.</i> Come back next week. · <i>Kabii it gabii, nakatueog kamo?</i> Last night, did you sleep?</p>
+<p>◌ History-taking: <i>Nag-umpisa raya ku Enero?</i> Did this begin last January? · <i>Tatlo ka buean eon?</i> Three months ago? · <i>Balik kamo sa masunod nga dominggo.</i> Come back next week. · <i>Kabii it gabii, nakatueog kamo?</i> Last night, did you sleep?</p>
 <h3>Plural and counting words (p. 190)</h3>
 <p><b>mga</b> pluralises (<i>ro mga unga</i>), <b>ka</b> follows numbers and <i>pila</i> (<i>daywang ka unga</i>, <i>pila ka adlaw</i>), and <i>mga</i> is never used with a number. The linker <b>nga</b> becomes <b>-ng</b> after a vowel, h, glottal or n: <i>tawong mabuot</i>, <i>batang eaeaki</i>, <i>Mayad nga agahon</i> good morning, <i>Mayad nga hapon kinyong tanan</i> (p. 191).</p>
 <h3>Who said it: the Kalibo quotative (p. 167)</h3>
@@ -1333,7 +1333,7 @@ window.LESSONS = [
 <tr><td>hueat</td><td>wait</td><td>hintay</td></tr>
 <tr><td>tago, hab-on</td><td>hide, put away</td><td>tago</td></tr>
 <tr><td>takaw, takab</td><td>steal</td><td>nakaw</td></tr>
-<tr><td>sugod / untat, tapos</td><td>start / stop, finish</td><td>simula / tigil, tapos</td></tr>
+<tr><td>umpisa / tapos</td><td>start / finish</td><td>simula / tapos</td></tr>
 <tr><td>eaba, hugas, limpyo</td><td>wash clothes, wash dishes, clean</td><td>laba, hugas, linis</td></tr>
 <tr><td>bantay</td><td>watch, guard</td><td>bantay</td></tr>
 <tr><td>tatap, dipara, libang</td><td>take care of</td><td>alaga</td></tr></table>
@@ -1535,7 +1535,7 @@ window.LESSONS = [
 <tr><td>Hin-aga ma-adto kita.</td><td>Hin-aga hay ma-adto kita. Tomorrow, well, we will go.</td></tr>
 <tr><td>—</td><td>Ako hay bata pa ngani. Well me, I\'m still young.</td></tr>
 <tr><td>—</td><td>Imaw hay presidente. He is a president. (D. 31)</td></tr></table>
-<p>Simple inversion first; then the <b>emphasis derivation</b>, which fronts any element with "well, …" and sometimes adds a resumptive word (<i>Ro anwang, hay ginbaligya <b>ron</b> sa Kalibo</i>). This is the Tagalog <i>ay</i> sentence, and Kalibo speech uses it constantly (lesson 12). ◌ <i>Ro inom hay nagsugod kan-o?</i> The drinking, when did it start?</p>
+<p>Simple inversion first; then the <b>emphasis derivation</b>, which fronts any element with "well, …" and sometimes adds a resumptive word (<i>Ro anwang, hay ginbaligya <b>ron</b> sa Kalibo</i>). This is the Tagalog <i>ay</i> sentence, and Kalibo speech uses it constantly (lesson 12). ◌ <i>Ro inom hay nag-umpisa kan-o?</i> The drinking, when did it start?</p>
 <h3>may: there is, someone, has (p. 198)</h3>
 <table><tr><th>Use</th><th>Example</th></tr>
 <tr><td>existential</td><td><i>May baha kabi-i.</i> There was a flood last night. · <i>May patay sa datag.</i> There is a dead man in the field.</td></tr>

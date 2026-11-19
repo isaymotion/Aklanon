@@ -3,6 +3,15 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.5', date: '2026-11-19', title: 'Family informant section; sugod corrected to umpisa',
+    items: [
+      { type: 'content', text: 'New section Family informant (collateral history), 15 phrases: who the informant is and how well they know the patient, a private talk with a promise not to repeat what they say, what changed and when, the usual self before the illness, sleep, eating and work, talking or laughing alone, anger and violence, talk of death, wandering, and whether the family has had to tie up or lock in the patient (balighot, trangka), vices (bisyo), past episodes and medicine, family history (panubli-on), the family\'s own explanation and the kurandero or albularyo, and who will look after the patient and bring them back. With 11 point-board replies for the informant.' },
+      { type: 'content', text: '13 dictionary entries, each checked against Salas Reyes et al. first: umpisa, trangka, balighot, atipan, uyon, bisyo, bagwas, kambyado, panubli-on, lagaw, ampon, basag, barang. kaibahan (companion) now cites SR and Zorc. Two traps found: utod means a piece of something (sibling is igmanghod), and buong (break) is Hiligaynon (Aklanon basag, pusa\').' },
+      { type: 'correction', text: 'sugod does not mean "start" in Aklanon: Zorc lists it as "enter, go into", and the start sense is Hiligaynon. The Aklanon word is umpisa (SR: Umpisahi ring obra, Start your work). Changed everywhere: Kan-o nag-umpisa? (When did it start?) in the history section, the anxiety section, one point-board reply and seven lesson examples; the everyday-verbs lesson now pairs umpisa with tapos.' },
+      { type: 'update', text: 'Totals: 39 lessons, 12 sections, 142 phrases, 1,186 dictionary entries. Next: children, elderly.' }
+    ]
+  },
+  {
     version: '0.2.4', date: '2026-11-19', title: 'Seven more lessons and 232 dictionary entries from Zorc',
     items: [
       { type: 'content', text: 'Four grammar and culture lessons from the last unused chapters of Zorc: Pronunciation II (the e sound against y, l and g; glottal-stop minimal pairs such as bug-at heavy vs bughat relapse; the o/u spelling rule; stress pairs); Three Aklanons and a thousand loans (town, age and prestige dimensions, how Spanish, English, Chinese, Tagalog and Hiligaynon words are reshaped, and the dictionary\'s tags [Sp] [Hil] [Akl:] [Oak] [slg]); Sentence patterns (predicate first, ro vs do, persons are never direct objects, ku definite vs it indefinite, two-topic sentences, hay inversion and emphasis, may for there-is and has); Counting II (ka, ika- ordinals, bisis and kaywa, tig- distributives, money from kwarta to piso, the Spanish clock, dates, and age with idad).' },
