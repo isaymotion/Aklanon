@@ -1,10 +1,10 @@
 # Handoff: Mag-istorya Kita (Aklanon variant of Usap Tayo)
 
-Updated 2026-11-19 after v0.1.5 (source verification against the Zorc PDFs) and v0.1.4 (anxiety section). 0.1.2 added data/hospital.js and 0.1.3 fixed phone-menu scrolling (13 Nov).
+Updated 2026-11-19 after v0.1.6 (trauma section), v0.1.5 (source verification against the Zorc PDFs) and v0.1.4 (anxiety section). GitHub Pages is enabled: https://isaymotion.github.io/Aklanon/ (the sandbox shell cannot reach github.io; the user checks the live site). 0.1.2 added data/hospital.js and 0.1.3 fixed phone-menu scrolling (13 Nov).
 
 ## 1. Project and audience
 - App: **Mag-istorya Kita**, Aklanon ("Akeanon") for the psychiatric interview, for a psychiatrist who speaks Tagalog and English and will see patients in Kalibo, Aklan. Grammar lessons are the priority.
-- Repo: `isaymotion/Aklanon`, branch `main` (site), branch `dev-tools` (this file, smoke test, **OCR text of both Zorc PDFs in `sources/ocr/`**, verifier `tools/verify_dict.py`). Live: https://isaymotion.github.io/Aklanon/ once GitHub Pages is enabled (Settings → Pages → main, / root) — **not confirmed enabled yet**.
+- Repo: `isaymotion/Aklanon`, branch `main` (site), branch `dev-tools` (this file, smoke test, **OCR text of both Zorc PDFs in `sources/ocr/`**, verifier `tools/verify_dict.py`). Live: https://isaymotion.github.io/Aklanon/ (GitHub Pages enabled 19 Nov 2026, main / root).
 - Sister app / engine source: `isaymotion/Tagalog` (Usap Tayo 3.1.0). Clone it read-only when engine behaviour is unclear.
 - Project doc with decisions: `claude/mag-istorya-kita-plan.md` in the claude.ai Project "Aklanon".
 
@@ -50,7 +50,7 @@ git -C /home/claude/aklanon fetch --depth 1 origin dev-tools && git -C /home/cla
 for f in js/*.js js/data/*.js data/*.js sw.js; do node --check $f || echo FAIL $f; done
 cd /home/claude/aklanon && (python3 -m http.server 8123 &) && python3 /home/claude/aklanon-devtools/tools/smoke_test.py
 ```
-Passing: every route body length > 900; LESSONS 12 / SECTIONS 8 / phrases 90, 369 dictionary entries (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
+Passing: every route body length > 900; LESSONS 12 / SECTIONS 9 / phrases 102, 392 dictionary entries (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
 Design checks: skill `isaymotion-app-design` → `scripts/check_sw.py /home/claude/aklanon` (must pass) and `scripts/check_design.py` (warns about `hospital.js` and `icon-maskable-512` naming — both intentional).
 Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com"` and the Claude co-author trailer from the session reminder.
 
@@ -58,20 +58,21 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 | Item | Status |
 |---|---|
 | Engine fork, identity, icon, palette, banner, flags, #/review | done (v0.1.0) |
-| Current version | 0.1.5 (2026-11-19) |
+| Current version | 0.1.6 (2026-11-19) |
 | Lessons | 12 done: sounds, markers, pronouns, demonstratives, may-owa, questions, focus, aspect, particles, numbers-time, politeness, kalibo-register |
-| Dictionary | 369 entries; 265 carry Z or SR page references after the 0.1.5 verification; the rest are listed in the 0.1.5 changelog as still-draft |
-| Phrase sections | 8 / ~20: opening, hpi, depression, suicide, psychosis, closing, mania, anxiety (90 phrases) |
-| Point-board replies | common groups + 8 sections |
+| Dictionary | 392 entries; ~290 carry Z or SR page references; still-draft words are listed in the 0.1.5 changelog (plus kigbot, sang-una from 0.1.6) |
+| Phrase sections | 9 / ~20: opening, hpi, depression, suicide, psychosis, closing, mania, anxiety, trauma (102 phrases) |
+| Point-board replies | common groups + 9 sections |
 | Audio | none (no TTS exists); recorded pack by native speaker later |
-| GitHub Pages | user must enable |
+| GitHub Pages | enabled 19 Nov 2026 |
 | Mania section (0.1.1) | 12 phrases, 11 replies, 26 dict entries; Z-marked where attested (sadya, akig, hambae, gasto, baligya, obra, pasikat); unmarked forms (madasig, dugay, kusog, gahum, maaeam, kinaandan, basol, hueag, halin) are author's Western Bisayan drafts to verify against the PDFs |
 | Anxiety section (0.1.4) | 13 phrases, 11 replies, 34 dict entries; verified in 0.1.5 (budlay, likaw, kurog, atubangan now SR-cited; baehas→hueas, lipong→hilo, atake→ataki, palengke→tindahan corrected). Still draft: upang, gwa, hugot, sakay, kaimaw, kabalaka |
+| Trauma section (0.1.6) | 12 phrases, 11 replies, 23 dict entries, all SR-checked before use (the §4 recipe worked: ~10 min). ⚑ kigbot (SR line noisy), sang-una (draft). Kalibo context: Yolanda 2013, VAW desk, DSWD |
 | Source verification (0.1.5) | Done for the whole dictionary from a 300-dpi Tesseract OCR of ED145704/ED145705 (saved in `sources/ocr/`). 24 Hiligaynon forms replaced app-wide: salamat→saeamat, tambae→bueong, kulba→kueba, pirme→permi, kun kaisa→kon amat, talagsa→paeangta, kapoy→gaoy, madamo→abo, dugay→buhay, lipong→hilo, baehas→hueas, atake→ataki, multo→mueto, dako→bahoe, diutay→sangkiri, matugnaw→maeamig, hibi→tangis, butig→puril, dumdom→dumdum, tagipusuon→tagipuso-on, hunahuna→huna-huna, baba→ba-ba, delikado→peligro, palengke→tindahan. Lesson ◌ sentences were NOT individually re-verified (only the words in them); that is a separate pass |
 
 ## 7. Next steps
 1. Dictionary verification is done (0.1.5). Remaining verification work, optional and separable: (a) the 63 ◌ sentences in `lessons.js` — check each against grammar examples in `sources/ocr/ED145705-grammar-ocr.txt` (search a distinctive word; e.g. `grep -n -i "owa.*kwarta"`), drop ◌ and add `(p. N)` when a matching example exists, N = PDF page − 17 for the grammar (checked: "Owa gid" example is PDF page 222 = printed p. 205; verify on the page, the front matter shifts it); (b) the still-draft words listed in the 0.1.5 changelog item 3 — most are loans or Hiligaynon and may simply have no SR entry.
-2. Next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4 done): `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12 (next content release is 0.1.6).
+2. Next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4, `trauma` 0.1.6 done): `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12 (next content release is 0.1.7 = substances; 0.2.0 after cognition and collateral).
 3. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
 ## 8. Pitfalls learned
@@ -102,3 +103,8 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 - Biggest lesson: a Western Bisayan "draft" word is more often Hiligaynon than Aklanon. SR explicitly tags such words `[Hil]` with `[Akl: …]`; the gloss search (English → Aklanon) finds the rest. Always check before adding.
 - `verify_dict.py` HEAD hits still need eyeballing: it matched gamay→"tentacle", para→"to stop", kape→"café". The report in `sources/ocr/verify-report-0.1.4.tsv` is the pre-correction run.
 - Not changed on purpose: `semana` (attested in Zorc's grammar), `kwarta`, `kaon/inom`, Spanish loans (minuto, rason, lugar, sitwasyon, botika, kontrol), code-switch items (madistract), and `kabalaka` (kept in phrases because Kalibo speakers use it; `himud-os` added to the dictionary as the attested root).
+
+## Note, 19 Nov 2026 (version 0.1.6, pushed)
+- Trauma section written with the new rule: every candidate word run through `tools/verify_dict.py` and gloss search first. Attested finds worth reusing: kato anay (long ago), uman (again), tupay/hupa' (nightmare), bangungot, kigbot (startle, noisy), saea (fault), hinuesoe (regret), parehas, maeain (bad; eain alone = different), madali, hinay, kalma/linong, igbata (relative), abuso, pahog (threaten), siyagit, bunae/hampak/sampae.
+- Not found in SR and therefore avoided or flagged: luwas (safe) → say "owa it peligro"; liwat (again) → uman; basol → hinuesoe or "may saea"; sang-una (⚑); istorya is Kalibo usage, kept (it is in the app's name).
+- Watch for duplicate headwords when adding: this release re-added asawa, bunae, lipat, makaron, saea, sugid and had to merge them (the `uniq -d` check in §3 catches it).
