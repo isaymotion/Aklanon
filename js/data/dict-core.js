@@ -417,4 +417,13 @@ problema|problem|n|mind||SR ~p. 310 [Sp]; problema ST5 = to have problems; Tueog
 reklamo|complain; complaint|v|verbs||Spanish loan in general use; not in SR as a headword.|reklamo
 okasyon|occasion|n|time||Spanish loan.|okasyon
 reseta|prescription|n|health||Spanish loan.|reseta
+kasubo|sorrow; sadness|n|emotions|subo|Z p. 129 (ka- noun of the stative root).|kalungkutan
+igkampud|cousin|n|family||Z p. 123, 137 (Naakig ako sa akong igkampud).|pinsan
+hin-aga|tomorrow|adv|time||Z p. 184. Also buwas in Kalibo speech.|bukas
+hinduna|later on (today)|adv|time||Z p. 182, 184 (Hinduna mabalik ako).|mamaya
+hinay-hinay|little by little; slowly|adv|time|hinay|SR ~p. 215 (hinay = go slowly).|dahan-dahan; unti-unti
+sip-on|mucus; a cold|n|health||Z p. 170 (sip-onan = having a cold).|sipon
+matay|die|v|health||Z p. 123 (Class II stative: namatay = died); SR ~p. 258.|mamatay
+pangabuhi|life; livelihood|n|daily||Z p. 136 (panga- noun); SR ~p. 106 pangabuhi-an = occupation.|kabuhayan
+mangunguma|farmer|n|people||Z p. 138 (occupational maNV- noun).|magsasaka
 `);

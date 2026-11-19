@@ -283,7 +283,7 @@ table { border-collapse: collapse; width: 100%; font-size: .95rem; }
 th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .tablewrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--r-md); background: var(--surface); }
-.tablewrap table th, .tablewrap table td { white-space: normal; }
+.tablewrap table th, .tablewrap table td { white-space: normal; overflow-wrap: break-word; hyphens: manual; }
 .lesson-body .tablewrap { margin: 12px 0; }
 .lesson-body .ex { display: grid; gap: 2px; padding: 10px 14px; border-left: 3px solid var(--sand); background: var(--surface-2); border-radius: 0 10px 10px 0; margin: 8px 0; }
 .lesson-body .ex b { font-family: var(--font-tl); font-weight: 600; font-size: 1.05rem; }

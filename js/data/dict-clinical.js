@@ -348,4 +348,174 @@ yawa-on|evil; vile|adj|folk||SR ~p. 394.|
 yibit|slander; speak ill of|v|verbs||SR ~p. 394.|siraan
 rimedyo|cure; remedy|v|health||SR ~p. 322 (OCR headword yimedyo; spelling normalised).|remedyo
 yuko|bend; stoop; bow the head|v|body||SR ~p. 394 (OCR headword yuko'; spelling normalised).|yuko
+# Part 2b, added 2026-11-19 evening: a second pass over the OCR with a wider topic net; same rules.
+aeindog|accompany; walk side by side with|v|people||SR ~p. 45.|sama
+aga-aga|very early morning|n|time||SR ~p. 45.|madaling-araw
+agrabyo|frustrate; take advantage of; extort|v|verbs||SR ~p. 48.|agrabyado
+ama-ama|stepfather|n|family||SR ~p. 52 (OCR headword ama-dma; spelling normalised). ⚑ spelling to verify.|amain
+angan-angan|wait a little while; idle for a time|v|time||SR ~p. 58 (OCR headword angdn-angan; spelling normalised). ⚑ spelling to verify.|
+apin|take the side of; ally oneself with|v|people||SR ~p. 60.|kampi
+arisgar|risk; take a chance|v|verbs||SR ~p. 62.|sugal
+artista|actor; movie star|n|people||SR ~p. 62.|artista
+baktas|hike; walk; go on foot|v|verbs||SR ~p. 71.|lakad
+bakukang|tropical ulcer; abscess|n|health||SR ~p. 70 (OCR headword bakukdng; spelling normalised). ⚑ spelling to verify.|pigsa
+bingkoe|become stubborn; hard-headed|v|mind||SR ~p. 109.|matigas ang ulo
+basin|toilet bowl; potty|n|daily||SR ~p. 88.|inidoro
+bastos|crude; rude; ill-mannered|adj|adjectives||SR ~p. 89.|bastos
+batyag|feel; sense; perceive|v|mind||SR ~p. 91. Root of pamatyag = feeling.|dama
+baeo|become a widow or widower|v|family||SR ~p. 74 (OCR headword beeo; spelling normalised).|biyuda
+banhaw|rise from the dead|v|folk||SR ~p. 82 (OCR headword bemhaw; spelling normalised). ⚑ spelling to verify.|muling mabuhay
+bigaw|shoo; drive away; evict|v|verbs||SR ~p. 104.|bugaw
+bilog|solid; whole; entire|adj|quantity||SR ~p. 95.|buo
+binggaroe|bully|n|people||SR ~p. 97.|siga
+bio|lively; full of life; vivacious|adj|emotions||SR ~p. 93.|masigla
+bisto|see clearly; understand; know|v|mind||SR ~p. 98.|kita
+botilya|small bottle; medicine bottle|n|health||SR ~p. 113.|botelya
+bueutho-an|school|n|places||SR ~p. 113.|eskwelahan
+bug-akon|proud; boastful; inventing stories|adj|mind||SR ~p. 104.|mayabang
+bugaeon|proud; vain|adj|mind||SR ~p. 104 (OCR headword bugaeen; spelling normalised).|mapagmataas
+busog|full; satisfied after eating|v|body||SR ~p. 112.|busog
+dayan-dayan|sluggish; slow to do things|v|adjectives||SR ~p. 160 (OCR headword dadyan-dayan; spelling normalised). ⚑ spelling to verify.|makupad
+danga-danga|pant; breathe quickly|v|health||SR ~p. 157 (OCR headword danga-dangaa; spelling normalised).|hingal
+dawat|pass; hand over; give|v|verbs||SR ~p. 160.|abot
+dipara|take good care of; pay attention to|v|verbs||SR ~p. 162.|alaga
+diritso|go straight ahead|v|verbs||SR ~p. 163.|diretso
+disgusto|quarrel; argue with|v|verbs||SR ~p. 163 (OCR headword disgesto; spelling normalised).|away
+doktora|female doctor|n|people||SR ~p. 165.|doktora
+dupilok|fall asleep; doze off|v|body||SR ~p. 169.|idlip
+eaag-ok|swallow; gulp liquids|v|body||SR ~p. 175.|lagok
+eabed|welt; bruise|n|health||SR ~p. 172.|pasa
+eadway|salivate; froth at the mouth|v|health||SR ~p. 182.|laway
+eambot|reach; arrive at; get to|v|verbs||SR ~p. 177.|abot
+eampita|stutter; stammer|v|health||SR ~p. 178 (OCR headword eampita'; spelling normalised).|utal
+eansong|be together in one place; do together|v|people||SR ~p. 186.|sabay
+easgas|scratch; put a scratch or scar on|v|health||SR ~p. 181.|gasgas
+eigot-eogot|grind one's teeth|v|health||SR ~p. 175 (OCR headword eigot-edgot; spelling normalised). ⚑ spelling to verify.|ngalit
+eimbong|shirt; blouse; dress|n|daily||SR ~p. 177.|damit
+eo|hoarse; raspy-voiced|adj|health||SR ~p. 180.|paos
+estar|dwell; live at|v|daily||SR ~p. 236.|tira
+gaga|foolish; silly (woman)|adj|mind||SR ~p. 190.|gaga
+gamhanan|powerful; forceful|adj|adjectives||SR ~p. 190.|makapangyarihan
+gang|fight; quarrel with|v|verbs||SR ~p. 284.|away
+garde-garde|tremulous; quivering (voice)|adj|body||SR ~p. 192.|nanginginig
+grasyahon|blessed; full of grace|adj|folk||SR ~p. 198 (OCR headword grasyahen; spelling normalised).|pinagpala
+guapo|handsome|adj|adjectives||SR ~p. 196.|guwapo
+hab-on|put away; put aside; hide|v|verbs||SR ~p. 200.|tago
+haega|price; asking price|n|daily||SR ~p. 201.|halaga
+hagong|groan; moan from severe pain or sickness|v|health||SR ~p. 202 (OCR headword hagohg; spelling normalised).|daing
+hanabo|accident|n|health||SR ~p. 358 (OCR headword hanabo'; spelling normalised). Native word for accident, beside the loan aksidente.|aksidente
+hangdan|few; not many|adj|quantity||SR ~p. 206.|iilan
+hapit|stop by for; pick up on the way|v|verbs||SR ~p. 208.|daan
+hapot|pant; breathe fast|v|health||SR ~p. 208.|hingal
+haeong|treat carefully; be careful with; respect|v|verbs||SR ~p. 201 (OCR headword heeong; spelling normalised).|ingat
+higugma|love; be in love with|v|emotions||SR ~p. 212 (OCR headword higigma; spelling normalised).|mahal
+hikdo|gasp for breath (after crying)|v|body||SR ~p. 212 (OCR headword hikdo'; spelling normalised).|hikbi
+himot|bear a grudge; plot against|v|emotions||SR ~p. 215 (OCR headword himet; spelling normalised).|sama ng loob
+hin-isa|the day after tomorrow|adv|time||SR ~p. 215 (OCR headword hin-isaa; spelling normalised).|samakalawa
+hutik|whisper|v|verbs||SR ~p. 222.|bulong
+hambog|proud; swell-headed; boastful|adj|mind||SR ~p. 204 (OCR headword iambog; spelling normalised). ⚑ spelling to verify.|hambog
+igo|sufficient; enough; fits|adj|quantity||SR ~p. 226 (OCR headword igo'; spelling normalised).|sapat
+inanay|gradually; little by little|adv|time||SR ~p. 229 (OCR headword inanoy; spelling normalised).|unti-unti
+oto|mourn for|v|emotions||SR ~p. 249 (OCR headword ioto; spelling normalised).|magluksa
+iras|wedding; marriage ceremony|n|family||SR ~p. 61.|kasal
+kaanyag|beauty; charm|n|adjectives||SR ~p. 58.|ganda
+kabubut-on|heart (figurative); interior self; deep inside oneself|n|mind||SR ~p. 110 (OCR headword kabubtit-on; spelling normalised).|kalooban
+kaeasaeon|engaged; about to be married|adj|family||SR ~p. 129 (OCR headword kaeasdeon; spelling normalised). ⚑ spelling to verify.|nakatakdang ikasal
+kaghat|regret; feel sorry for; repent|v|emotions||SR ~p. 120.|pagsisisi
+karsada|road; street|n|places||SR ~p. 129.|kalsada
+kasae|wed; be married|v|family||SR ~p. 129.|kasal
+kasaea|sin; commit a sin|v|folk||SR ~p. 327 (OCR headword kasaea'; spelling normalised).|magkasala
+kastigo|punish; castigate; whip|v|verbs||SR ~p. 130.|parusa
+kataeigman|premonition; foreboding; fate|n|folk||SR ~p. 130.|kutob
+kueang|run short of; lack|v|quantity||SR ~p. 139 (OCR headword kdeang; spelling normalised).|kulang
+kutis|complexion; skin colour|n|body||SR ~p. 148 (OCR headword kditis; spelling normalised).|kutis
+kinatawohan|birthday|n|time||SR ~p. 372 (OCR headword kinatawohtin; spelling normalised).|kaarawan
+kisaw-kisaw|flicker; have a tic (eye)|v|health||SR ~p. 136 (OCR headword kisaew-kisaw; spelling normalised). ⚑ spelling to verify.|kibot
+kubos|lowly; humble|adj|adjectives||SR ~p. 138.|hamak
+kueas|flee; run away|v|verbs||SR ~p. 139 (OCR headword kueds; spelling normalised).|takas
+kumkum|hold one's hand closed; clench|v|body||SR ~p. 142.|kuyom
+kwartahan|moneyed; rich|adj|people||SR ~p. 150.|mayaman
+ligtas|escape; get free|v|verbs||SR ~p. 244.|ligtas
+limbong|conceal; deceive (with good intent)|v|verbs||SR ~p. 244.|linlang
+mabinaeak-on|well-intentioned; concerned; helpful|adj|emotions||SR ~p. 72.|maalalahanin
+mabuot|good; kind; meek; not quarrelsome|adj|emotions||SR ~p. 110 (OCR headword mabtot; spelling normalised).|mabait
+mahae|dear; beloved; costly; expensive|adj|adjectives||SR ~p. 252 (OCR headword mahde; spelling normalised).|mahal
+mahaeong|careful; respectful|adj|adjectives||SR ~p. 201 (OCR headword mahdeong; spelling normalised). ⚑ spelling to verify.|maingat
+mahiea|pillow|n|daily||SR ~p. 252 (OCR headword mahiea'; spelling normalised).|unan
+mahigko'-|dirty|adj|adjectives||SR ~p. 212.|marumi
+mahinukeogon|sympathetic; compassionate; kind-hearted|adj|emotions||SR ~p. 218 (OCR headword mahinukeedgon; spelling normalised). ⚑ spelling to verify.|mahabagin
+mahisa|envious; selfish; possessive|adj|emotions||SR ~p. 217 (OCR headword mahisa'; spelling normalised).|mainggitin
+maimon|possessive; overly protective; selfish|adj|emotions||SR ~p. 229.|seloso
+makaeueuoy|pitiable; inspires pity|adj|emotions||SR ~p. 187 (OCR headword makaeuetiay; spelling normalised).|kaawa-awa
+makahilidlaw|causes homesickness or longing|adj|emotions||SR ~p. 212.|nakakamiss
+makidyos|overly religious; always mentioning God|adj|folk||SR ~p. 170.|
+mampilok|doze off|v|body||SR ~p. 156.|idlip
+mangingisda|fisherman|n|people||SR ~p. 234 (OCR headword mangingisda'; spelling normalised).|mangingisda
+mapainubsanon|humble; modest; meek|adj|emotions||SR ~p. 275.|mapagpakumbaba
+mapait|bitter|adj|adjectives||SR ~p. 291.|mapait
+masmas|discover; find out; notice; realize|v|mind||SR ~p. 258.|mapansin
+matag-od|short (time or length)|adj|time||SR ~p. 363.|maikli
+mata-mata|look down on; belittle|v|emotions||SR ~p. 258 (OCR headword matea-mata; spelling normalised). ⚑ spelling to verify.|maliitin
+ut-i|senile|adj|health||SR ~p. 263 (OCR headword mt-i'; spelling normalised).|ulyanin
+mueay|scold; reprimand|v|verbs||SR ~p. 263.|pagalitan
+muok|fall into a deep, sound sleep|v|body||SR ~p. 264.|mahimbing
+naog|go down (stairs); get off|v|verbs||SR ~p. 268.|baba
+obligasyon|obligation; duty|n|daily||SR ~p. 274.|obligasyon
+obligar|force; compel; obligate|v|verbs||SR ~p. 274 (OCR headword obliger; spelling normalised).|pilitin
+paakeos|skin abrasion; scratch|n|health||SR ~p. 287.|galos
+pabugtaw|wake someone up|v|daily||SR ~p. 105 (OCR headword pabigtaw; spelling normalised).|gisingin
+pabuyog|cause dizziness; drive crazy|v|health||SR ~p. 114 (OCR headword pabtiyog; spelling normalised).|
+paldado|disabled; crippled; having a broken bone|adj|health||SR ~p. 79.|baldado
+pamahaw|breakfast; snack|n|daily||SR ~p. 78 (OCR headword pamirraw; spelling normalised).|almusal
+pandiho-an|toilet|n|daily||SR ~p. 161 (OCR headword pandihe-an; spelling normalised).|kubeta
+pangadyi-on|prayer|n|folk||SR ~p. 43.|dasal
+pangaman|plan ahead; look ahead|v|mind||SR ~p. 296.|paghahanda
+panghayhay|sigh (from boredom or sadness)|v|emotions||SR ~p. 211.|buntong-hininga
+pangisog|scold; reprimand|v|verbs||SR ~p. 235.|pagalitan
+pantalon|trousers; pants|n|daily||SR ~p. 296 (OCR headword pantalen; spelling normalised).|pantalon
+pasaka|hasten; rush; hurry|v|verbs||SR ~p. 325 (OCR headword pasaket; spelling normalised).|magmadali
+patalikod|make someone turn around; do behind one's back|v|verbs||SR ~p. 243.|patalikod
+baeos|revenge; repayment|n|emotions||SR ~p. 75 (OCR headword pbaeos; spelling normalised).|ganti
+pisngi|cheek|n|body||SR ~p. 308.|pisngi
+pindo|stop|v|verbs||SR ~p. 314.|hinto
+pungod|stop; halt|v|verbs||SR ~p. 315.|tigil
+preparado|prepared; ready|adj|adjectives||SR ~p. 318.|handa
+presohan|prison; jail|n|places||SR ~p. 318 (OCR headword presohen; spelling normalised).|bilangguan
+prima|first cousin (female)|n|family||SR ~p. 318.|pinsan
+primo|first cousin (male)|n|family||SR ~p. 318.|pinsan
+promisa|promise|v|verbs||SR ~p. 318.|pangako
+tapue|put medicinal herbs on a wound|v|folk||SR ~p. 312 (OCR headword ptepue; spelling normalised).|tapal
+puno|leader; head|n|people||SR ~p. 314 (OCR headword ptino'; spelling normalised).|puno
+pugto|snap; break; give way|v|verbs||SR ~p. 105.|putol
+pwersido|forceful; powerful|adj|adjectives||SR ~p. 319.|malakas
+renta|rent|n|daily||SR ~p. 322.|renta
+sakdag|support; be responsible for; take care of|v|family||SR ~p. 326.|suporta
+salipod|partially hide; cover; overshadow|v|verbs||SR ~p. 247.|takip
+sawa|snake|n|daily||SR ~p. 337.|ahas
+saya|skirt|n|daily||SR ~p. 338.|palda
+hipos|keep silent; be quiet|v|verbs||SR ~p. 216 (OCR headword shipos; spelling normalised).|tahimik
+sid-ot|hiccup|v|body||SR ~p. 340 (OCR headword sid-o't; spelling normalised).|sinok
+siewae|pants; trousers|n|daily||SR ~p. 328.|salawal
+siko|elbow|n|body||SR ~p. 340.|siko
+silat|punish; penalize|v|verbs||SR ~p. 342.|parusa
+singad|chin|n|body||SR ~p. 354.|baba
+sipsip|sip; suck|v|body||SR ~p. 345.|sipsip
+kimi|shy; timid|adj|emotions||SR ~p. 134 (OCR headword skimi'; spelling normalised). ⚑ spelling to verify.|mahiyain
+sueang|fetch; go to get; call for|v|verbs||SR ~p. 349 (OCR headword steang; spelling normalised).|sundo
+sueopakton|stubborn; cannot be convinced|adj|mind||SR ~p. 350 (OCR headword sueopaktopn; spelling normalised). ⚑ spelling to verify.|matigas ang ulo
+supeot|bully; pick on someone weaker|v|verbs||SR ~p. 355.|api
+swerte|luck; fortune|n|folk||SR ~p. 356.|suwerte
+sweldo|salary; pay|n|daily||SR ~p. 356 (OCR headword swildo; spelling normalised).|sweldo
+syete-syete|premature child (born at seven months)|n|health||SR ~p. 356.|pitong buwan
+tago'|hide; conceal; put away|v|verbs||SR ~p. 363.|tago
+tahaw|calm down; cool off; subside|v|emotions||SR ~p. 364.|humupa
+tahiras|cot; small folding bed|n|daily||SR ~p. 364.|teheras
+tambae|stop bleeding|v|health||SR ~p. 366.|pampatigil ng dugo
+tangpad|face; confront|v|verbs||SR ~p. 369.|harapin
+tarong|become righteous; do right|v|folk||SR ~p. 371.|tumuwid
+tibawag|overcome hardship; lessen the burden|v|emotions||SR ~p. 372.|
+toeang|go astray; err; take the wrong way|v|mind||SR ~p. 360.|maligaw
+walid|crippled; unable to stand or walk|adj|health||SR ~p. 249.|lumpo
+libre|get free; escape; free|v|verbs||SR ~p. 242 (OCR headword wibre; spelling normalised).|libre
+bughat|relapse; get sick again (often after childbirth)|v|health||SR (OCR headword btghat; spelling normalised). Visayan folk concept: relapse after childbirth or illness from exertion or diet.|binat
 `);
