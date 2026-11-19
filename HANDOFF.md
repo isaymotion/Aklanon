@@ -1,6 +1,6 @@
 # Handoff: Mag-istorya Kita (Aklanon variant of Usap Tayo)
 
-Updated 2026-11-08 after v0.1.1 (mania section).
+Updated 2026-11-19 after v0.1.4 (anxiety section). 0.1.2 added data/hospital.js and 0.1.3 fixed phone-menu scrolling (13 Nov).
 
 ## 1. Project and audience
 - App: **Mag-istorya Kita**, Aklanon ("Akeanon") for the psychiatric interview, for a psychiatrist who speaks Tagalog and English and will see patients in Kalibo, Aklan. Grammar lessons are the priority.
@@ -46,7 +46,7 @@ git -C /home/claude/aklanon fetch --depth 1 origin dev-tools && git -C /home/cla
 for f in js/*.js js/data/*.js data/*.js sw.js; do node --check $f || echo FAIL $f; done
 cd /home/claude/aklanon && (python3 -m http.server 8123 &) && python3 /home/claude/aklanon-devtools/tools/smoke_test.py
 ```
-Passing: every route body length > 900; LESSONS 12 / SECTIONS 7 / phrases 77 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
+Passing: every route body length > 900; LESSONS 12 / SECTIONS 8 / phrases 90 (update as content grows); ERRORS empty (Google Fonts failures are filtered; the sandbox blocks them).
 Design checks: skill `isaymotion-app-design` → `scripts/check_sw.py /home/claude/aklanon` (must pass) and `scripts/check_design.py` (warns about `hospital.js` and `icon-maskable-512` naming — both intentional).
 Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com"` and the Claude co-author trailer from the session reminder.
 
@@ -54,19 +54,20 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 | Item | Status |
 |---|---|
 | Engine fork, identity, icon, palette, banner, flags, #/review | done (v0.1.0) |
-| Current version | 0.1.1 (2026-11-08) |
+| Current version | 0.1.4 (2026-11-19) |
 | Lessons | 12 done: sounds, markers, pronouns, demonstratives, may-owa, questions, focus, aspect, particles, numbers-time, politeness, kalibo-register |
-| Dictionary | 315 entries (core, grammar, time, body, emotions, verbs, folk, mania vocabulary) |
-| Phrase sections | 7 / ~20: opening, hpi, depression, suicide, psychosis, closing, mania (77 phrases) |
-| Point-board replies | common groups + 7 sections |
+| Dictionary | 349 entries (core, grammar, time, body, emotions, verbs, folk, mania and anxiety vocabulary) |
+| Phrase sections | 8 / ~20: opening, hpi, depression, suicide, psychosis, closing, mania, anxiety (90 phrases) |
+| Point-board replies | common groups + 8 sections |
 | Audio | none (no TTS exists); recorded pack by native speaker later |
 | GitHub Pages | user must enable |
 | Mania section (0.1.1) | 12 phrases, 11 replies, 26 dict entries; Z-marked where attested (sadya, akig, hambae, gasto, baligya, obra, pasikat); unmarked forms (madasig, dugay, kusog, gahum, maaeam, kinaandan, basol, hueag, halin) are author's Western Bisayan drafts to verify against the PDFs |
+| Anxiety section (0.1.4) | 13 phrases, 11 replies, 34 dict entries. Unattested Western Bisayan drafts to verify against the PDFs: mabudlay/budlay, baehas, likaw, upang, gwa, hugot, kurog, ginhadlukan, atubangan, sakay. Attested or loan: ginhawa, lipong, maeayo, nanda, huya, kaimaw (imaw), untat, abot, Spanish loans |
 | Source verification | Zorc grammar partly extracted (verb chart p. 95 unreadable); dictionary ~400 noisy rows. Proper OCR pending PDFs |
 
 ## 7. Next steps
 1. If the user attached `ED145705.pdf` / `ED145704.pdf`: OCR them (pdftotext/tesseract via the pdf skill), rebuild `sources/zorc-*.md` from real text, re-verify every ◌ line in lessons and every unmarked dictionary entry; fix and commit as 0.1.2 with `correction` changelog items.
-2. Otherwise next section units, in this order (`mania` done in 0.1.1): `anxiety` (incl. kulba, panic), `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12.
+2. Otherwise next section units, in this order (`mania` 0.1.1, `anxiety` 0.1.4 done): `trauma`, `substances` (tuba, alak, shabu, mama/betel, sigarilyo; AUDIT-C stems), `cognition` (orientation, recall in Aklanon), `collateral` (family informant), `children`, `elderly`. Version 0.2.0 when sections reach 12 (next content release is 0.1.5; 0.1.2 and 0.1.3 were non-content).
 3. Later: Aklanon verb trainer (new paradigms, not Usap Tayo's conjugate.js), case simulations, readings, native review pass, recorded audio.
 
 ## 8. Pitfalls learned
@@ -87,3 +88,8 @@ Commit with `-c user.name="Isabella Navarro" -c user.email="isaymotion@gmail.com
 
 ## Note, 13 Nov 2026 (version 0.1.3, pushed)
 - Phone menu fix: the menu that opens from More could not scroll on phones (the fixed `.rail` took the height of its content inside the `.shell` grid). The phone rule in `css/style.css` now sets `align-self: stretch` and a max-height. Found and fixed first in Hanashimashō (`isaymotion/Japanese` 0.12.1); test with `qa/drawer-any.py <port> <label>` on that repo's dev-tools branch ("scrolls OK" at 390×844, 360×640 and 820×1180). Version bumped in app-meta.js, changelog.js, sw.js and README.
+
+## Note, 19 Nov 2026 (version 0.1.4, pushed)
+- Anxiety section added as 0.1.4 (0.1.2/0.1.3 had been used on 13 Nov for hospital.js and the menu fix, so the handoff's "0.1.2" became 0.1.4). Remote main had moved since the previous handoff: always `git fetch origin main` and compare before assuming the next version number.
+- Smoke test routes now include `#/psych/s/anxiety`, `#/psych/point?s=anxiety`, `#/psych/listen?s=anxiety`.
+- Dictionary duplicate check used before commit: `cut -d'|' -f1 js/data/dict-core.js | sort | uniq -d` — the pairs kita, isip, obra, tueog are intentional noun/verb homonyms; anything else is a mistake.
