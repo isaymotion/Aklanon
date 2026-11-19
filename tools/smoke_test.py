@@ -3,16 +3,22 @@
 Needs: pip install --break-system-packages playwright && playwright install chromium
 Passes when every route prints a body length > 900 and ERRORS lists only fonts.googleapis (blocked in sandboxes)."""
 from playwright.sync_api import sync_playwright
-routes=['#/','#/lessons','#/lessons/markers','#/lessons/statives','#/lessons/mood','#/lessons/causative','#/lessons/adjectives','#/lessons/possession','#/lessons/modal-particles','#/lessons/conjunctions','#/lessons/adverbs-deictics','#/lessons/word-building','#/lessons/vocab-body','#/lessons/vocab-feelings','#/lessons/vocab-family','#/lessons/vocab-time','#/lessons/vocab-illness','#/lessons/vocab-life','#/lessons/sound-changes','#/lessons/focus-ii','#/lessons/verb-classes','#/lessons/verbs-iii','#/lessons/questions-ii','#/lessons/vocab-house','#/lessons/vocab-verbs','#/lessons/vocab-describing','#/lessons/pronunciation','#/lessons/kalibo-dimensions','#/lessons/sentence-patterns','#/lessons/counting','#/dict?cat=health','#/dict','#/dict/d3','#/flash','#/psych','#/psych/s/opening','#/psych/s/suicide','#/psych/s/mania','#/psych/point?s=mania','#/psych/s/anxiety','#/psych/point?s=anxiety','#/psych/listen?s=anxiety','#/psych/s/trauma','#/psych/point?s=trauma','#/psych/listen?s=trauma','#/psych/s/substances','#/psych/point?s=substances','#/psych/s/cognition', '#/psych/s/collateral', '#/psych/point?s=collateral', '#/psych/listen?s=collateral','#/psych/point?s=cognition',
+routes=['#/','#/lessons','#/lessons/markers','#/lessons/statives','#/lessons/mood','#/lessons/causative','#/lessons/adjectives','#/lessons/possession','#/lessons/modal-particles','#/lessons/conjunctions','#/lessons/adverbs-deictics','#/lessons/word-building','#/lessons/vocab-body','#/lessons/vocab-feelings','#/lessons/vocab-family','#/lessons/vocab-time','#/lessons/vocab-illness','#/lessons/vocab-life','#/lessons/sound-changes','#/lessons/focus-ii','#/lessons/verb-classes','#/lessons/verbs-iii','#/lessons/questions-ii','#/lessons/vocab-house','#/lessons/vocab-verbs','#/lessons/vocab-describing','#/lessons/pronunciation','#/lessons/kalibo-dimensions','#/lessons/sentence-patterns','#/lessons/counting','#/dict?cat=health','#/dict','#/dict/d3','#/flash','#/psych','#/psych/s/opening','#/psych/s/suicide','#/psych/s/mania','#/psych/point?s=mania','#/psych/s/anxiety','#/psych/point?s=anxiety','#/psych/listen?s=anxiety','#/psych/s/trauma','#/psych/point?s=trauma','#/psych/listen?s=trauma','#/psych/s/substances','#/psych/point?s=substances','#/psych/s/cognition', '#/psych/s/collateral', '#/psych/point?s=collateral', '#/psych/listen?s=collateral', '#/psych/s/children', '#/psych/point?s=children', '#/psych/listen?s=children', '#/psych/s/children?p=15','#/psych/point?s=cognition',
         '#/psych/point?s=depression','#/psych/listen','#/practice',
         '#/drills','#/drills/switch','#/drills/markers','#/drills/build','#/drills/roots','#/drills/errors','#/drills/translate','#/drills/negation','#/drills/pronoun','#/drills/qword','#/drills/particle','#/drills/aspect','#/drills/lessongaps','#/drills/lessongaps?l=markers','#/drills/lessongaps?l=may-owa','#/daily',
-        '#/vocab','#/vocab/match','#/vocab/type','#/vocab/hear','#/vocab/odd',
+        '#/drills/transform','#/drills/transform?mode=type','#/drills/unit','#/drills/unit?u=Foundations',
+        '#/vocab','#/vocab/match','#/vocab/type','#/vocab/hear','#/vocab/odd','#/vocab/pairs','#/vocab/context',
         '#/drills/handout','#/lessons/handout?id=markers','#/lessons/handout?id=may-owa','#/psych/handout',
         '#/progress','#/settings','#/about','#/review','#/new']
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_context(viewport={'width':390,'height':844}).new_page()
     errs=[]; pg.on('console',lambda m: errs.append((pg.url,m.text)) if m.type=='error' else None)
     pg.on('requestfailed',lambda r: errs.append((pg.url,'FAILED '+r.url)))
+    # One route per DRILL_GAP_SETS key (from js/data/drills-2.js), and the first lesson unit.
+    pg.goto('http://localhost:8123/'); pg.wait_for_timeout(500)
+    routes=routes+['#/drills/gap-'+k for k in pg.evaluate('Object.keys(window.DRILL_GAP_SETS||{})')]
+    u0=pg.evaluate('(window.LESSONS||[]).map(l=>l.unit).find(Boolean)||""')
+    if u0 and '#/drills/unit?u='+u0 not in routes: routes.append('#/drills/unit?u='+u0)
     for r in routes:
         pg.goto('http://localhost:8123/'+r); pg.wait_for_timeout(500); print(r,'|',len(pg.inner_text('body')))
     print('LESSONS',pg.evaluate('LESSONS.length'),'DICT',pg.evaluate('App.DICT.length'),'SECTIONS',pg.evaluate('PSYCH_SECTIONS.length'),'phrases',pg.evaluate('PSYCH_SECTIONS.reduce((a,s)=>a+s.phrases.length,0)'))
