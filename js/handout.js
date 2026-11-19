@@ -17,7 +17,7 @@
     if (pdfReady) return pdfReady;
     const add = (src) => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => rej(new Error('Could not load ' + src)); document.head.appendChild(s); });
     pdfReady = add('js/vendor/pdfmake.min.js').then(() => add('js/vendor/vfs_fonts.js')).then(() => add('js/vendor/vfs_marks.js')).then(() => {
-      // Roboto (pdfmake's default) has no ◌ or ⚑: those runs use the small Marks font (js/vendor/vfs_marks.js).
+      // Roboto (pdfmake's default) has no ◌, ⚑ or ɣ: those runs use the small Marks font (js/vendor/vfs_marks.js).
       window.pdfMake.fonts = Object.assign({}, window.pdfMake.fonts || {}, {
         Roboto: { normal: 'Roboto-Regular.ttf', bold: 'Roboto-Medium.ttf', italics: 'Roboto-Italic.ttf', bolditalics: 'Roboto-MediumItalic.ttf' },
         Marks: { normal: 'Marks.ttf', bold: 'Marks.ttf', italics: 'Marks.ttf', bolditalics: 'Marks.ttf' }
@@ -35,7 +35,7 @@
     });
   }
   // Characters Roboto lacks are kept, as runs in the Marks font. Walks the tree in place so layout functions survive.
-  const MARKS = /([◌⚑→↔✗✓☐])/;
+  const MARKS = /([◌⚑→↔✗✓☐ɣ])/;
   const runs = (s) => s.split(MARKS).filter((x) => x !== '').map((x) => (MARKS.test(x) && x.length === 1 ? { text: x, font: 'Marks' } : x));
   function fixGlyphs(node) {
     if (Array.isArray(node)) node.forEach((x, i) => { if (typeof x === 'string') { if (MARKS.test(x)) node[i] = { text: runs(x) }; } else fixGlyphs(x); });

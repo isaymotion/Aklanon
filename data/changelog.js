@@ -3,6 +3,12 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.8', date: '2026-11-19', title: 'Handout fix: the ɣ sound sign',
+    items: [
+      { type: 'correction', text: 'PDF handouts showed a box instead of ɣ (the sign for the Aklanon e sound) in the Say column of the Sounds and spelling lesson: the PDF font had no such letter. The small marks font now includes it.' }
+    ]
+  },
+  {
     version: '0.2.7', date: '2026-11-19', title: 'Children and adolescents section; more grammar and vocabulary drills',
     items: [
       { type: 'content', text: 'New section Children and adolescents, 21 phrases: with the parent (why they came, who raises the child, pregnancy and birth, breastfeeding and milestones, fever with shaking, school, the teacher\'s report, friends and bullying, obedience, lying and stealing, discipline, bedwetting and nightmares), then with the child alone (confidentiality and its limits, an abuse screen, secrecy and blame) and a short HEADSS interview for adolescents. 11 likely replies on the point board.' },

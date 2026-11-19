@@ -1,4 +1,4 @@
-IsaymotionMarks (js/vendor/vfs_marks.js) is a subset of DejaVu Sans 2.37 with seven glyphs (◌ ⚑ → ↔ ✗ ✓ ☐), renamed.
+IsaymotionMarks (js/vendor/vfs_marks.js) is a subset of DejaVu Sans 2.37 with eight glyphs (◌ ⚑ → ↔ ✗ ✓ ☐ ɣ), renamed.
 DejaVu changes are in the public domain. Glyphs imported from Arev fonts are (c) Tavmjong Bah. Bitstream Vera is (c) 2003 Bitstream, Inc.
 
 License: bitstream-vera
