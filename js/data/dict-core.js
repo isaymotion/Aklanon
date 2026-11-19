@@ -163,7 +163,7 @@ klinika|clinic|n|daily|||klinika
 trabaho|work; job|n|daily|||trabaho
 obra|work; make|n|daily||Z.|gawa
 kwarta|money|n|daily|||pera
-eskwela|school|n|daily|||eskwela
+eskwela|schooling; student|n|daily||SR ~p. 234 glosses eskwela (alt. of eskuyla) as student; Kalibo nagaeskwela = goes to school. The school building is eskwelahan.|eskwela
 banwa|town|n|daily||Z.|bayan
 baryo|village|n|daily||SR ~p. 77.|baryo
 dagat|sea|n|daily||Z.|dagat
@@ -687,4 +687,26 @@ lagaw|go around; travel about; wander|v|verbs||SR ~p. 238. naglagaw-lagaw = wand
 ampon|adopt; adopted child|v|family||SR ~p. 54.|ampon
 basag|broken|adj|adjectives||SR ~p. 87 (syn. pusa'). buong (break) is Hiligaynon.|basag; sira
 barang|be cursed or bewitched (illness sent by sorcery)|v|folk||SR ~p. 86 (ST4). nabarang = bewitched.|kulam
+# Part 6, 2026-11-19 (0.2.7): child and adolescent words, each checked against SR before use.
+kamang|crawl (on all fours)|v|verbs||SR ~p. 123 (RV6).|gapang
+partera|midwife|n|health||SR ~p. 254 [Sp] (given as synonym of the native word for midwife).|hilot; komadrona
+maestra|teacher (woman)|n|people||SR ~p. 252 [Sp] (Nakahambae eon ako sa maestra = I already spoke to the teacher); maestro = man teacher.|guro; titser
+eskwelahan|school (the building)|n|daily||SR ~p. 234 (headword eskuylahan, alt. eskwelahan; Eng school is marked Akl: eskuylahan).|paaralan
+sunlog|tease; joke with; kid|v|verbs||SR ~p. 353 (sunlogon = teaser).|tukso; biro
+masinueundon|obedient; docile|adj|emotions|sunod|SR ~p. 353 (opp. disobedient).|masunurin
+sunod|follow; obey|v|verbs||SR ~p. 353 (RV3; syn. tuman, pati). masunod = next.|sunod; sumunod
+tuman|obey; follow; oblige|v|verbs||SR ~p. 384 (RV1; syn. sunod).|sunod; tupad
+ealis|disobey|v|verbs||SR ~p. 176 (opp. sunod, tuman).|sumuway
+eahog|naughty; mischievous; misbehaved|adj|emotions||SR ~p. 105, 179 (syn. of bugoy, eangas; opp. him-ong).|pilyo; malikot
+bulingag|stubborn; hard-headed|adj|emotions||SR ~p. 107 (alt. balingag, bingkoe).|matigas ang ulo
+silot|punishment; penalty|n|people||SR ~p. 342; SR ~p. 130 gives kastigo [Sp] with Akl: silot.|parusa
+ihi|urine; urinate|v|body||SR ~p. 226 (ihi' n.; RV5 = urinate); Natag-ihi' ako = I need to urinate.|ihi
+kameot|touch (with the fingers)|v|verbs||SR ~p. 124 (RV1; syn. kawkaw).|hawak; hipo
+pae-at|be absent; leave a gap|v|daily||SR ~p. 289 (RV3); Eng absent is marked Akl: pae-at.|liban; absent
+pasuso|breastfeed; suckle|v|family|suso|SR ~p. 355 (CV; Pasuswa ro eapsag = Suckle the baby).|pasusuhin
+hampang|play|v|verbs||SR ~p. 205 (RV3); Z p. 39 (hampangan = toy).|laro
+bakuna|vaccinate|v|health||SR ~p. 71 (RV3).|bakuna
+kurot|pinch|v|verbs||SR ~p. 147 (RV1); sangkurot = a little bit (Z).|kurot
+binata|young man; bachelor|n|people||SR ~p. 89 (binata', syn. soltero).|binata
+gamit|use; thing, article|v|verbs||SR ~p. 191 (RV1 = use; n. = article, thing).|gamit
 `);

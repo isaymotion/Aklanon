@@ -6,6 +6,8 @@
    type   Type the word: English to Aklanon, typed; a near miss on a long word passes as "Almost"
    hear   Hear the word: the word is played (a Filipino device voice: no Aklanon voice exists), pick the meaning
    odd    Odd one out: three words of one dictionary topic and one of another
+   pairs  Word pairs: WORD_PAIRS (js/data/drills-2.js); see `a`, choose its partner `b` of the same type. ?type=opp|syn|col
+   context In context: an Aklanon sentence already in the app with one dictionary word blanked; choose the word
    Word source (match, type, hear): ?cat=<key> or state.settings.vocabCat; 'mine' = mistakes and due cards, 'all', a topic.
    Best scores: state.done.vocab['<mode>:<source>']. */
 (function () {
@@ -24,7 +26,11 @@
     { id: 'hear', title: 'Hear the word', eyebrow: 'Listening · 10 words', src: true, audio: true, blurb: 'Hear a word, pick its meaning.',
       intro: 'A word is played. Choose what it means; the word is shown after you answer. There is no ' + NAME + ' voice on any device, so the word is read by a Filipino voice if your device has one: a rough guide to the sound only. Words you miss go to My mistakes.' },
     { id: 'odd', title: 'Odd one out', eyebrow: 'Vocabulary · 10 questions', blurb: 'Three words share a topic. Find the one that does not.',
-      intro: 'Three of the four words come from one topic of the dictionary, such as the body or the family. Choose the word that does not belong.' }
+      intro: 'Three of the four words come from one topic of the dictionary, such as the body or the family. Choose the word that does not belong.' },
+    { id: 'pairs', title: 'Word pairs', eyebrow: 'Vocabulary · 10 questions', blurb: 'Opposites, similar words and words that go together.', ok: () => pairTypes().length > 0, opts: () => pairOpts(), optLabel: 'Type', optKey: 'type',
+      intro: 'Learn words in pairs: opposites (good and bad), similar words, and words that go together. Each question shows a word; choose its partner from four.' },
+    { id: 'context', title: 'In context', eyebrow: 'Vocabulary · 10 sentences', blurb: 'A sentence from the app with one word missing. Choose the word.', ok: () => ctxPool().length >= CTX_MIN,
+      intro: 'Each question is an ' + NAME + ' sentence from the lessons, drills or interview phrases with one word left out. Choose the dictionary word that fits; the English of the sentence is shown under it. The word in the sentence is the dictionary form, so the wrong choices are the same part of speech.' }
   ];
   const byId = (id) => MODES.find((m) => m.id === id);
   const bestOf = (id) => { const o = App.state.done.vocab || {}; const v = Object.keys(o).filter((k) => k.split(':')[0] === id).map((k) => o[k]); return v.length ? Math.max(...v) : null; };
@@ -108,7 +114,104 @@
     }
     return out;
   }
-  App.vocabQs = { hear: hearQs, odd: oddQs };
+  /* ---------- Word pairs: WORD_PAIRS ----------
+     { id, type: opp | syn | col, a, ea, b, eb, note?, en? }. The question shows a (and ea); the options are b and three other
+     b of the same type that are not a partner of a anywhere in the data. A type is offered once it has 4 pairs. */
+  const PAIR_TYPES = [['opp', 'Opposites'], ['syn', 'Similar words'], ['col', 'Words that go together']];
+  const PAIR_ASK = { opp: 'Opposite of', syn: 'Similar to', col: 'Which word goes with' };
+  const PAIR_MIN = 4;
+  const isStr = (x) => typeof x === 'string' && x.trim() !== '';
+  const lc = (s) => String(s || '').trim().toLowerCase();
+  const pairsAll = () => (Array.isArray(window.WORD_PAIRS) ? window.WORD_PAIRS : []).filter((p) => p && isStr(p.id) && isStr(p.a) && isStr(p.b) && PAIR_ASK[p.type] && lc(p.a) !== lc(p.b));
+  const pairTypes = () => { const all = pairsAll(); return PAIR_TYPES.filter(([k]) => all.filter((p) => p.type === k).length >= PAIR_MIN); };
+  const pairOpts = () => { const t = pairTypes(); return t.length ? [['all', 'All']].concat(t) : []; };
+  function pairOthers(p, data) {
+    const a = lc(p.a), seen = new Set([a, lc(p.b)]);
+    data.forEach((x) => { if (lc(x.a) === a) seen.add(lc(x.b)); if (lc(x.b) === a) seen.add(lc(x.a)); });
+    const out = [];
+    for (const x of shuffle(data.filter((y) => y !== p && y.type === p.type))) { if (out.length >= 3) break; const b = lc(x.b); if (seen.has(b)) continue; seen.add(b); out.push(x.b); }
+    return out;
+  }
+  function pairQs(n, type) {
+    const data = pairsAll(), ok = pairTypes().map(([k]) => k);
+    const src = data.filter((p) => ok.includes(p.type) && (type === 'all' || !type || p.type === type));
+    const out = [];
+    for (const p of shuffle(src)) {
+      if (out.length >= n) break;
+      const o = pairOthers(p, data);
+      if (o.length < 3) continue;
+      const col = p.type === 'col', both = p.a + ' ' + p.b;
+      const exp = col ? both + (isStr(p.en) ? ' = ' + p.en : '') + '.' + (isStr(p.note) ? ' ' + p.note : '')
+        : p.a + (isStr(p.ea) ? ' (' + p.ea + ')' : '') + (p.type === 'opp' ? ' ↔ ' : ' ≈ ') + p.b + (isStr(p.eb) ? ' (' + p.eb + ')' : '') + '.' + (isStr(p.note) ? ' ' + p.note : '');
+      out.push({ q: p.a, sub: PAIR_ASK[p.type] + (isStr(p.ea) ? ' “' + p.ea + '”' : '') + ' · choose its partner.', tlq: true, tlo: true, say: p.a, opts: [p.b].concat(o), a: 0, sayAfter: col ? both : p.b, exp });
+    }
+    return out;
+  }
+
+  /* ---------- In context ----------
+     A sentence pool built once, lazily, from Aklanon already in the app: interview phrases (everyday form `c`), DRILL_GAPS
+     `full`, the first DRILL_TRANSLATE answer and DRILL_TRANSFORM `to`, each with its English. A token blanked is exactly a
+     dictionary headword (one word, 4+ letters, noun, verb, adjective or adverb, not in AKL_CLOSED, not a stigma word) that
+     occurs once in the sentence; the choice is seeded by the sentence, so an item is the same every time. Options: the word
+     and three other headwords of the same part of speech (same topic first), none with the same English and none that is
+     also in the sentence, shares the root, or contains the word (or is contained in it). The mode is listed once the pool has 10 sentences. */
+  const CTX_MIN = 10, CTX_POS = { n: 1, v: 1, adj: 1, adv: 1 };
+  const hash = (str) => { let h = 2166136261; for (const ch of String(str)) h = Math.imul(h ^ ch.charCodeAt(0), 16777619); return h >>> 0; };
+  const rnd = (seed) => (App.drillSeeded ? App.drillSeeded.rnd(seed) : (() => { let h = hash(seed); return () => ((h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0) / 4294967296); })());
+  const seededShuffle = (list, r) => { const a = list.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const coreOf = (t) => t.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
+  const cleanAk = (s) => String(s || '').replace(/\([^)]*\)/g, '').replace(/[◌⚑]/g, '').replace(/\s+([,.?!])/g, '$1').replace(/\s+/g, ' ').trim();
+  let ctxCache = null, ctxKey = '', headIdx = null;
+  const headwords = () => {
+    if (headIdx) return headIdx;
+    const W = window, closed = new Set();
+    const C = W.AKL_CLOSED && typeof W.AKL_CLOSED === 'object' ? W.AKL_CLOSED : {};
+    Object.keys(C).forEach((g) => (Array.isArray(C[g]) ? C[g] : []).forEach((w) => closed.add(lc(w))));
+    headIdx = new Map();
+    App.DICT.forEach((e) => {
+      const w = lc(e.tl);
+      if (!CTX_POS[e.pos] || e.cat === 'stigma' || /[\s]/.test(w) || w.replace(/[^\p{L}]/gu, '').length < 4 || closed.has(w)) return;
+      if (!headIdx.has(w)) headIdx.set(w, e);
+    });
+    return headIdx;
+  };
+  function ctxPool() {
+    const W = window, S = W.PSYCH_SECTIONS || [], G = W.DRILL_GAPS || [], T = W.DRILL_TRANSLATE || [], F = W.DRILL_TRANSFORM || [];
+    const key = [S.length, G.length, T.length, F.length].join(':');
+    if (ctxCache && key === ctxKey) return ctxCache;
+    const idx = headwords(), out = [], seen = new Set();
+    const add = (ak, en) => {
+      ak = cleanAk(ak); en = String(en || '').replace(/\s+/g, ' ').trim();
+      if (!ak || !en || /____|\//.test(ak) || seen.has(lc(ak))) return;
+      const toks = ak.split(' '), cores = toks.map(coreOf), keys = cores.map(lc);
+      const n = keys.filter(Boolean).length;
+      if (n < 3 || n > 16) return;
+      const cand = keys.map((k, i) => ({ k, i })).filter((c) => idx.has(c.k) && keys.filter((x) => x === c.k).length === 1);
+      if (!cand.length) return;
+      const r = rnd('ctx|' + ak), c = seededShuffle(cand, r)[0], e = idx.get(c.k);
+      const inSent = new Set(keys);
+      const w = lc(e.tl), root = lc(e.root);
+      // Not the same English, not built on the same root, and neither word inside the other (Akeanon / Inakeanon).
+      const same = Array.from(idx.values()).filter((x) => { const k = lc(x.tl); return x !== e && x.pos === e.pos && !inSent.has(k) && x.nen !== e.nen && !k.includes(w) && !w.includes(k) && !(root && (lc(x.root) === root || k === root)) && !(x.root && lc(x.root) === w); });
+      const opts = [], used = new Set([lc(e.tl)]);
+      for (const x of seededShuffle(same.filter((y) => y.cat === e.cat), r).concat(seededShuffle(same, r))) { if (opts.length >= 3) break; const k = lc(x.tl); if (used.has(k)) continue; used.add(k); opts.push(x.tl); }
+      if (opts.length < 3) return;
+      seen.add(lc(ak));
+      const q = toks.map((t, i) => (i === c.i ? t.replace(cores[i], '____') : t)).join(' ');
+      out.push({ q, en, full: ak, word: e, opts: [e.tl].concat(opts) });
+    };
+    try {
+      S.forEach((s) => (s && Array.isArray(s.phrases) ? s.phrases : []).forEach((p) => p && add(p.c, p.en)));
+      G.forEach((it) => it && typeof it.q === 'string' && add(it.full || (it.a ? it.q.replace('____', it.a) : ''), it.en));
+      T.forEach((it) => { const a = it && (Array.isArray(it.akl) ? it.akl[0] : it.akl); if (a) add(a, it.en); });
+      F.forEach((it) => it && add(it.to, it.en));
+    } catch (err) { /* a broken entry is skipped */ }
+    ctxCache = out; ctxKey = key;
+    return out;
+  }
+  const ctxQs = (n) => pick(ctxPool(), Math.min(n, ctxPool().length)).map((it) => ({ q: it.q, sub: it.en, tlq: true, tlo: true, opts: it.opts.slice(), a: 0, cardId: it.word.id, sayAfter: it.full,
+    exp: it.word.tl + ' = ' + it.word.en + '. ' + it.full }));
+  App.vocabQs = { hear: hearQs, odd: oddQs, pairs: pairQs, context: ctxQs, contextPool: ctxPool };
 
   /* ---------- Match the pairs ---------- */
   function matchGame(src) {
@@ -223,11 +326,14 @@
   const RUN = {
     match: runMatch, type: runType,
     odd: quiz(() => oddQs(N), 'odd:all'),
-    hear: (box, src) => { const used = poolFor(src, 4).src; return quiz(() => hearQs(N, used), 'hear:' + used)(box); }
+    hear: (box, src) => { const used = poolFor(src, 4).src; return quiz(() => hearQs(N, used), 'hear:' + used)(box); },
+    pairs: (box, t) => quiz(() => pairQs(N, t), 'pairs:' + t)(box),
+    context: quiz(() => ctxQs(N), 'context:all')
   };
   const tileHTML = (m) => { const b = bestOf(m.id); return '<a class="tile" href="#/vocab/' + m.id + '" data-mode="' + m.id + '"><span class="eyebrow">' + esc(m.eyebrow) + '</span><h3>' + esc(m.title) + '</h3><p>' + esc(m.blurb) + '</p>' +
     '<div class="meta row"><span class="pill' + (b != null ? ' good' : '') + '">' + (b != null ? 'Best ' + b + '%' : 'Not tried yet') + '</span></div></a>'; };
-  App.vocabTiles = () => MODES.map(tileHTML).join(''); // the Practice page (js/app.js)
+  const shown = () => MODES.filter((m) => !m.ok || m.ok());
+  App.vocabTiles = () => shown().map(tileHTML).join(''); // the Practice page (js/app.js)
   App.VOCAB_MODES = MODES;
 
   // One row per dictionary topic: words, cards in the deck (an srs entry), known (srs r >= 3).
@@ -239,7 +345,7 @@
   App.vocabCatStats = catStats;
   V.vocab = (el) => {
     const matchable = new Set(sources().map(([k]) => k));
-    el.innerHTML = '<h1>Vocabulary practice</h1><p class="muted">Four short word games from the dictionary: matching, typing, listening and odd one out.</p>' +
+    el.innerHTML = '<h1>Vocabulary practice</h1><p class="muted">Short word games from the dictionary: matching, typing, listening, odd one out' + (shown().length > 4 ? ', and more' : '') + '.</p>' +
       '<div class="notice warn" style="margin:10px 0 12px">' + esc(LANG.draftShort || 'Draft.') + '</div>' +
       '<div class="grid">' + App.vocabTiles() + '</div>' +
       '<h2 style="margin-top:22px">Your words by topic</h2><p class="muted small">Words in the dictionary, how many are in your flashcards, and how many you know well. Tap a topic to open its flashcards.</p>' +
@@ -255,15 +361,24 @@
     const st = App.state.settings, srcs = m.src ? sources() : null, key = 'vocabCat';
     const has = (v) => srcs && srcs.some(([k]) => k === v);
     const cur = has(q && q.cat) ? q.cat : has(st[key]) ? st[key] : 'all';
+    if (m.ok && !m.ok()) {
+      el.innerHTML = '<div class="breadcrumb"><a href="#/vocab">Vocabulary practice</a> / ' + esc(m.title) + '</div><h1>' + esc(m.title) + '</h1><p class="muted">' + esc(m.intro) + '</p>' +
+        '<div class="notice info">Not enough items for this game yet. They arrive with the next data update.</div><div class="row" style="margin-top:14px">' + ALL + '</div>' + DRAFT;
+      return;
+    }
+    const mo = m.opts ? m.opts() : [], mk = m.optKey;
+    const mcur = mo.some(([k]) => q && k === q[mk]) ? q[mk] : 'all';
     el.innerHTML = '<div class="breadcrumb"><a href="#/vocab">Vocabulary practice</a> / ' + esc(m.title) + '</div><h1>' + esc(m.title) + '</h1><p class="muted">' + esc(m.intro) + '</p>' +
       (m.audio && App.speechSupportNote ? App.speechSupportNote() : '') +
       '<div class="card stack"><div class="row">' +
+      (mo.length ? '<label class="small" style="max-width:100%">' + esc(m.optLabel) + ' <select class="input" id="vopt" style="width:auto;max-width:100%">' + mo.map(([v, t]) => '<option value="' + esc(v) + '"' + (v === mcur ? ' selected' : '') + '>' + esc(t) + '</option>').join('') + '</select></label>' : '') +
       (srcs ? '<label class="small" style="max-width:100%">Words <select class="input" id="vsrc" style="width:auto;max-width:100%">' + srcs.map(([v, t]) => '<option value="' + esc(v) + '"' + (v === cur ? ' selected' : '') + '>' + esc(t) + '</option>').join('') + '</select></label>' : '') +
       '<button class="btn primary" id="vgo">Start</button></div><div id="vbox"></div></div>' + DRAFT;
     const sel = el.querySelector('#vsrc'), box = el.querySelector('#vbox');
     if (sel) sel.onchange = () => { st[key] = sel.value; App.save(); };
     el.querySelector('#vgo').onclick = () => {
-      const src = sel ? sel.value : 'all';
+      const osel = el.querySelector('#vopt');
+      const src = sel ? sel.value : osel ? osel.value : 'all';
       if (sel) { st[key] = src; App.save(); }
       const inner = document.createElement('div'); inner.style.marginTop = '12px'; box.innerHTML = ''; box.appendChild(inner);
       RUN[m.id](inner, src);

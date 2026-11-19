@@ -306,7 +306,7 @@
       const nSeg = '<div><div class="eyebrow">Items per part</div>' + seg('n', [['8', '8'], ['12', '12'], ['16', '16']]) + '</div>';
       const setBox = '<div><div class="eyebrow">Sentences</div><div class="row"><button class="btn sm" id="ghNew">New set</button><span class="muted small">Set ' + esc(String(o.seed || 1)) + '</span></div><p class="small muted" style="margin:4px 0 0">The same set prints the same sentences.</p></div>';
       return '<div class="ho-grid">' + nSeg + setBox + englishSeg + paperSize + '</div>' +
-        '<div><div class="eyebrow">Include</div><div class="ho-chks">' + chk('gap', 'Fill the gap', 'markers, negators, pronouns, question words, small words, aspect') + chk('build', 'Build the sentence', 'words in a jumbled order') +
+        '<div><div class="eyebrow">Include</div><div class="ho-chks">' + chk('gap', 'Fill the gap', 'markers, negators, pronouns, question words, small words, aspect' + (App.drillGapSets ? App.drillGapSets().map((g) => ', ' + esc(g.title.toLowerCase())).join('') : '')) + chk('build', 'Build the sentence', 'words in a jumbled order') +
         chk('errors', 'Find the mistake', 'write the corrected sentence') + chk('translate', 'Say it in ' + esc(NAME), 'from the English') + chk('key', 'Answer key', 'on its own page') + '</div></div>';
     };
     const defTitle = () => (topic === 'lesson' ? (LV().find((l) => l.id === o.lesson) || {}).title || '' : DEF.drills.title);

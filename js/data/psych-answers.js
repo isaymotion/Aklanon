@@ -202,6 +202,19 @@ window.PSYCH_ANSWERS = {
       ['Nabarang kuno imaw, hambae it kurandero.', 'He was bewitched, the healer said.', 'Explanatory model; respect it, negotiate treatment.'],
       ['Ako ro magaatipan kana.', 'I will be the one to look after him.', 'Named caregiver; teach doses and warning signs.']
     ],
+    children: [
+      ['Ro anang lola ro nagaatipan kana.', 'His grandmother looks after him.', 'Ask where the parents are; who has authority.'],
+      ['Nagaobra sa abroad ro anang nanay.', 'His mother works abroad.', 'Separation from mother; ask contact and when it began.'],
+      ['Mas hinay imaw nakapanaw ag nakahambae sa iba.', 'He walked and talked later than others.', 'Developmental delay; screen hearing, autism, intellectual disability.'],
+      ['Nag-eagnat imaw ag nagkurog ro anang eawas.', 'He had a fever and his body shook.', 'Possible febrile seizure; ask duration, recurrence, EEG.'],
+      ['Permi imaw nagapae-at sa eskwelahan.', 'He is always absent from school.', 'School refusal or truancy; ask why and where he goes.'],
+      ['Ginasunlog imaw ku iba nga unga sa eskwelahan.', 'Other children at school tease him.', 'Bullying; ask about hitting, online, and his mood.'],
+      ['Bulingag gid imaw, indi magsunod.', 'He is very stubborn, he does not obey.', 'Oppositional behaviour; ask settings, onset, and discipline used.'],
+      ['Ginahampak namon imaw kon eahog.', 'We spank him when he is naughty.', 'Ask what is used, marks, and frequency.'],
+      ['Indi ko gusto magsugid.', 'I don\'t want to tell.', 'Reassure; do not push; offer another time or person.'],
+      ['May nagkameot it akong eawas.', 'Someone touched my body.', 'Possible abuse: who, when, safety now; WCPD and DSWD.'],
+      ['Nakahuna-huna ako nga gusto ko eon mapatay.', 'I have thought that I want to die.', 'Suicidal ideation: plan, means, attempts; tell the parent.']
+    ],
     closing: [
       ['Owa ako it pangutana.', 'I have no questions.'],
       ['Pila ro bayad it bueong?', 'How much does the medicine cost?', 'Cost barrier; discuss generics or free supply.'],

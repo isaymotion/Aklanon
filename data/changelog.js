@@ -3,6 +3,19 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.7', date: '2026-11-19', title: 'Children and adolescents section; more grammar and vocabulary drills',
+    items: [
+      { type: 'content', text: 'New section Children and adolescents, 21 phrases: with the parent (why they came, who raises the child, pregnancy and birth, breastfeeding and milestones, fever with shaking, school, the teacher\'s report, friends and bullying, obedience, lying and stealing, discipline, bedwetting and nightmares), then with the child alone (confidentiality and its limits, an abuse screen, secrecy and blame) and a short HEADSS interview for adolescents. 11 likely replies on the point board.' },
+      { type: 'content', text: '21 dictionary entries, each checked against Salas Reyes et al. first: kamang, partera, maestra, eskwelahan, sunlog, masinueundon, sunod, tuman, ealis, eahog, bulingag, silot, ihi, kameot, pae-at, pasuso, hampang, bakuna, kurot, binata, gamit. eskwela now says what SR says (student; Kalibo nagaeskwela = goes to school).' },
+      { type: 'feature', text: 'Change the sentence (Grammar drills): 46 sentences to make negative, past, future, habitual, a command or prohibition, respectful, a question, can/cannot, or another focus. Choose from four or type the answer.' },
+      { type: 'feature', text: 'Six new Fill-the-gap drills: Choose the focus, Can/could/happened to (maka-, naka-, hi-), Have someone do it (pa-), Feelings are verbs (statives), Build the word, and Squeezed words (imna, nasaktan, ring). They are in the daily mix and the drills worksheet.' },
+      { type: 'feature', text: 'Unit review: twelve questions from the quizzes of one lesson unit, with links back to the lessons you missed.' },
+      { type: 'feature', text: 'Vocabulary practice: Word pairs (22 opposites, 11 similar words with the difference explained, 12 words that go together) and In context (choose the word missing from a sentence of the app).' },
+      { type: 'content', text: 'More items in the existing drills (cloze 30, build 22, find the mistake 33, translate 30) and Practise a lesson for seven more lessons: focus, choosing a focus, verbs III, word building, sound changes, sounds and pronunciation (25 lessons in all).' },
+      { type: 'update', text: 'Totals: 39 lessons, 13 sections, 163 phrases, 1,207 dictionary entries. Next: elderly.' }
+    ]
+  },
+  {
     version: '0.2.6', date: '2026-11-19', title: 'Grammar drills, vocabulary practice and printable handouts',
     items: [
       { type: 'feature', text: 'Grammar drills (Practice → Grammar drills), as in Usap Tayo but written for Aklanon: Respectful or everyday?, Choose the marker (ro, ku, it, sa; si, ni, kay), Build the sentence, Find the root, Find the mistake (with a set of Tagalog and Hiligaynon slips: salamat, siya, hindi, sugod, kapoy, madamo, dito, baso, buong, ulo), Say it in Aklanon (typed, several answers accepted), Owa, indi, ayaw or bukon?, Ako, ko or akon?, Choose the question word, Choose the small word, Choose the aspect, and a Daily mix. About 180 items, each sentence from a lesson example or an attested pattern, with Zorc pages where the book has it.' },

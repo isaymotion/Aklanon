@@ -7,6 +7,9 @@
    errors      Find the mistake         DRILL_ERRORS (set menu built from the sets present in the data)
    translate   Say it in Aklanon        DRILL_TRANSLATE (typed; accepted answers in `akl`, or `tl`)
    negation, pronoun, qword, particle, aspect   Fill the gap: DRILL_GAPS sets neg, pn, qw, pt, asp
+   gap-<set>   Fill the gap, one drill per key of DRILL_GAP_SETS (js/data/drills-2.js) with at least 4 DRILL_GAPS items
+   transform   Change the sentence      DRILL_TRANSFORM + DRILL_TRANSFORM_TYPES; Choose or Type. #/drills/transform?type=<t>&mode=choose|type
+   unit        Unit review              12 lesson-quiz questions from one unit (LESSONS[].unit) + up to 3 related gaps. #/drills/unit?u=<unit>
    lessongaps  Practise a lesson        LESSON_GAPS[id] if present, otherwise gap sentences made from the lesson itself
                                         (App.lessonGapItems; see autoLessonGaps below). #/drills/lessongaps?l=<lesson id>
    Best scores: state.done.drills['<id>:<set>']; lesson practice: state.done.lessonGaps['<lesson id>'];
@@ -72,7 +75,7 @@
       intro: 'Choose a lesson and fill the gap in ten of its example sentences. The English line tells you what the sentence means. Each lesson page has a button for its own practice.',
       opts: () => [], lessons: [] }
   ];
-  const GROUPS = ['Grammar', 'Vocabulary', 'Writing'];
+  const GROUPS = ['Grammar', 'Vocabulary', 'Writing', 'Review'];
   const HANDOUT = ['markers', 'negation', 'pronoun', 'qword', 'particle', 'aspect', 'errors', 'translate'];
   App.DRILLS = DRILLS;
   const byId = (id) => DRILLS.find((d) => d.id === id);
@@ -288,6 +291,123 @@
     const src = GAPS.filter((it) => gapOk(it) && it.set === set);
     return pick(src, Math.min(n, src.length)).map((it) => ({ q: it.q, sub: it.en, tlq: true, tlo: true, opts: it.opts.slice(), a: it.opts.indexOf(it.a), sayAfter: gapFull(it), exp: gapFull(it) + (it.why ? ' ' + it.why : '') }));
   }
+  const gapCount = (set) => GAPS.filter((it) => gapOk(it) && it.set === set).length;
+
+  /* ---------- Extra Fill-the-gap drills: DRILL_GAP_SETS (js/data/drills-2.js) ----------
+     { setId: { title, eyebrow, blurb, intro, lesson } }; a set becomes drill 'gap-<setId>' once DRILL_GAPS has 4 items in it.
+     They go before Practise a lesson, into the daily mix, and onto the drills handout (which prints every DRILL_GAPS item). */
+  const GAP_SETS = W.DRILL_GAP_SETS && typeof W.DRILL_GAP_SETS === 'object' && !Array.isArray(W.DRILL_GAP_SETS) ? W.DRILL_GAP_SETS : {};
+  const GAP_MIN = 4;
+  const isStr = (x) => typeof x === 'string' && x.trim() !== '';
+  const extraGaps = [];
+  Object.keys(GAP_SETS).forEach((k) => {
+    const s = GAP_SETS[k] && typeof GAP_SETS[k] === 'object' ? GAP_SETS[k] : {};
+    if (byId('gap-' + k) || DRILLS.some((d) => d.gap === k) || gapCount(k) < GAP_MIN) return;
+    const title = isStr(s.title) ? s.title : 'Fill the gap';
+    extraGaps.push({ id: 'gap-' + k, g: 'Grammar', gap: k, title, eyebrow: isStr(s.eyebrow) ? s.eyebrow : 'Grammar · 10 gaps', blurb: isStr(s.blurb) ? s.blurb : 'Choose the word that fills the gap.',
+      intro: isStr(s.intro) ? s.intro : 'Choose the word that fills the gap. The English line tells you what the sentence means.', opts: () => [], lessons: [].concat(s.lesson || []).filter(isStr) });
+  });
+  DRILLS.splice(DRILLS.findIndex((d) => d.id === 'lessongaps'), 0, ...extraGaps);
+  extraGaps.forEach((d) => HANDOUT.push(d.id));
+  App.drillGapSets = () => extraGaps.map((d) => ({ id: d.id, set: d.gap, title: d.title })); // the drills handout
+
+  /* ---------- Change the sentence: DRILL_TRANSFORM + DRILL_TRANSFORM_TYPES (js/data/drills-2.js) ----------
+     Choose: `to` and the three `wrong`, shuffled. Type: right when, lower-cased and without commas, ? ! . and extra spaces, the
+     answer equals `to` or an `alt`, also when hyphens are ignored (sin-o = sino, mayad-ayad = mayad ayad). A type is offered
+     once it has 3 items; the drill is listed once 4 items load. Best: state.done.drills['transform:<type|all>:<mode>']. */
+  const TF_MIN = 4, TF_TYPE_MIN = 3;
+  const tfTypesMap = () => (W.DRILL_TRANSFORM_TYPES && typeof W.DRILL_TRANSFORM_TYPES === 'object' ? W.DRILL_TRANSFORM_TYPES : {});
+  const tfOk = (x) => x && isStr(x.id) && isStr(x.instr) && isStr(x.from) && isStr(x.to) && Object.prototype.hasOwnProperty.call(tfTypesMap(), x.type);
+  const tfChoosable = (x) => Array.isArray(x.wrong) && x.wrong.filter(isStr).length >= 3;
+  const tfPool = (mode) => (Array.isArray(W.DRILL_TRANSFORM) ? W.DRILL_TRANSFORM : []).filter((x) => tfOk(x) && (mode !== 'choose' || tfChoosable(x)));
+  const tfTypes = (mode) => { const p = tfPool(mode); return Object.keys(tfTypesMap()).filter((t) => p.filter((x) => x.type === t).length >= TF_TYPE_MIN); };
+  const tfAlts = (x) => [x.to].concat(Array.isArray(x.alt) ? x.alt.filter(isStr) : []);
+  const tfNorm = (s) => String(s || '').toLowerCase().replace(/[’]/g, "'").replace(/[,?!.]/g, ' ').replace(/\s+/g, ' ').trim();
+  const tfNoHy = (s) => tfNorm(s).replace(/-/g, '');
+  const tfHySp = (s) => tfNorm(String(s || '').replace(/-/g, ' '));
+  const tfJudge = (typed, x) => { const a = tfNorm(typed); if (!a) return false; return tfAlts(x).some((t) => tfNorm(t) === a || tfNoHy(t) === tfNoHy(typed) || tfHySp(t) === tfHySp(typed)); };
+  App.drillTransformJudge = tfJudge; // for tests
+  const lessonLink = (id) => { const l = id && LV().find((y) => y && y.id === id); return l ? '<a class="small" href="#/lessons/' + esc(l.id) + '">Lesson: ' + esc(l.title) + '</a>' : ''; };
+  const tfUrl = (type, mode) => { const u = new URLSearchParams(); if (type && type !== 'all') u.set('type', type); if (mode === 'type') u.set('mode', 'type'); const s = u.toString(); return '#/drills/transform' + (s ? '?' + s : ''); };
+  function runTransform(box, all, mode, key) {
+    if (!all.length) return empty(box);
+    let items = pick(all, Math.min(N, all.length)), i = 0, right = 0;
+    const draw = () => {
+      if (i >= items.length) {
+        box.innerHTML = scoreCard(right, items.length);
+        box.querySelector('[data-act=retry]').onclick = () => { items = pick(all, Math.min(N, all.length)); i = 0; right = 0; draw(); };
+        saveBest(key, right, items.length);
+        return;
+      }
+      const x = items[i], lab = tfTypesMap()[x.type];
+      const opts = mode === 'choose' ? shuffle([x.to].concat(x.wrong.filter(isStr).slice(0, 3))) : [];
+      box.innerHTML = '<div class="card stack" data-tid="' + esc(x.id) + '"><div class="spread"><span class="eyebrow">Sentence ' + (i + 1) + ' of ' + items.length + '</span>' + (lab ? '<span class="pill">' + esc(lab) + '</span>' : '') + '</div>' +
+        '<div class="muted">' + esc(x.instr) + '</div>' +
+        '<div class="row"><span class="tl" style="font-size:1.12rem;font-weight:600">' + esc(x.from) + '</span> ' + App.sayBtn(x.from) + '</div>' +
+        (mode === 'choose'
+          ? '<div class="opts">' + opts.map((o, k) => '<button class="opt tl" data-k="' + k + '">' + esc(o) + '</button>').join('') + '</div>'
+          : '<div class="row"><input class="input tl" data-in autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" style="flex:1;min-width:0" placeholder="Type the new sentence" aria-label="Type the new sentence">' +
+            '<button class="btn primary" data-act="check">Check</button></div>') +
+        '<div data-fb></div></div>';
+      const finish = (ok) => {
+        if (ok) right++;
+        App.recordAnswer(ok);
+        const others = tfAlts(x).slice(1, 4);
+        box.querySelector('[data-fb]').innerHTML = '<div class="feedback ' + (ok ? 'ok' : 'no') + '"><b>' + (ok ? LANG.quiz.right : LANG.quiz.wrong) + '</b>' +
+          '<div style="margin-top:6px"><span class="tl">' + esc(x.to) + '</span> ' + App.sayBtn(x.to) + '</div>' +
+          (others.length ? '<div class="muted small" style="margin-top:4px">Also accepted: <span class="tl">' + others.map(esc).join(' · ') + '</span></div>' : '') +
+          (isStr(x.en) ? '<div style="margin-top:4px">' + esc(x.en) + '</div>' : '') +
+          (isStr(x.why) ? '<div class="muted small" style="margin-top:4px">' + esc(x.why) + '</div>' : '') +
+          (x.l ? '<div style="margin-top:4px">' + lessonLink(x.l) + '</div>' : '') + '</div>' +
+          '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="next">' + (i + 1 < items.length ? 'Next' : 'See score') + '</button></div>';
+        const nx = box.querySelector('[data-act=next]');
+        nx.onclick = () => { i++; draw(); };
+        nx.focus();
+      };
+      if (mode === 'choose') {
+        box.querySelectorAll('.opt').forEach((b) => (b.onclick = () => {
+          const ok = opts[+b.dataset.k] === x.to;
+          box.querySelectorAll('.opt').forEach((y) => { y.disabled = true; if (opts[+y.dataset.k] === x.to) y.classList.add('right'); });
+          if (!ok) b.classList.add('wrong');
+          finish(ok);
+        }));
+      } else {
+        const inp = box.querySelector('[data-in]'), chk = box.querySelector('[data-act=check]');
+        inp.focus();
+        const check = () => { if (chk.disabled || !inp.value.trim()) return; chk.disabled = true; inp.disabled = true; finish(tfJudge(inp.value, x)); };
+        chk.onclick = check;
+        inp.onkeydown = (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); check(); } };
+      }
+    };
+    draw();
+  }
+  const TF_INTRO = 'Change an ' + NAME + ' sentence the way the instruction says: make it negative, put it in the past or the future, make it a command or a question, make it respectful, and more. Choose the new sentence from four, or type it yourself. Typed answers ignore capitals, commas, end punctuation and hyphens.';
+  function tfView(el, q) {
+    const mode = q.mode === 'type' ? 'type' : 'choose';
+    const pool = tfPool(mode), types = tfTypes(mode), T = tfTypesMap();
+    const type = types.includes(q.type) ? q.type : 'all';
+    const items = pool.filter((x) => type === 'all' || x.type === type);
+    const key = 'transform:' + type + ':' + mode;
+    const ls = [...new Set(pool.map((x) => x.l).filter(isStr))].map((id) => LV().find((l) => l && l.id === id)).filter(Boolean);
+    el.innerHTML = '<div class="breadcrumb"><a href="#/drills">Drills</a> / Change the sentence</div><h1>Change the sentence</h1><p class="muted">' + esc(TF_INTRO) + '</p>' + draftNote() +
+      (pool.length < TF_MIN
+        ? '<div class="notice info">Not enough sentences for this drill yet' + (mode === 'type' ? '' : ' in Choose mode') + '. They arrive with the next data update.</div>' +
+          (mode === 'choose' && tfPool('type').length >= TF_MIN ? '<div class="row" style="margin-top:10px"><a class="btn" href="' + tfUrl('all', 'type') + '">Type mode</a></div>' : '')
+        : '<div class="card stack"><div class="seg" role="group" aria-label="Mode">' + [['choose', 'Choose'], ['type', 'Type']].map(([k, t]) => '<button type="button" data-tm="' + k + '" class="' + (k === mode ? 'on' : '') + '" aria-pressed="' + (k === mode) + '">' + t + '</button>').join('') + '</div>' +
+          '<div class="row">' + (types.length ? '<label class="small" style="max-width:100%">Kind of change <select class="input" id="dset" style="width:auto;max-width:100%">' +
+            [['all', 'All']].concat(types.map((t) => [t, T[t]])).map(([v, t]) => '<option value="' + esc(v) + '"' + (v === type ? ' selected' : '') + '>' + esc(t) + '</option>').join('') + '</select></label>' : '') +
+          '<button class="btn primary" id="dgo">Start</button><span class="muted small">' + items.length + ' items</span>' + (bestOf('transform') != null && App.state.done.drills[key] != null ? '<span class="pill good">Best ' + App.state.done.drills[key] + '%</span>' : '') + '</div><div id="dbox"></div></div>') +
+      (ls.length ? '<p class="muted small" style="margin-top:12px">Lessons for this drill: ' + ls.map((l) => '<a href="#/lessons/' + esc(l.id) + '">' + esc(l.title) + '</a>').join(' · ') + '</p>' : '') +
+      '<div class="row" style="margin-top:14px">' + ALL + '</div>';
+    el.querySelectorAll('[data-tm]').forEach((b) => (b.onclick = () => { if (b.dataset.tm !== mode) App.go(tfUrl(type, b.dataset.tm)); }));
+    const sel = el.querySelector('#dset');
+    if (sel) sel.onchange = () => App.go(tfUrl(sel.value, mode));
+    const go = el.querySelector('#dgo');
+    if (go) go.onclick = () => { const box = el.querySelector('#dbox'), inner = document.createElement('div'); inner.style.marginTop = '12px'; box.innerHTML = ''; box.appendChild(inner); runTransform(inner, items, mode, key); };
+  }
+  const tfDailyQ = () => (tfPool('choose').length < TF_MIN ? [] : pick(tfPool('choose'), 1)).map((x) => ({ q: x.from, sub: x.instr, tlq: true, tlo: true, say: x.from, opts: [x.to].concat(x.wrong.filter(isStr).slice(0, 3)), a: 0, sayAfter: x.to,
+    exp: x.to + (isStr(x.en) ? ' (' + x.en + ')' : '') + (isStr(x.why) ? ' ' + x.why : '') }));
+  App.drillTransform = { pool: tfPool, types: tfTypes, judge: tfJudge }; // for tests
 
   /* ---------- Practise a lesson: LESSON_GAPS, or gap sentences made from the lesson ----------
      Automatic items: Aklanon sentences from (a) <table> rows whose header row has a cell reading exactly "Aklanon"
@@ -405,6 +525,91 @@
   }
   App.drillLessonGaps = { items: lgItems, lessons: lgLessons, lessonQs: lgLessonQs, sentences: (id) => lessonSentences(LV().find((l) => l.id === id)) }; // for tests
 
+  /* ---------- Unit review: lesson quizzes of one unit (a simple port of the Hablemos level test) ----------
+     Units in the order they first appear in LESSONS, offered when their lessons have 6 quiz questions in all. A test is 12
+     of them, spread over the lessons, plus up to 3 DRILL_GAPS items from gap drills whose lessons are in the unit. Feedback
+     after each question; the result lists the lessons of the questions missed. Best: state.done.drills['unit:<unit>']. */
+  const UNIT_MIN = 6, UNIT_N = 12, UNIT_GAPS = 3;
+  const quizOk = (x) => Array.isArray(x) && isStr(x[0]) && Array.isArray(x[1]) && x[1].length >= 2 && Number.isInteger(x[2]) && x[1][x[2]] != null;
+  const unitList = () => {
+    const out = [];
+    LV().forEach((l) => { if (!l || !isStr(l.unit)) return; let u = out.find((x) => x.u === l.unit); if (!u) out.push((u = { u: l.unit, lessons: [], n: 0 })); u.lessons.push(l); u.n += (Array.isArray(l.quiz) ? l.quiz.filter(quizOk) : []).length; });
+    return out.filter((u) => u.n >= UNIT_MIN);
+  };
+  function unitQs(u) {
+    const decks = shuffle(u.lessons.map((l) => ({ l, qs: shuffle((Array.isArray(l.quiz) ? l.quiz : []).filter(quizOk)) })).filter((d) => d.qs.length));
+    const out = [];
+    for (let k = 0; out.length < UNIT_N && decks.some((d) => d.qs.length); k++) {
+      const d = decks[k % decks.length], x = d.qs.shift();
+      if (x) out.push({ q: x[0], sub: 'Lesson: ' + d.l.title, opts: x[1].slice(), a: x[2], exp: x[3] || '', lesson: d.l });
+    }
+    const ids = u.lessons.map((l) => l.id), gaps = [];
+    DRILLS.filter((d) => d.gap && d.lessons.some((id) => ids.includes(id))).forEach((d) => {
+      const l = u.lessons.find((x) => d.lessons.includes(x.id));
+      GAPS.filter((it) => gapOk(it) && it.set === d.gap).forEach((it) => gaps.push({ it, l }));
+    });
+    pick(gaps, Math.min(UNIT_GAPS, gaps.length)).forEach(({ it, l }) => out.push({ q: it.q, sub: it.en + ' · Lesson: ' + l.title, tlq: true, tlo: true, opts: it.opts.slice(), a: it.opts.indexOf(it.a), sayAfter: gapFull(it), exp: gapFull(it) + (it.why ? ' ' + it.why : ''), lesson: l }));
+    return shuffle(out);
+  }
+  App.drillUnits = { list: unitList, qs: unitQs }; // for tests
+  function runUnit(box, u, key) {
+    let qs = unitQs(u), i = 0, right = 0, missed = [];
+    if (!qs.length) return empty(box);
+    const draw = () => {
+      if (i >= qs.length) {
+        const ls = []; missed.forEach((x) => { if (x.lesson && !ls.includes(x.lesson)) ls.push(x.lesson); });
+        ls.sort((a, b) => LV().indexOf(a) - LV().indexOf(b));
+        const list = ls.length ? '<div><b>Lessons to look at again</b><ul style="margin:6px 0 0">' + ls.map((l) => '<li><a href="#/lessons/' + esc(l.id) + '">' + esc(l.title) + '</a> <span class="muted small">(' + missed.filter((x) => x.lesson === l).length + ' missed)</span></li>').join('') + '</ul></div>'
+          : '<p class="muted" style="margin:0">Nothing missed in this unit.</p>';
+        box.innerHTML = scoreCard(right, qs.length).replace('<div class="row">', list + '<div class="row">');
+        box.querySelector('[data-act=retry]').onclick = () => { qs = unitQs(u); i = 0; right = 0; missed = []; draw(); };
+        saveBest(key, right, qs.length);
+        return;
+      }
+      const q = qs[i], order = shuffle(q.opts.map((o, k) => k));
+      box.innerHTML = '<div class="card stack"><div class="spread"><span class="eyebrow">Question ' + (i + 1) + ' of ' + qs.length + '</span><span class="muted small">' + right + ' right</span></div>' +
+        '<div class="progress"><i style="width:' + Math.round((100 * i) / qs.length) + '%"></i></div>' +
+        '<div class="' + (q.tlq ? 'tl' : '') + '" style="font-size:1.12rem;font-weight:600">' + esc(q.q) + '</div><div class="muted small">' + esc(q.sub) + '</div>' +
+        '<div class="opts">' + order.map((k) => '<button class="opt' + (q.tlo ? ' tl' : '') + '" data-k="' + k + '">' + esc(q.opts[k]) + '</button>').join('') + '</div><div data-fb></div></div>';
+      box.querySelectorAll('.opt').forEach((b) => (b.onclick = () => {
+        const ok = +b.dataset.k === q.a;
+        if (ok) right++; else missed.push(q);
+        App.recordAnswer(ok);
+        box.querySelectorAll('.opt').forEach((x) => { x.disabled = true; if (+x.dataset.k === q.a) x.classList.add('right'); });
+        if (!ok) b.classList.add('wrong');
+        box.querySelector('[data-fb]').innerHTML = '<div class="feedback ' + (ok ? 'ok' : 'no') + '"><b>' + (ok ? LANG.quiz.right : LANG.quiz.wrong) + '</b> ' + esc(q.exp || '') + (q.sayAfter ? ' ' + App.sayBtn(q.sayAfter) : '') + '</div>' +
+          '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="next">' + (i + 1 < qs.length ? 'Next' : 'See score') + '</button></div>';
+        const nx = box.querySelector('[data-act=next]');
+        nx.onclick = () => { i++; draw(); };
+        nx.focus();
+      }));
+    };
+    draw();
+  }
+  const unitBest = (u) => { const v = (App.state.done.drills || {})['unit:' + u]; return typeof v === 'number' ? v : null; };
+  function unitView(el, q) {
+    const us = unitList(), u = q.u ? us.find((x) => x.u === q.u) : null;
+    const crumbs = '<div class="breadcrumb"><a href="#/drills">Drills</a> / ' + (u ? '<a href="#/drills/unit">Unit review</a>' : 'Unit review') + '</div>';
+    if (!u) {
+      el.innerHTML = crumbs + '<h1>Unit review</h1><p class="muted">A short test on one unit of the lessons: twelve questions from the lesson quizzes, spread over the unit, and a few gap sentences where a drill goes with it. At the end you see which lessons to look at again.</p>' + draftNote() +
+        (q.u ? '<div class="notice info" style="margin-bottom:12px">That unit has too few quiz questions for a review. Choose one below.</div>' : '') +
+        (us.length ? '<div class="grid">' + us.map((x) => { const b = unitBest(x.u); return '<a class="tile" href="#/drills/unit?u=' + encodeURIComponent(x.u) + '"><span class="eyebrow">' + x.lessons.length + (x.lessons.length === 1 ? ' lesson' : ' lessons') + ' · ' + x.n + ' questions</span><h3>' + esc(x.u) + '</h3><p>' + esc(x.lessons.map((l) => l.title).join(', ')) + '</p>' +
+          '<div class="meta row"><span class="pill' + (b != null ? ' good' : '') + '">' + (b != null ? 'Best ' + b + '%' : 'Not tried yet') + '</span></div></a>'; }).join('') + '</div>'
+          : '<div class="notice info">No unit has enough quiz questions yet.</div>') +
+        '<div class="row" style="margin-top:14px"><a class="btn" href="#/lessons">All lessons</a>' + ALL + '</div>';
+      return;
+    }
+    const b = unitBest(u.u);
+    el.innerHTML = crumbs + '<span class="eyebrow">Unit review</span><h1 style="margin-top:6px">' + esc(u.u) + '</h1><p class="muted">' + Math.min(UNIT_N, u.n) + ' questions from the quizzes of ' + u.lessons.length + (u.lessons.length === 1 ? ' lesson' : ' lessons') + ', in a new order each time, and up to ' + UNIT_GAPS + ' gap sentences where a drill goes with the unit.</p>' + draftNote() +
+      '<div class="card stack"><div class="row"><button class="btn primary" id="dgo">Start</button>' + (b != null ? '<span class="pill good">Best ' + b + '%</span>' : '') + '</div><div id="dbox"></div></div>' +
+      '<p class="muted small" style="margin-top:12px">Lessons in this unit: ' + u.lessons.map((l) => '<a href="#/lessons/' + esc(l.id) + '">' + esc(l.title) + '</a>').join(' · ') + '</p>' +
+      '<div class="row" style="margin-top:10px"><a class="btn" href="#/drills/unit">Choose another unit</a>' + ALL + '</div>';
+    el.querySelector('#dgo').onclick = () => { const box = el.querySelector('#dbox'), inner = document.createElement('div'); inner.style.marginTop = '12px'; box.innerHTML = ''; box.appendChild(inner); runUnit(inner, u, 'unit:' + u.u); };
+  }
+  // Listed only when the data supports them; the routes always answer.
+  if (tfPool('choose').length >= TF_MIN || tfPool('type').length >= TF_MIN) DRILLS.splice(DRILLS.findIndex((d) => d.id === 'lessongaps'), 0, { id: 'transform', g: 'Grammar', title: 'Change the sentence', eyebrow: 'Grammar · 10 sentences', blurb: 'Make it negative, past, a command, respectful: change the sentence as asked.', intro: TF_INTRO, opts: () => [], lessons: [] });
+  if (unitList().length) DRILLS.push({ id: 'unit', g: 'Review', title: 'Unit review', eyebrow: 'Review · 12 questions', blurb: 'A short test on one unit of the lessons, with the lessons to look at again.', intro: '', opts: () => [], lessons: [] });
+
   /* ---------- Daily mix: one question from each of several drills ---------- */
   function vocabQs(n) {
     const s = App.state, now = Date.now();
@@ -418,8 +623,9 @@
   const dayKey = () => App.today();
   App.dailyToday = () => (App.state.done.daily || {})[dayKey()];
   const DAILY_PARTS = [['Markers', () => clozeQs('all', 1)], ['Register', () => switchQs('f-c', 1)], ['Roots', () => rootQs('all', 1)], ['Find the mistake', () => errorQs(1)],
-    ['Negation', () => gapQs('neg', 1)], ['Pronouns', () => gapQs('pn', 1)], ['Question words', () => gapQs('qw', 1)], ['Small words', () => gapQs('pt', 1)], ['Aspect', () => gapQs('asp', 1)],
+    ['Negation', () => gapQs('neg', 1)], ['Pronouns', () => gapQs('pn', 1)], ['Question words', () => gapQs('qw', 1)], ['Small words', () => gapQs('pt', 1)], ['Aspect', () => gapQs('asp', 1)], ['Change the sentence', tfDailyQ],
     ['Lesson practice', () => { const ls = lgLessons(); if (!ls.length) return []; const fin = ls.filter((l) => App.state.done.lessons[l.id] != null); const l = pick(fin.length ? fin : ls, 1)[0]; return pick(lgItems(l.id), 1).map(lgQ); }]];
+  extraGaps.forEach((d) => DAILY_PARTS.push([d.title, () => gapQs(d.gap, 1)]));
   const DAILY_N = 8;
   const tagged = (tag) => (q) => Object.assign(q, { sub: tag + ' · ' + (q.sub || '') });
   const dailyQs = () => {
@@ -466,8 +672,9 @@
   App.drillQs = { switch: switchQs, markers: clozeQs, roots: rootQs, rootWords, errors: errorQs, gaps: gapQs, vocab: vocabQs, daily: dailyQs, translate: transItems }; // for tests
 
   const countOf = (d) => (d.id === 'switch' ? SECTIONS().reduce((a, s) => a + s.phrases.filter((p) => p.f && p.c && p.f !== p.c).length, 0) : d.id === 'markers' ? clozeQs('all', 1e6).length : d.id === 'build' ? BUILD.length : d.id === 'roots' ? rootWords().length :
-    d.id === 'errors' ? ERRORS.filter(errOk).length : d.id === 'translate' ? transItems('all').length : d.gap ? GAPS.filter((it) => gapOk(it) && it.set === d.gap).length : d.id === 'lessongaps' ? lgLessons().length : 0);
-  const tileOf = (d) => { const b = bestOf(d.id), n = countOf(d); return '<a class="tile" href="#/drills/' + d.id + '"><span class="eyebrow">' + esc(d.eyebrow) + '</span><h3>' + esc(d.title) + '</h3><p>' + esc(d.blurb) + '</p><div class="meta row"><span class="pill' + (b != null ? ' good' : '') + '">' + (b != null ? 'Best ' + b + '%' : 'Not tried yet') + '</span><span class="muted small">' + n + (d.id === 'lessongaps' ? ' lessons' : ' items') + '</span></div></a>'; };
+    d.id === 'errors' ? ERRORS.filter(errOk).length : d.id === 'translate' ? transItems('all').length : d.gap ? GAPS.filter((it) => gapOk(it) && it.set === d.gap).length : d.id === 'lessongaps' ? lgLessons().length :
+    d.id === 'transform' ? tfPool('type').length : d.id === 'unit' ? unitList().length : 0);
+  const tileOf = (d) => { const b = bestOf(d.id), n = countOf(d); return '<a class="tile" href="#/drills/' + d.id + '"><span class="eyebrow">' + esc(d.eyebrow) + '</span><h3>' + esc(d.title) + '</h3><p>' + esc(d.blurb) + '</p><div class="meta row"><span class="pill' + (b != null ? ' good' : '') + '">' + (b != null ? 'Best ' + b + '%' : 'Not tried yet') + '</span><span class="muted small">' + n + (d.id === 'lessongaps' ? ' lessons' : d.id === 'unit' ? ' units' : ' items') + '</span></div></a>'; };
   App.drillTiles = (ids) => (ids ? ids.map(byId).filter(Boolean) : DRILLS).map(tileOf).join(''); // the Practice page (js/app.js)
   V.drills = (el) => {
     el.innerHTML = '<h1>Grammar drills</h1><p class="muted">Short grammar and writing drills, ten items each. They go with the lessons; each drill links to the lessons it practises.</p>' +
@@ -477,6 +684,8 @@
   };
   V.drill = (el, p, q) => {
     if (p.id === 'lessongaps') return lgView(el, q || {});
+    if (p.id === 'transform') return tfView(el, q || {});
+    if (p.id === 'unit') return unitView(el, q || {});
     const d = byId(p.id);
     if (!d) { el.innerHTML = '<h1>Grammar drills</h1><p>That drill does not exist. <a href="#/drills">See all drills</a>.</p>'; return; }
     const lessons = LV().filter((l) => d.lessons.includes(l.id));
