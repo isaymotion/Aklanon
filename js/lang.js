@@ -47,5 +47,7 @@ window.LANG = {
     prefixes: ['nagapa', 'magapa', 'pinaka', 'nagpa', 'magpa', 'naga', 'maga', 'naka', 'maka', 'naki', 'maki', 'gina', 'gin', 'ipa', 'nag', 'mag', 'pag', 'ka', 'na', 'ma', 'pa', 'i'],
     suffixes: ['hon', 'han', 'on', 'an']
   },
+  // One line for drills and printed handouts (every handout page footer carries it).
+  draftShort: 'Draft: the Aklanon has not been checked by a native speaker.',
   draftNotice: 'Draft. The Aklanon in this app was written from published grammars and dictionaries and has not yet been checked by a native Akeanon speaker. Use it to understand patients and to learn; confirm wording with Aklanon-speaking staff before relying on a line clinically.'
 };

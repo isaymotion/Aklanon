@@ -2,13 +2,15 @@
    All isaymotion apps share one origin (isaymotion.github.io), so this worker only ever deletes caches that
    start with its own PREFIX. 'magistorya-audio' will hold recorded clips (future pack) and is kept across versions. */
 const PREFIX = 'magistorya-';
-const VERSION = PREFIX + '0.2.5';
+const VERSION = PREFIX + '0.2.6';
 const KEEP = ['magistorya-audio'];
 const FILES = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'data/app-meta.js', 'data/changelog.js', 'data/hospital.js', 'data/strings.js',
-  'js/data/dict-core.js', 'js/data/dict-clinical.js', 'js/data/lessons.js', 'js/data/psych-phrases.js', 'js/data/psych-answers.js',
-  'js/audio-key.js', 'js/lang.js', 'js/core.js', 'js/views.js', 'js/psych-views.js', 'js/point-listen.js', 'js/review.js', 'js/app.js',
+  'js/data/dict-core.js', 'js/data/dict-clinical.js', 'js/data/lessons.js', 'js/data/psych-phrases.js', 'js/data/psych-answers.js', 'js/data/drills.js',
+  'js/audio-key.js', 'js/lang.js', 'js/core.js', 'js/views.js', 'js/psych-views.js', 'js/point-listen.js', 'js/review.js', 'js/drills.js', 'js/vocab.js', 'js/handout.js', 'js/grammar-handout.js', 'js/app.js',
+  // pdfmake is loaded on demand (js/handout.js) but precached so PDFs work offline.
+  'js/vendor/pdfmake.min.js', 'js/vendor/vfs_fonts.js', 'js/vendor/vfs_marks.js',
   'icons/favicon-32.png', 'icons/favicon-64.png', 'icons/logo-96.png', 'icons/apple-touch-icon.png',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-192.png', 'icons/maskable-512.png'
 ];

@@ -6,7 +6,7 @@
 
 **App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com**
 
-Version **0.2.5** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
+Version **0.2.6** (2026-11-19); 0.1.0 (2026-11-08) was the first draft, an engine fork from Usap Tayo. It runs entirely in the browser, works offline after the first visit, and can be installed on phones and desktops.
 
 **Live site:** https://isaymotion.github.io/Aklanon/ (after GitHub Pages is switched on; see below)
 
@@ -27,6 +27,9 @@ The learner is assumed to **speak Tagalog already**. Lessons are contrastive (wh
 | **Lessons** | 39 lessons with quizzes, written for a Tagalog speaker and citing Zorc & de la Cruz (1968) by page. Foundations (6); Sounds (why words change shape; pronunciation II: the e sound in contrast, the glottal stop, o/u, stress); Verbs (focus; aspect; statives; mood and imperatives; pa- causative; choosing a focus; tenses and the dictionary's verb tags; pang-/mang-/maging-/mag-/makig-/-in- and intensives); Sentences (particles; modal and quotative particles; numbers and time; adjectives; possession and linkers; conjunctions; adverbs and deictics; question words II and ku/it/sa; sentence patterns, ro/do, hay and may; counting II: ka, ordinals, tig-, money, clock, dates, age); Word building; Vocabulary (nine thematic word lessons: body, feelings, family, time, illness and healers, drink/money/trouble, house/food/town, everyday verbs, describing people); Culture (respect without po; Kalibo speech; the three dimensions of Aklanon and the loanword layers). Lines marked ◌ are the author's reconstructions, not quotations. |
 | **Dictionary** | English → Aklanon and Aklanon → English, with root-word search and the Tagalog equivalent when given. 1,186 core and clinical entries (dict-core.js 676 + dict-clinical.js 512, two homonyms merged in the app, one homonym merged in the app, the latter all drawn from Salas Reyes et al. 1969 with page references); entries whose note says Z or SR ~p. N are attested in Zorc & de la Cruz (1968) or in Salas Reyes et al. (1969), the Aklanon dictionary (SR page numbers are approximate, from the ERIC scan). |
 | **Universal search** | One search bar (press `/`) across words, phrases, lessons and pages. |
+| **Grammar drills** | Markers, word order, negation (owa / indi / ayaw / bukon), pronouns, question words, small words, aspect, register, roots, find the mistake (including Tagalog and Hiligaynon slips), typed translation, a daily mix, and Practise a lesson (gap sentences from a lesson's own examples, 18 grammar lessons). Route `#/drills`. Data: `js/data/drills.js`. |
+| **Vocabulary practice** | Match the pairs, type the word, hear the word, odd one out, from the dictionary. Route `#/vocab`. |
+| **Printable handouts** | Print or download a PDF of any lesson (body, quiz worksheet, gap sentences, key), a drills worksheet, or chosen psychiatry sections. Routes `#/lessons/handout?id=`, `#/drills/handout`, `#/psych/handout`. pdfmake is in `js/vendor/`. |
 | **Flashcards** | Spaced repetition with topic decks, psychiatry decks and an automatic "My mistakes" deck. |
 | **You** | Streaks, XP, progress, backup export/import (review flags included), settings, What's New, About. |
 

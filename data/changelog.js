@@ -3,6 +3,16 @@
    For every release: add an entry here, then bump APP_META.version (data/app-meta.js) and VERSION in sw.js. */
 window.APP_CHANGELOG = [
   {
+    version: '0.2.6', date: '2026-11-19', title: 'Grammar drills, vocabulary practice and printable handouts',
+    items: [
+      { type: 'feature', text: 'Grammar drills (Practice → Grammar drills), as in Usap Tayo but written for Aklanon: Respectful or everyday?, Choose the marker (ro, ku, it, sa; si, ni, kay), Build the sentence, Find the root, Find the mistake (with a set of Tagalog and Hiligaynon slips: salamat, siya, hindi, sugod, kapoy, madamo, dito, baso, buong, ulo), Say it in Aklanon (typed, several answers accepted), Owa, indi, ayaw or bukon?, Ako, ko or akon?, Choose the question word, Choose the small word, Choose the aspect, and a Daily mix. About 180 items, each sentence from a lesson example or an attested pattern, with Zorc pages where the book has it.' },
+      { type: 'feature', text: 'Practise a lesson: ten gap sentences from a lesson\'s own examples, from the lesson page (Practise this lesson) or the drills page. Eighteen grammar lessons have it: nine built automatically from their example tables, nine with hand-written items.' },
+      { type: 'feature', text: 'Vocabulary practice: match the pairs, type the word, hear the word (Filipino fallback voice) and odd one out, from the dictionary, with My mistakes.' },
+      { type: 'feature', text: 'Printable handouts with PDF download: every lesson (Print handout under the title: the lesson, a quiz worksheet, the lesson\'s gap sentences and an answer key), a drills worksheet with key, and a psychiatry phrase handout (choose sections, respectful, everyday or both, English shown, hidden or as a key, with the likely patient replies). Every page carries the draft notice; the ◌ and ⚑ marks are kept in the PDF.' },
+      { type: 'update', text: 'The app now downloads about 2 MB more on first visit (the PDF maker), so handouts work offline.' }
+    ]
+  },
+  {
     version: '0.2.5', date: '2026-11-19', title: 'Family informant section; sugod corrected to umpisa',
     items: [
       { type: 'content', text: 'New section Family informant (collateral history), 15 phrases: who the informant is and how well they know the patient, a private talk with a promise not to repeat what they say, what changed and when, the usual self before the illness, sleep, eating and work, talking or laughing alone, anger and violence, talk of death, wandering, and whether the family has had to tie up or lock in the patient (balighot, trangka), vices (bisyo), past episodes and medicine, family history (panubli-on), the family\'s own explanation and the kurandero or albularyo, and who will look after the patient and bring them back. With 11 point-board replies for the informant.' },

@@ -38,7 +38,7 @@
         el.querySelectorAll('.opt').forEach((x) => { x.disabled = true; if (+x.dataset.k === q.a) x.classList.add('right'); });
         if (!ok) b.classList.add('wrong');
         if (q.hideQ) { const qt = el.querySelector('[data-qtext]'); if (qt) qt.hidden = false; }
-        el.querySelector('[data-fb]').innerHTML = '<div class="feedback ' + (ok ? 'ok' : 'no') + '">' + '<b>' + (ok ? LANG.quiz.right : LANG.quiz.wrong) + '</b> ' + esc(q.exp || '') + '</div>' +
+        el.querySelector('[data-fb]').innerHTML = '<div class="feedback ' + (ok ? 'ok' : 'no') + '">' + '<b>' + (ok ? LANG.quiz.right : LANG.quiz.wrong) + '</b> ' + esc(q.exp || '') + (q.sayAfter ? ' ' + App.sayBtn(q.sayAfter) : '') + '</div>' +
           '<div class="row" style="margin-top:10px"><button class="btn primary" data-act="next">' + (i + 1 < qs.length ? 'Next' : 'See score') + '</button></div>';
         el.querySelector('[data-act=next]').onclick = () => { i++; draw(); };
         el.querySelector('[data-act=next]').focus();
@@ -234,10 +234,14 @@
     if (!l) { el.innerHTML = '<p>Lesson not found.</p>'; return; }
     const idx = LESSONS.indexOf(l), next = LESSONS[idx + 1], prev = LESSONS[idx - 1];
     el.innerHTML = crumb([['Lessons', '#/lessons'], [l.title]]) + '<div class="row">' + lvPill(l.level) + '<span class="muted small">' + esc(l.unit) + '</span></div><h1 style="margin-top:6px">' + esc(l.title) + '</h1>' +
+      // Print this lesson; practise it with gap sentences from its own examples (js/drills.js), when it has four or more.
+      '<div class="row lesson-acts"><a class="btn sm" href="#/lessons/handout?id=' + encodeURIComponent(l.id) + '">' + icons.read + ' Print handout</a>' +
+      (App.lessonGapCount && App.lessonGapCount(l.id) ? '<a class="btn sm" href="#/drills/lessongaps?l=' + encodeURIComponent(l.id) + '" data-lgauto="' + esc(l.id) + '">' + icons.target + ' Practise this lesson</a>' : '') + '</div>' +
       (l.draft ? '<div class="notice warn" style="margin-bottom:12px">Draft for review: the ' + esc(LANG.name) + ' in this lesson has not yet been checked by a native speaker.</div>' : '') +
       '<div class="lesson-body">' + l.body.replace(/<table>/g, '<div class="tablewrap"><table>').replace(/<\/table>/g, '</table></div>') + '</div>' +
       '<h2 style="margin-top:20px">Check yourself</h2><div id="lq"></div>' +
       '<div class="spread" style="margin-top:16px">' + (prev ? '<a class="btn" href="#/lessons/' + prev.id + '">← ' + esc(prev.title) + '</a>' : '<span></span>') + (next ? '<a class="btn" href="#/lessons/' + next.id + '">' + esc(next.title) + ' →</a>' : '') + '</div>';
+    el.querySelectorAll('[data-lgauto]').forEach((a) => (a.onclick = () => { App._lgAuto = a.dataset.lgauto; }));
     // speak buttons for examples
     el.querySelectorAll('.lesson-body .ex').forEach((ex) => { const b = ex.querySelector('b'); if (b) { ex.style.gridTemplateColumns = 'minmax(0,1fr) auto'; const btn = document.createElement('div'); btn.innerHTML = App.sayBtn(b.textContent); btn.style.gridRow = '1 / span 2'; btn.style.gridColumn = '2'; ex.appendChild(btn.firstChild); } });
     App.runQuiz(el.querySelector('#lq'), l.quiz.map(([q, opts, a, exp]) => ({ q, opts, a, exp })), {

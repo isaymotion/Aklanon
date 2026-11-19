@@ -43,26 +43,34 @@
     [/^\/flash$/, V.flash, 'flash'],
     [/^\/flash\/(?<deck>[\w-]+)$/, V.review, 'flash'],
     [/^\/lessons$/, V.lessons, 'lessons'],
+    [/^\/lessons\/handout$/, V.ghandoutLesson, 'lessons'],
     [/^\/lessons\/(?<id>[\w-]+)$/, V.lesson, 'lessons'],
+    [/^\/drills$/, V.drills, 'drills'],
+    [/^\/drills\/handout$/, V.ghandoutDrills, 'drills'],
+    [/^\/drills\/(?<id>[\w-]+)$/, V.drill, 'drills'],
+    [/^\/daily$/, V.daily, 'drills'],
+    [/^\/vocab$/, V.vocab, 'vocab'],
+    [/^\/vocab\/(?<mode>[\w-]+)$/, V.vocabMode, 'vocab'],
     [/^\/psych$/, V.psych, 'psych'],
     [/^\/psych\/s\/(?<id>[\w-]+)$/, V.psychSection, 'psych'],
     [/^\/psych\/listen$/, V.psychListen, 'psych'],
     [/^\/psych\/point$/, V.psychPoint, 'psych'],
+    [/^\/psych\/handout$/, V.handout, 'psych'],
     [/^\/review$/, V.reviewList, 'review'],
     [/^\/progress$/, V.progress, 'progress'],
     [/^\/settings$/, V.settings, 'settings'],
     [/^\/new$/, V.whatsnew, 'new'],
     [/^\/about$/, V.about, 'about']
   ];
-  const TITLES = { home: '', practice: 'Practice', dict: 'Dictionary', flash: 'Flashcards', lessons: 'Lessons', psych: 'Psychiatry', review: 'For review', progress: 'Progress', settings: 'Settings', new: "What's New", about: 'About' };
+  const TITLES = { home: '', practice: 'Practice', dict: 'Dictionary', flash: 'Flashcards', drills: 'Grammar drills', vocab: 'Vocabulary practice', lessons: 'Lessons', psych: 'Psychiatry', review: 'For review', progress: 'Progress', settings: 'Settings', new: "What's New", about: 'About' };
 
   /* ---------- Navigation: one grouped list for the desktop rail, the phone drawer (More) and the #/more page ----------
      [key, href, label, icon]. Group labels are shell strings (data/strings.js); item labels are the app's own. */
-  const PSY_PRACTICE = [['p-point', '#/psych/point', 'Point board (' + LANG.point.title + ')', icons.speak], ['p-listen', '#/psych/listen', 'Listening drill', icons.sound]];
+  const PSY_PRACTICE = [['p-point', '#/psych/point', 'Point board (' + LANG.point.title + ')', icons.speak], ['p-listen', '#/psych/listen', 'Listening drill', icons.sound], ['p-ho', '#/psych/handout', 'Printable handout', icons.read]];
   const NAV = [
     ['', [['home', '#/', 'Home', icons.home], ['practice', '#/practice', 'Practice', icons.target]]],
     ['nav.learn', [['lessons', '#/lessons', 'Lessons', icons.lesson], ['dict', '#/dict', 'Dictionary', icons.book]]],
-    ['nav.drill', [['flash', '#/flash', 'Flashcards', icons.cards]]],
+    ['nav.drill', [['flash', '#/flash', 'Flashcards', icons.cards], ['drills', '#/drills', 'Grammar drills', icons.spark], ['vocab', '#/vocab', 'Vocabulary practice', icons.book]]],
     ['nav.interview', [['psych', '#/psych', 'Psychiatry ' + LANG.name, icons.brain]].concat(PSY_PRACTICE)],
     ['nav.app', [['progress', '#/progress', 'Progress', icons.chart], ['review', '#/review', 'For review', icons.flag], ['settings', '#/settings', 'Settings', icons.gear], ['new', '#/new', "What's New", icons.spark], ['about', '#/about', 'About', icons.info]]]
   ];
@@ -151,7 +159,8 @@
     dict: App.DICT.length + ' entries, both directions, root-word search', flash: 'Spaced repetition across every deck',
     lessons: 'Grammar and culture, contrasted with ' + ((LANG.bridgeLang && LANG.bridgeLang.name) || 'what you know'),
     practice: 'Every drill on one page', psych: (window.PSYCH_SECTIONS || []).length + ' interview section(s), point board and listening drill',
-    'p-point': 'The patient taps a reply; you read the English', 'p-listen': 'Hear a reply, choose the meaning',
+    'p-point': 'The patient taps a reply; you read the English', 'p-listen': 'Hear a reply, choose the meaning', 'p-ho': 'Print a phrase sheet: sections, register, English',
+    drills: 'Markers, negators, pronouns, question words, small words, aspect, word order, mistakes, typing', vocab: 'Matching, typing, listening, odd one out',
     review: 'Flagged lines for the native-speaker reviewer', progress: 'Streak, stats, backup', settings: 'Register, voice, theme', new: 'What changed in each version', about: 'Credits and disclaimers'
   };
   V.practice = (el) => {
@@ -160,7 +169,11 @@
     el.innerHTML = '<h1>Practice</h1><p class="muted">Short drills you can finish in a few minutes. Scores feed your streak and XP.</p>' +
       '<h2>Language</h2><div class="grid">' +
       T('#/flash/due', 'Review', due ? due + ' cards due' : 'Flashcards', 'Spaced repetition across every deck.') +
-      T('#/lessons', 'Quiz', 'Lesson quizzes', Object.keys(s.done.lessons).length + ' of ' + LESSONS.length + ' lessons done.') + '</div>' +
+      T('#/lessons', 'Quiz', 'Lesson quizzes', Object.keys(s.done.lessons).length + ' of ' + LESSONS.length + ' lessons done.') +
+      T('#/daily', 'A few minutes · about 10 questions', 'Daily mix', App.dailyToday && App.dailyToday() != null ? 'Done today: ' + App.dailyToday() + '%. Go again for a new set.' : 'Two words, then one question from each of several drills.') + '</div>' +
+      '<h2 style="margin-top:18px">Grammar drills</h2><div class="notice warn" style="margin-bottom:10px">' + esc(LANG.draftShort || '') + '</div><div class="grid">' + (App.drillTiles ? App.drillTiles() : '') +
+      T('#/drills/handout', 'Print', 'Drills handout', 'A worksheet from the drills, with an answer key.') + '</div>' +
+      '<h2 style="margin-top:18px">Vocabulary</h2><div class="grid">' + (App.vocabTiles ? App.vocabTiles() : '') + '</div>' +
       '<h2 style="margin-top:18px">Clinical</h2><div class="grid">' +
       T('#/psych/listen', 'Listen', 'Listening drill', 'Hear a reply, choose the meaning.') +
       T('#/psych/point', 'Bedside', 'Point board', 'Rehearse the replies a patient can tap.') +
@@ -178,7 +191,7 @@
   };
   routes.push([/^\/more$/, V.more, 'more']);
   routes.push([/^\/practice$/, V.practice, 'practice']);
-  const MORE_KEYS = ['dict', 'lessons', 'review', 'progress', 'settings', 'new', 'about', 'more'];
+  const MORE_KEYS = ['dict', 'drills', 'vocab', 'lessons', 'review', 'progress', 'settings', 'new', 'about', 'more'];
 
   /* ---------- Header height -> --top (the search drops to a second row on phones) ---------- */
   function setTopVar() { const h = $('.topbar'); if (h) root.style.setProperty('--top', h.offsetHeight + 'px'); }

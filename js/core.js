@@ -185,7 +185,7 @@
   });
   [['Flashcards', '#/flash'], ['Progress', '#/progress'], ['Settings', '#/settings'], ["What's New", '#/new'], ['About', '#/about'], ['Dictionary', '#/dict'],
     ['Listening drill', '#/psych/listen'], ['Point board: patient points to the answer', '#/psych/point'], ['For review: flagged lines for the native-speaker reviewer', '#/review'],
-    ['Practice', '#/practice'], ['Lessons', '#/lessons'], ['Psychiatry', '#/psych'], ['More', '#/more']]
+    ['Practice', '#/practice'], ['Grammar drills', '#/drills'], ['Vocabulary practice', '#/vocab'], ['Daily mix', '#/daily'], ['Practise a lesson', '#/drills/lessongaps'], ['Drills handout: printable worksheet', '#/drills/handout'], ['Lesson handout: print a lesson', '#/lessons/handout'], ['Psychiatry handout: printable phrase sheet', '#/psych/handout'], ['Lessons', '#/lessons'], ['Psychiatry', '#/psych'], ['More', '#/more']]
     .forEach(([t, r]) => push('Page', t, '', '', r));
   App.searchAll = (q, limit) => {
     const nq = norm(q);

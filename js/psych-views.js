@@ -19,6 +19,7 @@
     const body = {
       interview: Object.entries(groups).map(([g, ss]) => '<h2 style="margin-top:16px">' + esc(g) + '</h2><div class="grid">' + ss.map((s) =>
         '<a class="tile" href="#/psych/s/' + s.id + '"><h3>' + esc(s.title) + '</h3><p>' + s.phrases.length + ' phrases' + (s.draft ? ' · draft for review' : '') + '</p>' + (done.sections[s.id] ? '<div class="meta"><span class="pill good">opened</span></div>' : '') + '</a>').join('') + '</div>').join('') +
+        '<h2 style="margin-top:20px">Print</h2><div class="grid">' + T('#/psych/handout', 'Print', 'Printable handout', 'A phrase sheet for the ward: choose sections, register and English; PDF or print.') + '</div>' +
         (related.length ? '<h2 style="margin-top:20px">Related lessons</h2><div class="grid">' + related.map((l) => '<a class="tile" href="#/lessons/' + l.id + '"><h3>' + esc(l.title) + '</h3><p>' + esc(l.summary) + '</p></a>').join('') + '</div>' : ''),
       bedside: '<div class="grid" style="margin-top:14px">' +
         T('#/psych/point', 'Bedside', 'Point board (' + esc(LANG.point.title) + ')', 'Turn the phone around: the patient points to a reply, the phone speaks it, you read the English.') +
