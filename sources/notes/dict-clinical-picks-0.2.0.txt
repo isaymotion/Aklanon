@@ -1,0 +1,374 @@
+# orig[>new]|english|pos|category|tagalog
+agey|ouch (expression of pain)|interj|health|aray
+agis-is|dry, peeling skin|n|body|
+alila'>alila|adopt; foster; bring up|v|family|ampon
+angoe|be afflicted with a sickness or infirmity|v|health|
+antigo|know how to (do something)|v|mind|marunong
+apa'>apa|mute person; unable to speak|n|health|pipi
+atipiyong|feel faint; be dizzy|v|health|hilo
+ayo|faint; pass out|v|health|himatay
+baeagaten|susceptible; easily frightened; nervous|adj|emotions|
+baeaka|concern; earnest help|n|emotions|malasakit
+baewae|forbid; prohibit|v|verbs|bawal
+baga'>baga|lungs|n|body|baga
+bagi|swell up; get swollen|v|health|maga
+balibad|refuse; deny; turn down|v|verbs|tanggi
+balik-balik|come often; return again and again|v|verbs|balik-balik
+balita'>balita|report; tell the news|v|verbs|balita
+bangon|get up out of bed; arise|v|verbs|bangon
+baso|foolish; silly; crazy (person)|adj|mind|
+bawas|remove; take away; reduce|v|verbs|bawas
+biebue|body hair; feathers|n|body|balahibo
+bikil|swell up; become inflamed|v|health|
+bikoe|beat; whip; punish with a weapon|v|verbs|
+bilibid|jail; imprison|v|verbs|kulong
+bilig>bulig|help; assistance|n|verbs|tulong
+bilin|leave behind; order; request|v|verbs|bilin
+binhod|tingle; be numb; "fall asleep" (limb)|v|body|manhid
+biog|ear drainage|n|health|
+bire|punch; box; hit|v|verbs|suntok
+bisi|busy|adj|daily|abala
+bisita|visit; call on|v|verbs|bisita
+bitos|intestinal worms|n|health|bulate
+boesit|bad luck; misfortune|n|folk|malas
+bueaho'>bueaho|cry aloud; weep loudly|v|emotions|
+buhok|hair (on the head)|n|body|buhok
+bulehan|fortunate; blessed|adj|adjectives|mapalad
+buringet>buringot|moody; bad-humored; crabby|adj|emotions|masungit
+bunge>bungoe|deaf|adj|health|bingi
+bunggo'>bunggo|bump into; collide|v|verbs|bunggo
+but-anan|mature; kind; sensible|adj|adjectives|mabait
+butod|bloated; swell with gas (stomach)|v|health|kabag
+daeahig|involve; bring in|v|verbs|dawit
+daeapi'>daeapi|eczema|n|health|
+daeas|often; frequently|adv|time|madalas
+dangop|take refuge; seek help; go for help|v|verbs|dulog
+dalit|hurry; go quickly|v|verbs|dali
+diga|tell; relate to someone|v|verbs|
+dikeong|relapse; get sick again|v|health|binat
+dinaya'>dinaya|deceit; cheating|n|mind|daya
+dita|report; give information|v|verbs|
+ditok|brain|n|body|utak
+dueom|be in the dark; not able to comprehend|v|mind|
+dueon|choke on food; cough from eating fast|v|health|samid
+duge'>dugo|blood|n|body|dugo
+dungan|together; simultaneously|adv|grammar|sabay
+ea|smart; hurt (a wound)|v|health|hapdi
+eaba|launder; wash clothes|v|daily|laba
+eain|get worse|v|health|lumala
+eantaw|look at|v|verbs|tingin
+eaong|ask permission; request|v|verbs|paalam
+eapas|go against; violate|v|verbs|labag
+eapit|approach; get near|v|verbs|lapit
+eayo'>eayo|put far away; distance|v|verbs|layo
+eignat|fever; temperature|n|health|lagnat
+eigos|seize; take by force; rape|v|verbs|
+eingkag|be serious; take things to heart; be fearful|v|emotions|
+eiot|get worse; be near death|v|health|
+etka>suka|vomit; throw up|v|health|suka
+eubog|lie down; stay|v|verbs|higa
+euhaet>euha|tears; shed tears|n|emotions|luha
+euok|choke; strangle; squeeze the neck|v|verbs|sakal
+ewig|long; drawn out|adj|time|
+gab-an|object to; be fed up with; hate|v|emotions|
+gaba'>gaba|divine punishment; curse from above|n|folk|gaba
+gabot|pull out|v|verbs|bunot
+gakit|be hurt by; suffer from|v|health|
+gamon|get accustomed to; develop a habit|v|mind|sanay
+gieang|get older|v|time|tumanda
+gieos|abrasion; rash; scabies|n|health|galis
+gig|foolish; silly; stupid (male)|adj|mind|
+gigarilyo>sigarilyo|smoke a cigarette; cigarette|v|substances|sigarilyo
+gikan|come from; hail from|v|verbs|galing
+gikop|dependent; person under one's care|n|family|
+ginikenan>ginikanan|parents; elders|n|family|magulang
+gipos|runt; undernourished child|n|health|
+guteom>gutom|be hungry; hunger|v|body|gutom
+habok|swell; become inflated|v|health|
+haembol|humble; lowly; poor|adj|adjectives|
+haeok|swollen|adj|health|maga
+hagad|do one's best; force oneself; coax|v|verbs|
+hageok|wheeze; breathe with difficulty|v|health|hingal
+hagoeng|in death throes from disease|adj|health|
+hakat|care about; be concerned for|v|emotions|
+halid|sleep with; share a bed with|v|daily|
+hamiot|sincere; heartfelt|adj|emotions|taos
+hando|cherish; dream of; hope for|v|mind|
+hanggod|large; big|adj|adjectives|malaki
+hanghang|thirsty; parched|adj|body|uhaw
+hanginon|pretentious; boastful; foolish|adj|mind|hangin
+haoem|all set; ready|adj|adjectives|handa
+hawag|be anxious; worried|v|emotions|balisa
+hayang|lie on one's back|v|verbs|tihaya
+hendo|goal; ambition; desire; wish|n|mind|hangad
+hieog>hueog|fall; get dropped|v|verbs|hulog
+hikaw|be envious; jealous; possessive|v|emotions|inggit
+hilab|get an upset stomach|v|health|
+hilong|drunk; intoxicated|adj|substances|lasing
+hilot|massage; set a broken bone|v|health|hilot
+himametyon>himamatyon|about to die; at the point of death|adj|health|naghihingalo
+himo'>himo|do; make; work on|v|verbs|gawa
+hindesoe>hinuesoe|repent; regret; feel sorry for|v|emotions|pagsisisi
+hipag|sister-in-law|n|family|hipag
+hirop|friendly; loving; warm|adj|emotions|
+hisa'>hisa|envy; betray out of envy|v|emotions|inggit
+hueeng>hueong|dizzy; spinning (head)|adj|health|hilo
+hugom|smell; sniff; detect an odor|v|verbs|amoy
+humey>humay|cooked rice; rice|n|daily|kanin
+hunes|impolite; ill-mannered|adj|adjectives|bastos
+huyab-huyab|tremble; cower; shake|v|body|
+huyae'>huya|face; pride; shame|n|emotions|hiya
+huyap|count; enumerate|v|verbs|bilang
+iba|go together; be companions|v|people|sama
+ibod|irresponsible; lacking judgment|adj|mind|
+ieip|egoistic; selfish|adj|mind|makasarili
+ieod|stomach worms|n|health|bulate
+igit|diarrhea|n|health|pagtatae
+igminghod>igmanghod|sibling; brother or sister|n|family|kapatid
+ihapon|supper; evening meal|n|daily|hapunan
+ihimot|have a desire, wish or plan for|v|mind|
+ihit|urinate|v|body|ihi
+iidlot>sip-on|mucus; nasal discharge; a cold|n|health|sipon
+iipong>lipong|be dizzy; feel faint|v|health|hilo
+ikig>akig|be angry; furious|v|emotions|galit
+ila'>ila|like; love|v|emotions|gusto
+ilimnon|drink; beverage|n|daily|inumin
+inapa'>inapa|stutter; stammer; speak hesitantly|v|health|utal
+ineom>inom|drink|v|daily|inom
+intiridi>intindi|understand; pay attention to|v|mind|intindi
+isasaea|be alone; act on one's own|v|people|mag-isa
+istanbay|good-for-nothing; idler|n|people|istambay
+itim|black; dark|adj|adjectives|itim
+kaikig|anger; fury; rage|n|emotions|galit
+kaila'>kaila|liking; love|n|emotions|pagkagusto
+kaina|earlier; a little while ago|adv|time|kanina
+kalimutaw|eyeball; iris|n|body|balintataw
+kamana|similar; just like; the same|adj|adjectives|katulad
+kanya|shiver; tremble; shake|v|body|
+kasakit|suffering; pain|n|health|sakit
+katueogon|sleep; sleepiness|n|body|antok
+kauget>kaugot|anger; rage|n|emotions|
+kawing|draw near; approach|v|verbs|
+kaye>kayang|lying face up; on one's back|adj|body|tihaya
+kiboe|callus|n|body|kalyo
+kimod|murmur; mutter in anger|v|emotions|
+kinaboen|gathering; meeting|n|people|pagtitipon
+kinahengean>kinahangean|need; necessity|v|verbs|kailangan
+kis-a|every now and then|adv|time|minsan
+kitob|have a premonition; be worried|v|emotions|kutob
+konsumido'>konsumido|worried; miserable|adj|emotions|balisa
+kuea|stun; surprise; scare|v|emotions|gulat
+kueuyapan|high-strung; nervous; hysterical|adj|emotions|
+kuom|clench; hold the hands closed|v|body|kuyom
+larga|leave; depart|v|verbs|alis
+lasang|confused; unsound; foolish|adj|mind|lito
+leka>loka|crazy; foolish (female)|adj|mind|loka
+libang|take care of; babysit; console|v|verbs|libang
+libod|go around; wander|v|verbs|libot
+libs>libak|slander; backbite|v|verbs|libak
+lig-on|strong; firm; steady|adj|adjectives|matibay
+liked>likod|back|n|body|likod
+lilong|lie; deceive|v|verbs|sinungaling
+linaw|peaceful; calm; clear|adj|emotions|payapa
+lintad|unable to focus (eyes)|v|health|
+lista|smart; quick; intelligent|adj|mind|matalino
+maamigohen>maamigohon|friendly; amiable|adj|emotions|palakaibigan
+mabaekas>mabakas|quick; fast|adj|adjectives|mabilis
+mabye>mabdos|pregnant|adj|health|buntis
+madla'>madla|be sick and tired of; have one's fill|v|emotions|sawa
+maeangaang|developing a fever|adj|health|nilalagnat
+maedeot>maeapit|close; near|adj|adjectives|malapit
+maedin'>maeain|bad; evil; mean|adj|adjectives|masama
+mag-o|be a stranger to; not used to|v|mind|
+mageeang>mageuang|old; elder|adj|people|matanda
+magueang|elder sibling|n|family|kuya; ate
+mahinay|soft; quiet; slow|adj|adjectives|mahina
+mahipos|silent; quiet|adj|adjectives|tahimik
+maisot|little; small|adj|quantity|maliit
+makabuee'-bueo>makabueobueo|funny; makes one laugh|adj|emotions|nakakatawa
+makamimingaw|depressing; makes one sad and lonely|adj|emotions|nakakalungkot
+makasueim-oe>makasueum-oe|boring; irritating|adj|emotions|nakakasawa
+makisog>makusog|strong; powerful|adj|adjectives|malakas
+maldisyon|curse; scold|v|folk|sumpa
+maligno|evil spirit; demon|n|folk|maligno
+mamingaw|lonely; sad and depressing|adj|emotions|malungkot
+manggaranon|rich; wealthy|adj|people|mayaman
+manghod|younger|adj|family|bunso
+manogbarang|sorcerer; witch|n|folk|mangkukulam
+manogtatap|caretaker; person responsible for others|n|people|tagapag-alaga
+mas-ot|have hard feelings toward; be negative toward|v|emotions|sama ng loob
+masedya>masadya|happy; joyous; enjoyable|adj|emotions|masaya
+mayad-ayid>mayad-ayad|a little better; somewhat fine|adj|health|medyo mabuti
+mediko|doctor; physician|n|people|doktor
+mewaa'>mawaa|fool; feeble-minded person|n|mind|
+mikot|feel hurt; feel sad; have one's feelings hurt|v|emotions|nasaktan
+minus|under par; slow; less|adj|adjectives|kulang
+muemayad|a little bit better|adj|health|medyo mabuti
+mulianen>uli-anon|senile; old and forgetful|adj|health|ulyanin
+munet>munot|accompany; go along with|v|verbs|sama
+muto-muto|be alone in a house; live alone|v|people|nag-iisa
+nabo|be the victim of a tragedy or accident|v|health|
+nagob|midnight; very late at night|n|time|hatinggabi
+nam-an|lose hope; be frustrated; disappointed|v|emotions|
+nang|older sister (address)|n|family|ate
+nangit|be irritated; provoked; angry|v|emotions|inis
+nay|mother; mom (address)|n|family|nanay
+ngaethae>ngaethae|be frustrated|v|emotions|
+ngasae|talk nonsense; jabber|v|mind|
+ngdengae>ngaengae|cry; whimper|v|emotions|
+ngisi|grin cynically; smile sarcastically|v|emotions|ngisi
+ngislad|grin; smile|v|emotions|ngiti
+ngiteab>ngitngit|mutter; speak in anger|v|emotions|
+nigiaw>hidlaw|long for; miss; be homesick|v|emotions|nangungulila
+nignag|ointment; oil for a wound|n|health|pamahid
+nina|wound; injure|v|health|sugat
+niwang|get thinner; lose weight|v|health|pumayat
+nonoy|young boy (address)|n|family|totoy
+nuee>nuoe|regret; repent; be sorry for|v|emotions|pagsisisi
+ong>nong|older brother (address)|n|family|kuya
+paeagiw|run away and hide; avoid|v|verbs|tago
+paeanginoy|tremble with fear|v|emotions|
+paeapo'>paeapo|have a stomach ache; upset stomach|v|health|sakit ng tiyan
+paga'>paga|swollen|adj|health|maga
+pagot|grind one's teeth|v|health|ngalit
+pahangin-hangin|go out for fresh air|v|daily|pahangin
+pahibayeg>pahibayag|make someone laugh|v|emotions|patawa
+pahipos|silence; keep quiet|v|verbs|patahimik
+paino-ino|think; consider; reckon|v|mind|isip
+pakahuya'>pakahuya|lose face; be disgraced|v|emotions|mapahiya
+paki'>paki|be crippled; lame|v|health|pilay
+palangga'>palangga|pet; favourite; cherished person|n|family|paborito
+palhi|shy; easily embarrassed|adj|emotions|mahiyain
+paligos|take a bath; bathe|v|daily|ligo
+palikis-likis|get someone mixed up; confuse|v|mind|lito
+paltik|crazy|adj|mind|baliw
+pameti'>pamati|listen to; hear out|v|verbs|pakinig
+pamihaw|eat breakfast; have a snack|v|daily|almusal
+pangabay|request; ask a favour|v|verbs|pakiusap
+pangalipay|rejoice; be happy about|v|emotions|magalak
+pangasawa|court and marry; wed|v|family|mag-asawa
+pangayo'>pangayo|ask for; request|v|verbs|hingi
+pangineon|have an appetite; eat well|v|health|ganang kumain
+pangita'>pangita|job; occupation; livelihood|n|daily|hanapbuhay
+panimuet>panimuot|attitude; totality of one's feelings|n|mind|saloobin
+panit|skin|n|body|balat
+panugaiigan>panugangan|parents-in-law|n|family|biyenan
+pasaedmat>pasaeamat|thank; give thanks|v|verbs|pasalamat
+pasagibin>pasagibin|ask for help; get others to cooperate|v|verbs|
+pasiayod>pasayod|notify; let know|v|verbs|ipaalam
+pasilabot|mind someone else's business; snoop|v|people|pakialam
+pati|believe and obey; follow|v|mind|sunod
+patieog>patueog|put to sleep|v|health|patulog
+paukoy|keep silent|v|verbs|tumahimik
+payaw|brother-in-law|n|family|bayaw
+paypuy|tired; sore; numb (muscles)|adj|body|ngalay
+pia|thigh|n|body|hita
+pidlos|get free; slip away; escape|v|verbs|takas
+piead>paead|palm of the hand|n|body|palad
+pikaw|awaken; wake up|v|daily|gising
+pikoen>pikon|touchy; easily angered; cannot be joked with|adj|emotions|pikon
+piling|get cramps|v|health|pulikat
+pirga|give a purgative|v|health|purga
+pisoe|massage with the fingers|v|health|
+pitsa|date; day|n|time|petsa
+pobre|poor|adj|people|mahirap
+polis|police; policeman|n|people|pulis
+postiso|false teeth|n|body|pustiso
+preso|imprison; put in jail|v|verbs|preso
+pudsa|fast; abstain from|v|daily|ayuno
+puka|stay up late at night|v|daily|puyat
+pungdy>pungaw|unsteady; weak; unstable|adj|health|
+puniti|box; fight with fists|v|verbs|suntok
+puyo'>puyo|live at; dwell|v|daily|tira
+sabak|put on one's lap|v|family|kandong
+sabet>sabat|answer; reply|v|verbs|sagot
+sakdig|support; care; help|n|people|suporta
+salim-ok|choke on a liquid|v|health|
+samit|taste; try; sample|v|verbs|tikim
+sandig|lean against|v|verbs|sandal
+sangkiriti'>sangkiriti|very few; very little|adj|quantity|kaunti
+sanyog|dizzy; hazy|adj|health|hilo
+selig>saeig|trust deeply; have hope in; firmly believe|v|emotions|tiwala
+sentimyento|ill will; bad feelings; hurt|n|emotions|sama ng loob
+siahae|hold dear; love|v|emotions|mahal
+sigin|often; repeatedly|adv|time|madalas
+simak|make herbal medicine|v|folk|
+simpae|slap on the face|v|verbs|sampal
+sin-it|be moved with pity|v|emotions|awa
+singkoe|inform; tell; report|v|verbs|
+sip-onen>sip-onon|having a cold; runny nose|adj|health|sinisipon
+sipa|kick|v|verbs|sipa
+sipnga|blow one's nose|v|body|singa
+siyag-it|scream; shout; cry aloud|v|emotions|sigaw
+skol|school|n|places|eskwela
+sobrahan|too much; extra|n|quantity|sobra
+soltera|single woman|n|people|dalaga
+soltero|single man; bachelor|n|people|binata
+sora|criticize; defame; speak ill of|v|verbs|
+subang|eldest|adj|family|panganay
+sueedp>sueop|punch; hit; slug|v|verbs|suntok
+sugee>sugae|gamble; take one's chances|v|substances|sugal
+sugeot>sugot|permit; allow; tolerate|v|verbs|payag
+sugilenon>sugilanon|talk to one another; converse; story|v|verbs|kuwentuhan
+sutil|nasty; ill-mannered; naughty|adj|adjectives|sutil
+tabang|help; assist|v|verbs|tulong
+tabo'>tabo|happen; occur|v|verbs|nangyari
+tado|continual; incessant|adj|time|tuloy-tuloy
+taeamate>taeamati|look down upon; scorn|v|emotions|hamak
+tagimata|have bloodshot eyes|v|health|
+tagobilin|last will; final wish; instructions|n|family|habilin
+tagyan|entrust; trust to|v|emotions|ipagkatiwala
+taka|be bored with; fed up; dislike|v|emotions|sawa
+takab|steal; rob|v|verbs|nakaw
+taliked>talikod|turn one's back|v|verbs|talikod
+tamad|lazy person; lazy|n|adjectives|tamad
+tamilay|weak from bad mood or poor spirits|adj|emotions|
+tamyaw|greet; say hello|v|verbs|bati
+tanda'>tanda|mark; remember; commemorate|v|mind|tanda
+tandiho'>tandiho|feel the need to move one's bowels|v|body|
+tandok|folk cure by sucking the sick area through a horn|v|folk|tandok
+tango'>tango|nod the head|v|body|tango
+tapon|catch; contract (an illness)|v|health|hawa
+tapos|finish; complete; end|v|verbs|tapos
+taslit|cowardly; sheepish; afraid|adj|emotions|duwag
+tatap|take care of; rear|v|family|alaga
+tener|remain; stay; live at|v|daily|tira
+tibi'>tibi|covet; envy; drool over|v|emotions|
+tidio'>tudlo|finger; toe; teach|n|body|daliri
+tie-an>tue-an|bone|n|body|buto
+tieog>tueog|sleep through|v|body|tulog
+tig-a|hard; harsh; firm|adj|adjectives|matigas
+timsog|become stronger; get healthy|v|health|lumakas
+tinong|slow; quiet; peaceful|adj|emotions|tahimik
+tisikohon>tisikon|tuberculous; sick with TB|adj|health|tisiko
+tiya|aunt|n|family|tiya
+tomar|drink; take (medicine)|v|health|tomar
+trato|promise; agree on|v|verbs|pangako
+tuba-an|tuba stand; place where tuba is sold|n|substances|
+tuedey>tuedoy|hex; curse; wish bad luck on|v|folk|sumpa
+tuen>tuon|study; learn|v|mind|aral
+tueon|swallow|v|body|lunok
+tuli|ear wax|n|body|tutuli
+tupad|be side by side with|v|verbs|tabi
+tutinlan>tutunlan|throat|n|body|lalamunan
+tyo>tiyo|uncle; grandfather|n|family|tiyo
+ubinon>ubanon|gray-haired|adj|body|ubanin
+ubo|cough|v|health|ubo
+ueaahab>ueahab|wail; cry|v|emotions|hagulgol
+ueahak|scream; cry out|v|emotions|sigaw
+ued'>uea|malinger; pretend to be sick|v|health|
+uedn>uean|rain|n|daily|ulan
+uget>ugot|be angry; peeved|v|emotions|galit
+uligham|clear the throat|v|body|tikhim
+ulihi|be late|v|time|huli
+unon|illegitimate child|n|family|
+utekan>utokan|intelligent; brainy|adj|mind|matalino
+utot|flatulence|n|body|utot
+waea'>waea|disappear; become nothing; run out|v|verbs|wala
+wakwak|be or act like a witch|v|folk|aswang
+wieas|toss and turn; move back and forth|v|body|balisa
+wintid>wanted|want; crave|v|mind|gusto
+yawa-on|evil; vile|adj|folk|
+yibit|slander; speak ill of|v|verbs|siraan
+yimedyo>rimedyo|cure; remedy|v|health|remedyo
+yuko'>yuko|bend; stoop; bow the head|v|body|yuko
